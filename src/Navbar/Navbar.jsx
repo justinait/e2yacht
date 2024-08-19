@@ -73,11 +73,11 @@ function Navbar() {
                 {sections.map((e, i)=> {
                   return (
                     <p
-                        key={e.id} 
-                        to={`/${e.id}`} 
-                        onClick={()=>handleClose(e.id)} 
-                        className={selectedCategory == e.id? 'dropdownItems activeNavbar': 'dropdownItems'}>
-                        {e.name}
+                      key={e.id} 
+                      to={`/${e.id}`} 
+                      onClick={()=>handleClose(e.id)} 
+                      className={selectedCategory == e.id? 'dropdownItems activeNavbar': 'dropdownItems'}>
+                      {e.name}
                     </p>)
                 })}
                 

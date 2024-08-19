@@ -8,3 +8,13 @@
     padding: 0 21px;
     height: 58px;
 }
+.dropdownHeader {
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 500;
+    height: calc(100vh - 58px);
+    padding: 0 21px;
+}
+.dropdownItems {
+    line-height: 2.4;
+}
