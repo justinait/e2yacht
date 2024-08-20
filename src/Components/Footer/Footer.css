@@ -1,0 +1,39 @@
+.footerContainer {
+    background-color: var(--color-blue);
+}
+.footerTitle {
+    font-size: var(--fontSize-2xlarge);
+    font-weight: var(--fontWeigth-medium);
+}
+.logoFooter {
+    width: 50%;
+}
+.contactFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactFooter .button {
+    margin-top: 0;
+}
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.socialMediaCircle {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.socialMediaCircle img {
+    width: 20px;
+}

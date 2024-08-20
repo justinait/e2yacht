@@ -3,6 +3,7 @@ import CheckScroll from './CheckScroll';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -14,15 +15,10 @@ function App() {
 
         <Route path='/' element={< Home />} />
         
-        {/* <Route path='/about' element={< About />} />
-        <Route path='/news' element={< News />} />
-        <Route path='/atelier' element={< Atelier />} />
-        <Route path='/contact' element={< Contact />} />
-
-        <Route path='/:category' element={< GalleryContainer />} />
-        <Route path='/prensa/:id' element={< NewsDetail />} /> */}
-        
       </Routes>
+      
+      <Footer/>
+
     </BrowserRouter>
   )
 }
