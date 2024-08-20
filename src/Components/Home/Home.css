@@ -7,7 +7,7 @@
     font-size: 12px;
 }
 .subtitlesHome {
-    font-weight: 200;
+    font-weight: var(--fontWeigth-normal);
     font-size: 30px;
     font-size: clamp(23px, 3vw, 30px);
     color: #073460;

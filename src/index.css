@@ -13,3 +13,34 @@ body {
   color: white;
   font-family: 'Libre Franklin Variable', sans-serif;
 }
+
+
+:root {
+  --color-grey: #E9E9E9;
+  --color-darkGrey: #80858D;
+  --color-blue: #073460;
+  --color-lightBlue: #165BBB;
+
+  --fontSize-base: clamp(16px, 3vw, 21px);
+  --fontSize-medium: clamp(12px, 3vw, 15px);
+  --fontSize-large: clamp(14px, 3vw, 17px);
+  --fontSize-xlarge: clamp(16px, 3vw, 21px);
+  --fontSize-2xlarge: clamp(18px, 3vw, 24px);
+  --fontSize-3xlarge: clamp(22px, 3vw, 24px);
+  
+  --fontWeigth-normal: 200;
+  --fontWeigth-medium: 500;
+  --fontWeigth-bold: 700;
+}
+
+/* @media(min-width:1000px) {
+  
+
+  :root {
+    --fontSize-large: 24px;32
+    --fontSize-xlarge: 32px;40
+    --fontSize-2xlarge: 40px;48
+    --fontSize-3xlarge: 48px;52
+    
+  }
+} */

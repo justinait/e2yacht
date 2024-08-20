@@ -21,7 +21,7 @@
 .homeServiceName {
     text-transform: uppercase;
     color: #073460;
-    font-weight: 700;
+    font-weight: var(--fontWeigth-bold);
     font-size: 11px;
     width: 90%;
     margin: auto;
