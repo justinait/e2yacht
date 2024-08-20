@@ -8,7 +8,7 @@
     padding-bottom: 5px;
 }
 
-.whatWeDoTextContainer ul {
+.whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
     padding-left: 19px;
 }
 .whatWeDoTextContainer li {
@@ -20,14 +20,10 @@ li a {
 
 .managementTextContainer {
     color: #000B1B;
-    text-transform: capitalize;
     font-size: var(--fontSize-medium);
     padding-bottom: 5px;
 }
 
-.managementTextContainer ul {
-    padding-left: 19px;
-}
 li a {
     color: var(--color-lightBlue);
 }
@@ -40,6 +36,14 @@ li a {
     font-weight: var(--fontWeight-bold);
 }
 .managementh6 {
-    font-size: clamp(14px, 3vw, 17px);
+    font-size: clamp(13px, 3vw, 15px);
     font-weight: var(--fontWeight-bold);
+}
+.managementTextContainer ol li {
+    padding: 2px 0;
+}
+.boatsWeManage {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
 }

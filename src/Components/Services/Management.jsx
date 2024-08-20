@@ -42,9 +42,36 @@ function Management() {
         </p>
 
         <div className='separatorManagement'></div>
-
         <p className='managementh5'>Yachts under our care</p>
-        <p className='managementh6'>Power boats</p>
+        <div className='boatsWeManage'>
+          <div>
+            <p className='managementh6'>Power boats</p>
+            <ol>
+              <li>Horizon 70'</li>
+              <li>Princess 65’</li>
+              <li>Johnson 65’</li>
+              <li>Fleming 55’</li>
+              <li>Offshore 52’</li>
+              <li>Carver 40’</li>
+              <li>Mikelson 43’</li>
+              <li>Sea Ray 32’</li>
+            </ol>
+          </div>
+
+          <div>
+            <p className='managementh6'>Sailboats</p>
+            <ol>
+              <li>Peterson 44’</li>
+              <li>Island Packet 40’</li>
+              <li>JLiberty 41’</li>
+              <li>Jeanneau 47'</li>
+              <li>Hunter 44’</li>
+              <li>Westsail 43’</li>
+              <li>Island Packet 38'</li>
+            </ol>
+          </div>
+          
+        </div>
       </div>
     </div>
   )
