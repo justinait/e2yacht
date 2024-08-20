@@ -1,3 +1,15 @@
 .whatHero {
     background-image: url('/public/images/whatWeDoHero.jpg');
 }
+.whatWeDoTextContainer {
+    color: black;
+    text-transform: capitalize;
+    font-size: var(--fontSize-medium);
+}
+
+.whatWeDoTextContainer ul {
+    padding-left: 19px;
+}
+.whatWeDoTextContainer li {
+    padding: 7px 0;
+}
