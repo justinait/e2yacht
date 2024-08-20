@@ -18,8 +18,7 @@ function OurCrew() {
 
       <div className='ourCrewHero heroImages'>
         <br />
-        <br />
-        Our Crew
+        <h3>Our Crew</h3>
       </div>
 
       <h2 className='subtitlesHome'>The benefits of a full time crew without the expense yacht management, delivery and staffing.</h2>

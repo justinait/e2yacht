@@ -38,9 +38,16 @@ body {
   border-radius: 20px;
   height: 260px;
 }
+
+.heroImages h3 {
+  font-weight: 200;
+  font-size: var(--fontSize-30px);
+}
+
 .homeContainers {
   padding: 0 21px;
 }
+
 .titlesHome {
   color: var(--color-darkGrey);
   text-transform: uppercase;
