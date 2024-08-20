@@ -6,7 +6,7 @@
 }
 .referenceCardName {
     color: var(--color-blue);
-    font-weight: var(--fontWeigth-medium);
+    font-weight: 600;
     line-height: 18.3px;
     font-size: 13.75px;
 }
