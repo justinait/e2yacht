@@ -1,6 +1,5 @@
 import React from 'react'
 import menu from '/icons/servicesMenu.png'
-import { Link } from 'react-router-dom'
 
 function Management() {
   return (
