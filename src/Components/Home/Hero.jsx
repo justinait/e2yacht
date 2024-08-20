@@ -1,7 +1,14 @@
 import React from 'react'
 import './Hero.css'
+import { Link } from 'react-router-dom';
 
 function Hero() {
+  const handleScroll = () => {
+    window.scrollBy({
+      top: 380, // distancia en píxeles que querés que se desplace
+      behavior: 'smooth' // hace que el desplazamiento sea suave
+    });
+  };
   return (
     <div className='heroHome heroImages '>
       <h1>Professional Yacht Services</h1>
@@ -12,8 +19,8 @@ function Hero() {
       </p>
 
       <div className='buttonsHero'>
-        <p className='button learnMore'>Learn More</p>
-        <p className='button'>Contact us</p>
+        <p className='button learnMore' onClick={handleScroll}>Learn More</p>
+        <Link to='/contact' className='button'>Contact us</Link>
       </div>
     </div>
   )

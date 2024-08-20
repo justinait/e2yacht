@@ -29,6 +29,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 2em 0;
 }
 .button{
     font-size: 16px;
@@ -47,4 +48,8 @@ h1 {
     /* margin-bottom: 1.4em; */
     background: white;
     color: var(--color-lightBlue);
+    margin-top: 0;
+}
+a {
+    text-decoration: none;
 }
