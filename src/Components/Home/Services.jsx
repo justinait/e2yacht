@@ -13,9 +13,9 @@ function Services() {
     ]
 
   return (
-    <div className='servicesHomeContainer'>
-        <h5 className='servicesTitleHome'>Services</h5>
-        <h2 className='servicesSubtitleHome'>E² Yacht Services</h2>
+    <div className='homeContainers servicesHomeContainer'>
+        <h5 className='titlesHome'>Services</h5>
+        <h2 className='subtitlesHome'>E² Yacht Services</h2>
         <div className='servicesCardContainer'>
             {
                 services.map((e, i)=> {

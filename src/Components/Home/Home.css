@@ -1,0 +1,15 @@
+.homeContainers {
+    padding: 0 21px;
+}
+.titlesHome {
+    color: #80858D;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.subtitlesHome {
+    font-weight: 200;
+    font-size: 30px;
+    font-size: clamp(23px, 3vw, 30px);
+    color: #073460;
+    /* font-family: ; */
+}

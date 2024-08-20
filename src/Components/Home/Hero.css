@@ -39,7 +39,7 @@ h1 {
     font-size: clamp(14px, 3.5vw, 18px);
     font-weight: 700;
     text-transform: uppercase;
-    width: 35%;
+    width: 27vw;
     background: #165BBB;
     color: white;
     padding: 15px 18px 15px 18px;

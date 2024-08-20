@@ -1,16 +1,5 @@
 .servicesHomeContainer {
-    padding: 0 21px;
-}
-.servicesTitleHome {
-    color: #80858D;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-.servicesSubtitleHome {
-    font-weight: 200;
-    font-size: 30px;
-    color: #073460;
-    /* font-family: ; */
+    margin-top: 25px;
 }
 .servicesCardHome {
     width: 48%;
