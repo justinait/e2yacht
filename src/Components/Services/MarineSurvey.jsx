@@ -4,12 +4,6 @@ import menu from '/icons/servicesMenu.png'
 function MarineSurvey() {
   return (
     <div>
-      {/* Pre-purchase, appraisal, salvage, and damage surveys Insurance, financial and bank surveys, including estate appraisals 
-      Valuations 
-      Sail and power yachts 
-      Commercial vessels 
-      All hull types—wood, aluminum, fiberglass, steel 
-      Engine and oil analysis Testing: ultrasonic, moisture, galvanic current, stray current, and other types of tests Our surveys are accepted by major insurance and financial institutions, as well as the US Coast Guard. Our reports meet US Coast Guard, American Boat and Yacht Council, American Boating Association standards. With our survey, you will know the condition of your boat, its fair market value, and have the peace of mind you need to secure your vessel's future. */}
       <div className='homeContainers'>
         <div className='marineSurveyHero heroImages'>
           <br />
