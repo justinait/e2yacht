@@ -13,17 +13,28 @@
     /* font-family: ; */
 }
 .servicesCardHome {
-    width: 46%;
-    border: 1px solid black;
+    width: 48%;
+    border: 1px solid #80858D;
     margin-bottom: 20px;
+    border-radius: 10.5px;
 }
 .servicesCardHome img {
+    border-radius: 10.5px 10.5px 0 0;
     width: 100%;
+    aspect-ratio: 4 / 3 !important;
     object-fit: cover;
-    height: 120px;
 }
 .servicesCardContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.homeServiceName {
+    text-transform: uppercase;
+    color: #073460;
+    font-weight: 700;
+    font-size: 11px;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
 }

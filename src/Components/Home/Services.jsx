@@ -4,12 +4,12 @@ import './Services.css'
 function Services() {
     
     const services = [
-        { name: 'Management Yacht', id: '/management', image: '/images/deliveriesHero.jpg', className: '' },
-        { name: 'Our Crew', id: 'crew', image: '/images/deliveriesHero.jpg', className: ''},
-        { name: 'Where we are', id: 'where', image: '/images/deliveriesHero.jpg', className: ''},
-        { name: 'Contact', id: 'contact', image: '/images/deliveriesHero.jpg', className: ''},
-        { name: 'Our Crew', id: 'crew', image: '/images/deliveriesHero.jpg', className: ''},
-        { name: 'Maritime Recovery', id: 'where', image: '/images/deliveriesHero.jpg', className: ''}
+        { name: 'Yacht management', id: '/management', image: '/images/whatWeDoHero.jpg', className: '' },
+        { name: 'yacht deliveries', id: '/deliveries', image: '/images/deliveriesHero.jpg', className: ''},
+        { name: 'PRIVATE INSTRUCTIONS', id: '/instructions', image: '/images/instructionHero.jpg', className: ''},
+        { name: 'marine survey', id: '/marinesurvey', image: '/images/marineSurveyHero.jpg', className: ''},
+        { name: 'captain and crew services', id: 'crew', image: '/images/captainAndCrewServices.jpg', className: ''},
+        { name: 'marine asset recovery', id: '/marinerecovery', image: '/images/maritimeRecovery.jpg', className: ''}
     ]
 
   return (
