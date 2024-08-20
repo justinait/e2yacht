@@ -95,18 +95,18 @@
     opacity: 1;
 }
 .formButton {
-    margin-bottom: 15px !important;
+    margin-bottom: 21px !important;
     margin-top: 0px;
     border: none;
     width: 50% !important;
     font-family: 'Libre Franklin Variable', sans-serif !important;
 }
 .button:hover {
-    background-color: #3576CF;
+    background-color: var(--color-blue);
     cursor: pointer;
 }
 .learnMore:hover{
-    color: #3576CF;
+    color: var(--color-blue);
     background-color: #fff;
 }
 .floatingLabel {

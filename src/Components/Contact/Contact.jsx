@@ -105,6 +105,14 @@ function Contact() {
         <button className='button formButton'>Send Message</button>
         </form>
       </div>
+
+      <div className='homeContainers ourCrewHomeContainer'>
+        <h5 className='titlesHome'>WHERE WE ARE</h5>
+        <h2 className='subtitlesHome'>Visit us</h2>
+
+        {/* <img src={} alt="" className='ourCrewImageHome'/> */}
+        
+      </div>
     </div>
   )
 }
