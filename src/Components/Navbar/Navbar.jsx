@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from '/icons/logoNavbar.png'
 import menu from '/icons/burgerMenu.png'
 import CloseIcon from '/icons/closeMenu.png'
+import arrow from '/icons/arrowNavbar.png'
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -10,7 +11,8 @@ function Navbar() {
   const [selectedCategory, setSelectedCategory] = useState('')
 
   const sections = [
-    { name: 'Services', id: 'services', className: '' },
+    { name: 'Home', id: '', className: '' },
+    { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
     { name: 'Contact', id: 'contact', className: ''}
@@ -54,7 +56,7 @@ function Navbar() {
     <div className='navbarContainer'>
       <div className='navbar'>
         <Link to='/'>
-          <img src={logo} alt="E 2 Yacht Services" className='logoNavbar'/>
+          <img src={logo} alt="E 2 Yacht Services" className='logoNavbar' onClick={handleClose}/>
         </Link>
         {
           !desktop && (
@@ -77,6 +79,10 @@ function Navbar() {
                   onClick={()=>handleClose(e.id)} 
                   className={selectedCategory == e.id? 'dropdownItems activeNavbar': 'dropdownItems'}>
                   {e.name}
+                  {
+                    e.image &&
+                    <img src={e.image} alt="+" />
+                  }
                 </Link>
               )
             })}
