@@ -16,14 +16,16 @@
 }
 .cardCrew {
     width: 48%;
-    border: 1px solid #80858D;
+    width: 42vw;
+    /* border: 1px solid #80858D; */
+    background-color: #f5f5f5;
     margin-bottom: 20px;
     border-radius: 10.5px;
 }
 .cardCrew img {
     border-radius: 10.5px 10.5px 0 0;
     width: 100%;
-    aspect-ratio: 4 / 3 !important;
+    height: calc(42vw - 20px);
     object-fit: cover;
 }
 .crewDataContainer {
@@ -31,15 +33,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.homeCrewName {
-    text-transform: uppercase;
-    color: var(--color-blue);
-    font-weight: var(--fontWeigth-bold);
+.crewName {
+    color: black;
+    font-weight: var(--fontWeigth-medium);
     font-size: 11px;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
-    padding: 10px 0;
 }
-.homeCrewText{
-
+.crewText{
+    color: var(--color-darkGrey);
+    font-size: 8px;
+    /* width: 90%; */
+    line-height: 2;
+    margin: auto;
+}
+.crewInfoCard {
+    padding: 10px;
 }

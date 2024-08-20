@@ -44,8 +44,10 @@ function OurCrew() {
             return(
               <div className='cardCrew'>
                 <img src={e.image} alt={e.name} />
-                <p className='homeCrewName'>{e.name}</p>
-                <p className='homeCrewText'>{e.text}</p>
+                <div className='crewInfoCard'>
+                  <p className='crewName'>{e.name}</p>
+                  <p className='crewText'>{e.text}</p>
+                </div>
               </div>
             )
           })
