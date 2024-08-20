@@ -32,7 +32,7 @@ function Instruction() {
           <li>Perfect close quarters maneuvering, docking, slow speed boat handling </li>
           <li>Teach you to sail and operate your vessel in all weather and sea conditions </li>
           <li>For ASA certification information please visit our Partners at: 
-            <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' href='https://www.captainkupps.com/'> CaptainKupps.com</a>
+            <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' href='https://www.captainkupps.com/' rel="noopener noreferrer"> CaptainKupps.com</a>
           </li>
         </ul>
 
