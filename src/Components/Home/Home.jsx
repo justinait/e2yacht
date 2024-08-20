@@ -4,7 +4,6 @@ import Services from './Services'
 import OurCrew from './OurCrew'
 import Where from './Where'
 import References from './References'
-import './Home.css'
 
 function Home() {
   return (
