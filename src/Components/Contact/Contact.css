@@ -58,3 +58,79 @@
     margin: 0 21px;
 
 }
+
+/* copypaste */
+
+.contactFormContainer{
+    background-color:#FFF;
+    width: 80%;
+    border: 2.3px solid white;
+    padding: 0 10%;
+    border-radius: 20px;
+}
+.inputContainer {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inputContact {
+    background: #E9E9E9;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 5px;
+    width: 85%;
+    margin: 0 0 2% 0px;
+    font-size: 15px;
+    outline: none;
+}
+.inputContact:focus + .floatingLabel,
+.inputContact:not(:placeholder-shown) + .floatingLabel {
+  top: 0;
+  left: 16px;
+  font-size: 12px;
+}
+.inputContact::placeholder {
+    font-family: 'Libre Franklin Variable', sans-serif !important;
+    color:  #80858D;
+    opacity: 1;
+}
+.inputContactMessage {
+    padding: 10px 16px 64px 16px;
+}
+.inputContactMessage::placeholder{
+    font-family: 'Libre Franklin Variable', sans-serif !important;
+}
+.formButton {
+    margin-bottom: 15px !important;
+    margin-top: 0px;
+    border: none;
+    width: 62% !important;
+}
+.button:hover {
+    background-color: #3576CF;
+    cursor: pointer;
+}
+.learnMore:hover{
+    color: #3576CF;
+    background-color: #fff;
+}
+.floatingLabel {
+    position: absolute;
+    top: 40%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #80858D;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    font-family: 'Libre Franklin Variable', sans-serif !important;
+    margin-left: 5px;
+}
+.floatingLabelMessage {
+    top: 15%;
+}
+  
+.floatingLabelActive {
+    top: 0;
+    left: 16px;
+    font-size: 12px;
+}
