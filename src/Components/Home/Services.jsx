@@ -17,7 +17,6 @@ function Services() {
         <h5 className='servicesTitleHome'>Services</h5>
         <h2 className='servicesSubtitleHome'>E² Yacht Services</h2>
         <div className='servicesCardContainer'>
-
             {
                 services.map((e, i)=> {
                     return(
