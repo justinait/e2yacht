@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
   const handleScroll = () => {
-    window.scrollBy({
+    window.scrollTo({
       top: 380, // distancia en píxeles que querés que se desplace
       behavior: 'smooth' // hace que el desplazamiento sea suave
     });
