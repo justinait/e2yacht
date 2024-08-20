@@ -36,7 +36,7 @@
 }
 .crewName {
     color: black;
-    font-weight: var(--fontWeigth-medium);
+    font-weight: var(--fontWeight-medium);
     font-size: 11px;
     /* width: 90%; */
     margin: auto;

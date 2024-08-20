@@ -9,7 +9,7 @@ h1 {
     margin: 0;
 }
 .heroSubtitle {
-    font-weight: var(--fontWeigth-normal);
+    font-weight: var(--fontWeight-normal);
     font-size: 18px;
     font-size: var(--fontSize-xlarge);
 }
@@ -34,7 +34,7 @@ h1 {
 .button{
     font-size: 16px;
     font-size: var(--fontSize-large);
-    font-weight: var(--fontWeigth-bold);
+    font-weight: var(--fontWeight-bold);
     text-transform: uppercase;
     width: 27vw;
     background: var(--color-lightBlue);

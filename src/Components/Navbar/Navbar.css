@@ -10,7 +10,7 @@
 }
 .dropdownHeader {
     font-size: 16px;
-    font-weight: var(--fontWeigth-medium);
+    font-weight: var(--fontWeight-medium);
     height: calc(100vh - 58px);
     padding: 10px 21px;
 }

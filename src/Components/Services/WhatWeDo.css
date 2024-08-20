@@ -28,9 +28,18 @@ li a {
 .managementTextContainer ul {
     padding-left: 19px;
 }
-.managementTextContainer li {
-    /* padding: 6px 0; */
-}
 li a {
     color: var(--color-lightBlue);
+}
+.separatorManagement {
+    width: 100%;
+    border-top: 1px black solid;
+}
+.managementh5 {
+    font-size: clamp(14px, 3vw, 17px);
+    font-weight: var(--fontWeight-bold);
+}
+.managementh6 {
+    font-size: clamp(14px, 3vw, 17px);
+    font-weight: var(--fontWeight-bold);
 }

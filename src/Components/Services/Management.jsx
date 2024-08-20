@@ -41,6 +41,10 @@ function Management() {
           ‘libreta de mar ‘ to ‘Patrón de Yate'.
         </p>
 
+        <div className='separatorManagement'></div>
+
+        <p className='managementh5'>Yachts under our care</p>
+        <p className='managementh6'>Power boats</p>
       </div>
     </div>
   )

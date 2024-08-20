@@ -29,9 +29,9 @@ body {
   --fontSize-30px: clamp(23px, 3vw, 30px);
   /* chequear estos tamaños cuando tenga la tipo */
   
-  --fontWeigth-normal: 200;
-  --fontWeigth-medium: 500;
-  --fontWeigth-bold: 700;
+  --fontWeight-normal: 200;
+  --fontWeight-medium: 500;
+  --fontWeight-bold: 700;
 }
 .heroImages {
   background-size: cover;
@@ -57,7 +57,7 @@ body {
 }
 .subtitlesHome {
   font-size: 30px;
-  font-weight: var(--fontWeigth-normal);
+  font-weight: var(--fontWeight-normal);
   font-size: var(--fontSize-30px);
   color: var(--color-blue);;
   /* font-family: ; */
