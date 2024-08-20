@@ -9,6 +9,7 @@ function OurCrew() {
         <h2 className='servicesSubtitleHome'>Serving Banderas Bay 2007</h2>
 
         <img src={photo} alt="" className='ourCrewImageHome'/>
+        <p className='button'>SEE MORE</p>
     </div>
   )
 }

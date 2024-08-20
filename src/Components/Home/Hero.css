@@ -40,7 +40,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     width: 35%;
-    background: #0056CC;
+    background: #165BBB;
     color: white;
     padding: 15px 18px 15px 18px;
     border-radius: 5px;
@@ -50,5 +50,5 @@ h1 {
 .learnMore {
     /* margin-bottom: 1.4em; */
     background: white;
-    color: #0056CC;
+    color: #165BBB;
 }
