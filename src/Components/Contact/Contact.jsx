@@ -36,7 +36,7 @@ function Contact() {
         </div>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            <img src={phone} alt="location" className='contactIconLocation'/>
+            <img src={phone} alt="location" className='contactIcon'/>
           </div>
           <h5>PHONE</h5>
           <p className='cardContactText'>Office: +52 322 297 4065
@@ -46,7 +46,7 @@ function Contact() {
         </div>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            <img src={mail} alt="location" className='contactIconLocation'/>
+            <img src={mail} alt="location" className='contactIcon'/>
           </div>
           <h5>EMAIL</h5>
           <p className='cardContactText'>info@e2yachtservices.com</p>
