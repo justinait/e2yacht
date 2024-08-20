@@ -42,6 +42,7 @@ body {
 .heroImages h3 {
   font-weight: 200;
   font-size: var(--fontSize-30px);
+  margin: 0.5em 0;
 }
 
 .homeContainers {
