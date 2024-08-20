@@ -9,12 +9,17 @@
     height: 58px;
 }
 .dropdownHeader {
-    color: #8B8B8B;
     font-size: 16px;
     font-weight: var(--fontWeigth-medium);
     height: calc(100vh - 58px);
-    padding: 0 21px;
+    padding: 10px 21px;
+}
+.dropdownItemsContainer {
+    display: flex;
+    flex-direction: column;
 }
 .dropdownItems {
-    line-height: 2.4;
+    line-height: 3;
+    color: #8B8B8B;
+    text-decoration: none;
 }
