@@ -10,7 +10,7 @@ function Services() {
         { name: 'PRIVATE INSTRUCTIONS', id: '/instruction', image: '/images/instructionHero.jpg', className: ''},
         { name: 'marine survey', id: '/marinesurvey', image: '/images/marineSurveyHero.jpg', className: ''},
         { name: 'captain and crew services', id: '/captainandcrew', image: '/images/captainAndCrewServices.jpg', className: ''},
-        { name: 'marine asset recovery', id: '/marinerecovery', image: '/images/maritimeRecovery.jpg', className: ''}
+        { name: 'marine asset recovery', id: '/maritimerecovery', image: '/images/maritimeRecovery.jpg', className: ''}
     ]
 
   return (
