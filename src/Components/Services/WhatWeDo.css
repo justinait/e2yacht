@@ -52,3 +52,6 @@ li a {
 .deliveriesHero {
     background-image: url('/public/images/deliveriesHero.jpg');   
 }
+.instructionHero {
+    background-image: url('/public/images/instructionHero.jpg');  
+}
