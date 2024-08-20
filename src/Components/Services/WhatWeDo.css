@@ -5,11 +5,15 @@
     color: black;
     text-transform: capitalize;
     font-size: var(--fontSize-medium);
+    padding-bottom: 5px;
 }
 
 .whatWeDoTextContainer ul {
     padding-left: 19px;
 }
 .whatWeDoTextContainer li {
-    padding: 7px 0;
+    padding: 6px 0;
+}
+li a {
+    color: var(--color-lightBlue);
 }

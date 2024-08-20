@@ -1,6 +1,7 @@
 import React from 'react'
 import './WhatWeDo.css'
 import menu from '/icons/servicesMenu.png'
+import { Link } from 'react-router-dom'
 
 function WhatWeDo() {
   return (
@@ -21,11 +22,11 @@ function WhatWeDo() {
           and boat owners, agents and brokers:
         </p>
         <ul>
-          <li>Professional and careful motor and sailing yacht delivery insurable year round world wide</li>
+          <li>Professional and careful motor and sailing <Link to='/deliveries'>yacht delivery</Link> insurable year round world wide</li>
           <li>Maintenance while you are away from your yacht, weekly washing to project management and system upgrades</li>
-          <li>Complete captain and crewing services, and specialties including , fishing guides, diver masters, surf instruction, etc.</li>
-          <li>Complete yacht and project management.</li>
-          <li>Hands-on, personal training and instruction</li>
+          <li>Complete <Link to='/captainandcrew'>captain and crewing services</Link>, and specialties including, fishing guides, diver masters, surf instruction, etc.</li>
+          <li>Complete <Link to='/management'>yacht and project management.</Link></li>
+          <li>Hands-on, <Link to='/instruction'>personal training and instruction.</Link> </li>
         </ul>
       </div>
     </div>
