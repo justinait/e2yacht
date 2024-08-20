@@ -1,0 +1,29 @@
+.servicesHomeContainer {
+    color: black;
+    padding: 0 21px;
+}
+.servicesTitleHome {
+    color: #80858D;
+    text-transform: uppercase;   
+}
+.servicesSubtitleHome {
+    font-weight: 200;
+    font-size: 30px;
+    color: #073460;
+    /* font-family: ; */
+}
+.servicesCardHome {
+    width: 46%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.servicesCardHome img {
+    width: 100%;
+    object-fit: cover;
+    height: 120px;
+}
+.servicesCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

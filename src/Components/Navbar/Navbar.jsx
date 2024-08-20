@@ -10,24 +10,21 @@ function Navbar() {
     const [selectedCategory, setSelectedCategory] = useState('')
 
     const sections = [
-        { name: 'Services', id: 'services', className: '' },
-        { name: 'Our Crew', id: 'crew', className: ''},
-        { name: 'Where we are', id: 'where', className: ''},
-        { name: 'Contact', id: 'contact', className: ''}
+      { name: 'Services', id: 'services', className: '' },
+      { name: 'Our Crew', id: 'crew', className: ''},
+      { name: 'Where we are', id: 'where', className: ''},
+      { name: 'Contact', id: 'contact', className: ''}
     ]
     const windowWidth = window.innerWidth;
     const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
+
     const handleClose = (id) => {
-        if(!desktop){
-          setOpenMenu(false);
-        }
-        // if(id){
-        //   setSelectedCategory(id);
-        //   if(id == 'tvandfilms' ||id == 'events' || id == 'spatialDesign'   )
-        //     setProjectsActive(true);
-        //   else
-        //     setProjectsActive(false);
-        // }
+      if(!desktop){
+        setOpenMenu(false);
+      }
+      if(id){
+        setSelectedCategory(id);
+      }
         
     }
 
