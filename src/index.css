@@ -68,10 +68,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 30vw;
+  margin-top: 15px;
 }
 
 .servicesTitles {
-  color: var(--color-blue);
+  color: var(--color-blue);    
+  margin: 1em 0;
 }
 .menuServices {
   width: 10px;

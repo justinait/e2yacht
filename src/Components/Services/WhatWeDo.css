@@ -2,7 +2,7 @@
     background-image: url('/public/images/whatWeDoHero.jpg');
 }
 .whatWeDoTextContainer {
-    color: black;
+    color: #000B1B;
     text-transform: capitalize;
     font-size: var(--fontSize-medium);
     padding-bottom: 5px;
@@ -13,6 +13,23 @@
 }
 .whatWeDoTextContainer li {
     padding: 6px 0;
+}
+li a {
+    color: var(--color-lightBlue);
+}
+
+.managementTextContainer {
+    color: #000B1B;
+    text-transform: capitalize;
+    font-size: var(--fontSize-medium);
+    padding-bottom: 5px;
+}
+
+.managementTextContainer ul {
+    padding-left: 19px;
+}
+.managementTextContainer li {
+    /* padding: 6px 0; */
 }
 li a {
     color: var(--color-lightBlue);
