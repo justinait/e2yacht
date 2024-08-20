@@ -62,6 +62,24 @@ body {
   color: var(--color-blue);;
   /* font-family: ; */
 }
+
+.ourServicesTitleDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+.servicesTitles {
+  color: var(--color-blue);
+}
+.menuServices {
+  width: 10px;
+  height: 10px;
+}
+
+
+
 /* @media(min-width:1000px) {
   
 

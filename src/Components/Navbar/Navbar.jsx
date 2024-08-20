@@ -12,7 +12,7 @@ function Navbar() {
   const sections = [
     { name: 'Services', id: 'services', className: '' },
     { name: 'Our Crew', id: 'crew', className: ''},
-    { name: 'Where we are', id: 'where', className: ''},
+    { name: 'What we do', id: 'whatwedo', className: ''},
     { name: 'Contact', id: 'contact', className: ''}
   ]
   const windowWidth = window.innerWidth;
