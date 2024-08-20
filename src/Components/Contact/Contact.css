@@ -94,17 +94,12 @@
     color:  #80858D;
     opacity: 1;
 }
-.inputContactMessage {
-    padding: 10px 16px 64px 16px;
-}
-.inputContactMessage::placeholder{
-    font-family: 'Libre Franklin Variable', sans-serif !important;
-}
 .formButton {
     margin-bottom: 15px !important;
     margin-top: 0px;
     border: none;
-    width: 62% !important;
+    width: 50% !important;
+    font-family: 'Libre Franklin Variable', sans-serif !important;
 }
 .button:hover {
     background-color: #3576CF;
@@ -124,9 +119,6 @@
     pointer-events: none;
     font-family: 'Libre Franklin Variable', sans-serif !important;
     margin-left: 5px;
-}
-.floatingLabelMessage {
-    top: 15%;
 }
   
 .floatingLabelActive {
