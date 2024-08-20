@@ -1,16 +1,12 @@
 .heroHome {
     background-image: url('/public/images/hero.jpg');
     background-position: left;
-    background-size: cover;
-    padding: 30px 21px;
-    border-radius: 20px;
     margin: 0 21px;
 }
 h1 {
     font-weight: 100;
     font-size: var(--fontSize-30px);
     margin: 0;
-    /* margin-top: 8px; */
 }
 .heroSubtitle {
     font-weight: var(--fontWeigth-normal);
@@ -24,7 +20,7 @@ h1 {
 .heroDescription {
     line-height: 1.5;
     font-size: 14px;
-    font-size: var(--fontSize-medium);
+    font-size: 12px;
 }
 .heroDescription strong {
     font-weight: 600;

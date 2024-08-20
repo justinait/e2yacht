@@ -1,0 +1,8 @@
+.ourCrewHero {
+    background-image: url('/public/images/hero.jpg');
+}
+.descriptionCrew{
+    font-size: var(--fontSize-medium);
+    color: black;
+    text-transform: capitalize;
+}

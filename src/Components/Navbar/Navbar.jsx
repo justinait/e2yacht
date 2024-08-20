@@ -53,7 +53,9 @@ function Navbar() {
   return (
     <div className='navbarContainer'>
       <div className='navbar'>
-        <img src={logo} alt="E 2 Yacht Services" className='logoNavbar'/>
+        <Link to='/'>
+          <img src={logo} alt="E 2 Yacht Services" className='logoNavbar'/>
+        </Link>
         {
           !desktop && (
           openMenu ?

@@ -14,7 +14,6 @@ body {
   font-family: 'Libre Franklin Variable', sans-serif;
 }
 
-
 :root {
   --color-grey: #E9E9E9;
   --color-darkGrey: #80858D;
@@ -22,7 +21,7 @@ body {
   --color-lightBlue: #165BBB;
 
   --fontSize-base: clamp(16px, 3vw, 21px);
-  --fontSize-medium: clamp(12px, 3vw, 15px);
+  --fontSize-medium: clamp(10.5px, 2.5vw, 15px);
   --fontSize-large: clamp(14px, 3vw, 17px);
   --fontSize-xlarge: clamp(16px, 3.5vw, 21px);
   --fontSize-2xlarge: clamp(18px, 3vw, 24px);
@@ -33,7 +32,27 @@ body {
   --fontWeigth-medium: 500;
   --fontWeigth-bold: 700;
 }
-
+.heroImages {
+  background-size: cover;
+  padding: 30px 21px;
+  border-radius: 20px;
+  height: 260px;
+}
+.homeContainers {
+  padding: 0 21px;
+}
+.titlesHome {
+  color: var(--color-darkGrey);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.subtitlesHome {
+  font-size: 30px;
+  font-weight: var(--fontWeigth-normal);
+  font-size: var(--fontSize-30px);
+  color: var(--color-blue);;
+  /* font-family: ; */
+}
 /* @media(min-width:1000px) {
   
 

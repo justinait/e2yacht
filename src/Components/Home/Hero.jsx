@@ -3,7 +3,7 @@ import './Hero.css'
 
 function Hero() {
   return (
-    <div className='heroHome'>
+    <div className='heroHome heroImages '>
       <h1>Professional Yacht Services</h1>
       <h4 className='heroSubtitle'>Your resource based in Puerto Vallarta and Pacific Mexico including Baja California and the Sea of Cortez</h4>
       <div className='separator'></div>
