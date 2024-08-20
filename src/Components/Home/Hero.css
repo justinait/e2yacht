@@ -40,7 +40,7 @@ h1 {
     font-weight: var(--fontWeigth-bold);
     text-transform: uppercase;
     width: 27vw;
-    background: #165BBB;
+    background: var(--color-lightBlue);
     color: white;
     padding: 15px 18px 15px 18px;
     border-radius: 5px;
@@ -50,5 +50,5 @@ h1 {
 .learnMore {
     /* margin-bottom: 1.4em; */
     background: white;
-    color: #165BBB;
+    color: var(--color-lightBlue);
 }

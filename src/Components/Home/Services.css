@@ -20,7 +20,7 @@
 }
 .homeServiceName {
     text-transform: uppercase;
-    color: #073460;
+    color: var(--color-blue);
     font-weight: var(--fontWeigth-bold);
     font-size: 11px;
     width: 90%;

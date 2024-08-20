@@ -5,7 +5,7 @@
     border-radius: 15.27px;
 }
 .referenceCardName {
-    color: #073460;
+    color: var(--color-blue);
     font-weight: var(--fontWeigth-medium);
     line-height: 18.3px;
     font-size: 13.75px;
