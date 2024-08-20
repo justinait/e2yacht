@@ -42,7 +42,7 @@ function OurCrew() {
         {
           crew.map((e, i)=> {
             return(
-              <div className='cardCrew'>
+              <div className='cardCrew' key={i}>
                 <img src={e.image} alt={e.name} />
                 <div className='crewInfoCard'>
                   <p className='crewName'>{e.name}</p>
