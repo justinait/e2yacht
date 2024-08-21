@@ -37,13 +37,13 @@
 .crewName {
     color: black;
     font-weight: var(--fontWeight-medium);
-    font-size: 11px;
+    font-size: var(--fontSize-medium);
     /* width: 90%; */
     margin: auto;
 }
 .crewText{
     color: var(--color-darkGrey);
-    font-size: 8px;
+    font-size: 8.5px;
     /* width: 90%; */
     line-height: 2;
     margin: auto;
