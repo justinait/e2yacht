@@ -33,7 +33,7 @@ function OurCrew() {
       </p>
       
       <div className='ourCrewBrujula heroImages'>
-        <img src={brujula} alt="" className='brujula' />
+        {/* <img src={brujula} alt="" className='brujula' /> */}
       </div>
       
       <h2 className='subtitlesHome'>Our Crew</h2>
