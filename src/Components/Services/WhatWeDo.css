@@ -32,8 +32,9 @@ li a {
     border-top: 1px black solid;
 }
 .managementh5 {
-    font-size: clamp(14px, 3vw, 17px);
+    font-size: clamp(15px, 3vw, 17px);
     font-weight: var(--fontWeight-bold);
+    font-family: "utile-display", sans-serif;
 }
 .managementh6 {
     font-size: clamp(13px, 3vw, 15px);

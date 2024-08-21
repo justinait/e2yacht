@@ -7,6 +7,7 @@ h1 {
     font-weight: 100;
     font-size: var(--fontSize-30px);
     margin: 0;
+    font-family: "utile-display", sans-serif;
 }
 .heroSubtitle {
     font-weight: var(--fontWeight-normal);
@@ -36,7 +37,7 @@ h1 {
     font-size: var(--fontSize-large);
     font-weight: var(--fontWeight-bold);
     text-transform: uppercase;
-    width: 27vw;
+    width: 27.5vw;
     background: var(--color-lightBlue);
     color: white;
     padding: 15px 18px 15px 18px;

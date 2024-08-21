@@ -38,8 +38,8 @@
     color: black;
     font-weight: var(--fontWeight-medium);
     font-size: var(--fontSize-medium);
-    /* width: 90%; */
     margin: auto;
+    font-family: "utile-display", sans-serif;
 }
 .crewText{
     color: var(--color-darkGrey);

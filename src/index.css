@@ -45,6 +45,7 @@ body {
   font-weight: 200;
   font-size: var(--fontSize-30px);
   margin: 0.5em 0;
+  font-family: "utile-display", sans-serif;
 }
 
 .homeContainers {
@@ -60,8 +61,8 @@ body {
   font-size: 30px;
   font-weight: var(--fontWeight-normal);
   font-size: var(--fontSize-30px);
-  color: var(--color-blue);;
-  /* font-family: ; */
+  color: var(--color-blue);
+  font-family: "utile-display", sans-serif;
 }
 
 .ourServicesTitleDiv{

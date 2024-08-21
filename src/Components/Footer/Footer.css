@@ -8,6 +8,7 @@
 .footerTitle {
     font-size: var(--fontSize-2xlarge);
     font-weight: var(--fontWeight-medium);
+    font-family: "utile-display", sans-serif;
 }
 .logoFooter {
     width: 50%;

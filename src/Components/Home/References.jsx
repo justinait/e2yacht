@@ -21,7 +21,7 @@ function References() {
       {
         references.map((e, i)=> {
           return(
-            <div className='referenceCard'>
+            <div className='referenceCard' key={i}>
               <p className='referenceCardName'>{e.name}</p>
               <p className='referenceCardText'>{e.text}</p>
             </div>

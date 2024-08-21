@@ -53,8 +53,8 @@
 .contactBigSubtitle {
     font-size: clamp(40px, 4vw, 48px);
     font-weight: var(--fontWeight-normal);
-    color: var(--color-blue);;
-    /* font-family: ; */
+    color: var(--color-blue);
+    font-family: "utile-display", sans-serif;
 }
 .contactFormBigContainer {
     margin: 0 21px;
