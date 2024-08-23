@@ -13,8 +13,7 @@ import Instruction from './Components/Services/Instruction';
 import MarineSurvey from './Components/Services/MarineSurvey';
 import CaptainAndCrewServices from './Components/Services/CaptainAndCrewServices';
 import MaritimeRecovery from './Components/Services/MaritimeRecovery';
-import { useState } from 'react';
-
+import '@fontsource-variable/libre-franklin/wght-italic.css';
 function App() {
 
   return (
