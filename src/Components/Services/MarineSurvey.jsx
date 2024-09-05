@@ -38,8 +38,50 @@ function MarineSurvey() {
             mind you need to secure your vessel's future.
           </p>
 
-          
-          <p className='managementh5'>Frequently Asked Questions:</p>
+          <div>
+            <p className='managementh5'>Frequently Asked Questions:</p>
+            <div>
+              <div>
+                <p>How long does a survey take?</p>
+                <p>+</p>
+                <p>I recommend that you be there to open any locks and give me permission 
+                  to board and inspect. The survey can run anywhere from 2 to 10 hours depending 
+                  on the size of the vessel and 2 to 8 hours in the office to thoroughly prepare 
+                  the survey report. Larger yachts and commercial vessels may take me 2-3 days to 
+                  conduct a thorough physical survey.
+                </p>
+              </div>
+
+              <div>
+                <p>Can I be present at the time of the survey?</p>
+                <p>+</p>
+                <p>I welcome all clients to be present, and I have 
+                  no problem explaining as I conduct the survey.</p>
+              </div>
+
+              <div>
+                <p>How long does a survey take?</p>
+                <p>+</p>
+                <p>The boat must be plugged into shore power, all batteries hooked up, charged and installed.  All manuals, maintenance log, receipts, registration, 
+                  USCG Documentation Papers, and a copy of the previous survey must be onboard.  If a sailboat, masts and spars must be moved to ground level.  
+                  Additionally, Please provide the Buyer / Owner/ Brokers's Name, Mailing and E-mail address, Phone Number as well as the Make and Model of Vessel,  
+                  HIN (Hull Identification Number), specific location of vessel and mast if un-stepped, and notes pertaining to access of the vessel.  
+                  <br /><br />IMPORTANT:  Prior to any survey please ensure the vessel is clean and clear of any personal effects, gear, oil / water in bilge, furniture 
+                  or other items which might block access or vision.  The vessel will be surveyed as found, and only to the extent of what can be seen, what is 
+                  accessible and what is limited.</p>
+              </div>
+
+              <div>
+                <p>Because fiberglass hulls can blister, why are they still better than a wood, steel or aluminum boat?</p>
+                <p>+</p>
+                <p>The basic facts of life, physics, and chemistry are that Steel, Aluminum and Wood all require constant maintenance, which, if neglected would have 
+                  far more severe effects on structural integrity over a shorter time period.  A fiberglass boat will likely withstand prolonged neglect without the 
+                  hull being weakened.  Ingress of moisture (which can lead to blistering) occurs over years and in the end, might not even result in the formation 
+                  of a blister (or chemical change in properties of the GRP matrix).   </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

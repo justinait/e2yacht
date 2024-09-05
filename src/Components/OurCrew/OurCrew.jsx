@@ -7,7 +7,6 @@ function OurCrew() {
     { name: 'Elizabeth Shanahan', text: 'Captain, 1600 T USCG Master, SA', image: '/images/ourCrewElizabeth.jpg', className: '' },
     { name: 'Eugenie Russel', text: 'Captain, 1600 T USCG Master, SA', image: '/images/ourCrewEugene.jpg', className: ''},
     { name: 'José Alejandro Cano', text: 'On the dock', image: '/images/ourCrewCano.jpg', className: ''},
-    { name: 'Enrique Delgado', text: 'Office Assistant', image: '/images/ourCrewElizabeth.jpg', className: '' },
     { name: 'Odi Gutierrez', text: 'Office Manager', image: '/images/ourCrewEugene.jpg', className: ''},
     { name: 'Miguel Sánchez Rodríguez', text: 'On the dock', image: '/images/ourCrewCano.jpg', className: ''},
   ]

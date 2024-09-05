@@ -3,6 +3,7 @@
     padding: 10px;
     margin: 10px;
     border-radius: 15.27px;
+    flex: 0 0 50vw;
 }
 .referenceCardName {
     color: var(--color-blue);
@@ -15,4 +16,11 @@
     font-style: italic;
     line-height: 16px;
     font-size: 12px;
+}
+.referencesContainerScroll {
+    
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }

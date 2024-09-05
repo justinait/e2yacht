@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './References.css'
 
 function References() {
@@ -12,22 +12,68 @@ function References() {
     { name: 'Cheryl and Thom Landgreen, SV Bolero, Puerto Vallarta', text: 'Eugenie is knowledgeable, enthusiastic, personable and she is a great teacher. It is rare to find all these qualities in one person! We look forward to more lessons with Eugenie during the 2011-2012 season. Whenever friends ask us for a recommendation for a sailing instructor - from the most basic to advanced levels – we always send them to Eugenie!', className: ''},
     { name: 'Gary and Marybeth, SV Eagle, Formosa 51', text: '“Dear Elizabeth and Eugenie, Your combined professionalism and skills truly put a lot of my anxiety to rest and carried us through. Thanks so much. Our sailboat’s namesake, the Eagle, is a good metaphor for camaraderie and for good times: I hope to exploit this to the max in the coming years. You both are welcome to sail her anytime the opportunity permits. Love you both.”', className: ''}
   ]
+
+  const containerRef = useRef(null);
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  useEffect(() => {
+    
+    const container = containerRef.current;
+    const handleMouseDown = (e) => {
+      isDown = true;
+      startX = e.pageX - container.offsetLeft;
+      scrollLeft = container.scrollLeft;
+    };
+
+    const handleMouseLeave = () => {
+      isDown = false;
+    };
+
+    const handleMouseUp = () => {
+      isDown = false;
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - container.offsetLeft;
+      const walk = (x - startX) * 3; // Multiplica para aumentar la velocidad de desplazamiento
+      container.scrollLeft = scrollLeft - walk;
+    };
+
+    container.addEventListener('mousedown', handleMouseDown);
+    container.addEventListener('mouseleave', handleMouseLeave);
+    container.addEventListener('mouseup', handleMouseUp);
+    container.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      container.removeEventListener('mousedown', handleMouseDown);
+      container.removeEventListener('mouseleave', handleMouseLeave);
+      container.removeEventListener('mouseup', handleMouseUp);
+      container.removeEventListener('mousemove', handleMouseMove);
+    };
+
+  }, []);
+
   return (
     <div className='homeContainers whereHomeContainer'>
         
       <h5 className='titlesHome'>References</h5>
       <h2 className='subtitlesHome'>Create new experiences by working with us</h2>
-
-      {
-        references.map((e, i)=> {
-          return(
-            <div className='referenceCard' key={i}>
-              <p className='referenceCardName'>{e.name}</p>
-              <p className='referenceCardText'>{e.text}</p>
-            </div>
-          )
-        })
-      }
+      <div ref={containerRef} className='referencesContainerScroll'>
+        {
+          references.map((e, i)=> {
+            return(
+              <div className='referenceCard' key={i}>
+                <p className='referenceCardName'>{e.name}</p>
+                <p className='referenceCardText'>{e.text}</p>
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
