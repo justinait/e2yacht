@@ -43,7 +43,6 @@ function Navbar() {
 
   const handleOpen = () => {
     if(!desktop){
-        console.log('hola');
       if(openMenu)
         return setOpenMenu(false);
       else 

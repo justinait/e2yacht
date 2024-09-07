@@ -62,3 +62,77 @@ li a {
 .captainAndCrewHero {
     background-image: url('/public/images/captainAndCrewServices.jpg');  
 }
+
+/* maritime survey */
+.serviceItemName p {
+    margin: 0;
+}
+.serviceItemTitle {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding-left: 3%;
+}
+.serviceItem {
+    background: var(--color-grey);
+    padding: 2% 4%;
+    margin-bottom: 3px;
+    border-radius: 13.31px;
+}
+.seeMore {
+    margin-right: unset !important;
+    font-weight: 600;
+    background: var(--color-lightBlue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.seeMore:hover {
+    cursor: pointer;
+}
+.hideService {
+    display: none;
+}
+.servicesText {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+}
+.serviceOpenContainer {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.servicesItemsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    padding: 5% 0% 15%;
+}
+.serviceItemName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    border-radius: 15px;
+    margin: 3px 0;
+    font-weight: 400;
+}
+.servicesItemTitle {
+    width: 80%;
+    margin: 0;
+    font-weight: 600;
+}
+.servicesContainer{
+    display: flex;
+    flex-direction: column;
+}
+.servicesFirstContainer {
+    background-image: url('/public/sprayServices.jpg');
+    background-size: cover;
+    min-height: 95vh;
+    padding-top: 10vh;
+}

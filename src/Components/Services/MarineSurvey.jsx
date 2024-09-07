@@ -1,7 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import menu from '/icons/servicesMenu.png'
 
 function MarineSurvey() {
+
+  const [open, setOpen] = useState(false);
+  const [service, setService] = useState('');
+
+  const faqs = [
+    { 
+      question: 'How long does a survey take?', 
+      text: 'The survey can run anywhere from 2 to 10 hours depending on the size of the vessel.<br />Larger yachts may take 2-3 days to conduct a thorough survey.', 
+      className: ''
+    },
+    { 
+      question: 'Can I be present at the time of the survey?', 
+      text: 'I welcome all clients to be present, and I have no problem explaining as I conduct the survey.', 
+      className: '' 
+    },
+    { 
+      question: 'How does one prepare the boat for a marine survey?', 
+      text: 'The boat must be plugged into shore power, all batteries hooked up.<br />Please provide the Buyer / Owner\'s Name and Mailing Address.', 
+      className: '' 
+    },
+    { 
+      question: 'Fiberglass hulls can blister, why are they still better than wood, steel or aluminum?', 
+      text: 'Steel, Aluminum, and Wood require constant maintenance.<br />Fiberglass can withstand neglect better over time.', 
+      className: 'bigServicesText biggerLetter' 
+    }
+  ];
+
+  const handleOpen = (e) => {
+    setOpen(true);
+    setService(e.question);
+    console.log('hola');
+  }
+  const handleClose =(e)=>{
+    setOpen(false)
+    setService('')
+  }
+
+  const handleClick = () => {
+    handleClose();
+  };
+
   return (
     <div>
       <div className='homeContainers'>
@@ -40,45 +81,66 @@ function MarineSurvey() {
 
           <div>
             <p className='managementh5'>Frequently Asked Questions:</p>
-            <div>
-              <div>
-                <p>How long does a survey take?</p>
-                <p>+</p>
-                <p>I recommend that you be there to open any locks and give me permission 
-                  to board and inspect. The survey can run anywhere from 2 to 10 hours depending 
-                  on the size of the vessel and 2 to 8 hours in the office to thoroughly prepare 
-                  the survey report. Larger yachts and commercial vessels may take me 2-3 days to 
-                  conduct a thorough physical survey.
+            <div className='servicesItemsContainer'>
+              {
+                faqs.map((e, i)=> {
+                  return (
+                    <div className='serviceItem' key={i}>
+
+                      <div className='serviceItemName'>
+                        <p className='servicesItemTitle'>{e.question}</p>
+                        {(open && service == e.question) ?
+                          <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
+                          <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
+                        }
+                      </div>
+                      {
+                        (open && service == e.question) &&
+                        <div className='serviceOpenContainer'>
+                          <p dangerouslySetInnerHTML={{ __html: e.text }} className={`servicesText ${e.className}`}></p>
+                        </div>
+                      }
+                    </div>
+                  )
+                })
+              }
+
+              {/* <div className='serviceItem'>
+                <div className='faqsQuestion'>
+                  <p>Can I be present at the time of the survey?</p>
+                  <p>+</p>
+                </div>
+                <p>I welcome all clients to be present, and I have 
+                  no problem explaining as I conduct the survey.
                 </p>
               </div>
 
-              <div>
-                <p>Can I be present at the time of the survey?</p>
-                <p>+</p>
-                <p>I welcome all clients to be present, and I have 
-                  no problem explaining as I conduct the survey.</p>
-              </div>
-
-              <div>
-                <p>How long does a survey take?</p>
-                <p>+</p>
+              <div className='serviceItem'>
+                <div className='faqsQuestion'>
+                  <p>How long does a survey take?</p>
+                  <p>+</p>
+                </div>
                 <p>The boat must be plugged into shore power, all batteries hooked up, charged and installed.  All manuals, maintenance log, receipts, registration, 
                   USCG Documentation Papers, and a copy of the previous survey must be onboard.  If a sailboat, masts and spars must be moved to ground level.  
                   Additionally, Please provide the Buyer / Owner/ Brokers's Name, Mailing and E-mail address, Phone Number as well as the Make and Model of Vessel,  
                   HIN (Hull Identification Number), specific location of vessel and mast if un-stepped, and notes pertaining to access of the vessel.  
-                  <br /><br />IMPORTANT:  Prior to any survey please ensure the vessel is clean and clear of any personal effects, gear, oil / water in bilge, furniture 
-                  or other items which might block access or vision.  The vessel will be surveyed as found, and only to the extent of what can be seen, what is 
-                  accessible and what is limited.</p>
+                  <br /><br />IMPORTANT: Prior to any survey please ensure the vessel is clean and clear of any personal effects, gear, oil / water in bilge, furniture 
+                  or other items which might block access or vision. The vessel will be surveyed as found, and only to the extent of what can be seen, what is 
+                  accessible and what is limited.
+                </p>
               </div>
 
-              <div>
-                <p>Because fiberglass hulls can blister, why are they still better than a wood, steel or aluminum boat?</p>
-                <p>+</p>
+              <div className='serviceItem'>
+                <div className='faqsQuestion'>
+                  <p>Because fiberglass hulls can blister, why are they still better than a wood, steel or aluminum boat?</p>
+                  <p>+</p>
+                </div>
                 <p>The basic facts of life, physics, and chemistry are that Steel, Aluminum and Wood all require constant maintenance, which, if neglected would have 
                   far more severe effects on structural integrity over a shorter time period.  A fiberglass boat will likely withstand prolonged neglect without the 
-                  hull being weakened.  Ingress of moisture (which can lead to blistering) occurs over years and in the end, might not even result in the formation 
-                  of a blister (or chemical change in properties of the GRP matrix).   </p>
-              </div>
+                  hull being weakened. Ingress of moisture (which can lead to blistering) occurs over years and in the end, might not even result in the formation 
+                  of a blister (or chemical change in properties of the GRP matrix).
+                </p>
+              </div> */}
             </div>
           </div>
 
