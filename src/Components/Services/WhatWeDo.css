@@ -75,8 +75,8 @@ li a {
 }
 .serviceItem {
     background: #F5F5F5;
-    padding:1.5% 4%;
-    margin-bottom: 5px;
+    padding: 0% 4%;
+    margin-bottom: 8px;
     border-radius: 13.31px;
 }
 .seeMore {
@@ -88,8 +88,10 @@ li a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
+    height: 16.7px;
+    line-height: 3.5px;
 }
 .seeMore:hover {
     cursor: pointer;
@@ -104,13 +106,12 @@ li a {
 }
 .serviceOpenContainer {
     border-top: 1px solid black;
-    padding: 10px 0;
+    padding: 13px 0;
 }
 .servicesItemsContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;    
-    padding: 5% 0% 15%;
+    width: 100%;
 }
 .serviceItemName {
     display: flex;
@@ -118,8 +119,8 @@ li a {
     justify-content: space-between;
     height: 32px;
     border-radius: 15px;
-    margin: 3px 0;
     font-weight: 400;
+    margin: 13px 0;
 }
 .servicesItemTitle {
     width: 80%;
@@ -131,4 +132,8 @@ li a {
 .servicesContainer{
     display: flex;
     flex-direction: column;
+}
+.faqsTitle {
+    margin-top: 35px;
+    margin-bottom: 1.2em;
 }
