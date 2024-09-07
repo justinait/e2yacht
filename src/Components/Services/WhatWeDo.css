@@ -74,9 +74,9 @@ li a {
     padding-left: 3%;
 }
 .serviceItem {
-    background: var(--color-grey);
-    padding: 2% 4%;
-    margin-bottom: 3px;
+    background: #F5F5F5;
+    padding:1.5% 4%;
+    margin-bottom: 5px;
     border-radius: 13.31px;
 }
 .seeMore {
@@ -98,13 +98,13 @@ li a {
     display: none;
 }
 .servicesText {
-    font-size: 12px;
     width: 100%;
     margin: 0;
+    font-size: var(--fontSize-small);
 }
 .serviceOpenContainer {
     border-top: 1px solid black;
-    padding-top: 10px;
+    padding: 10px 0;
 }
 .servicesItemsContainer {
     display: flex;
@@ -124,15 +124,11 @@ li a {
 .servicesItemTitle {
     width: 80%;
     margin: 0;
-    font-weight: 600;
+    font-size: 12px;
+    font-size: var(--fontSize-medium);
+    font-weight: 700;
 }
 .servicesContainer{
     display: flex;
     flex-direction: column;
-}
-.servicesFirstContainer {
-    background-image: url('/public/sprayServices.jpg');
-    background-size: cover;
-    min-height: 95vh;
-    padding-top: 10vh;
 }
