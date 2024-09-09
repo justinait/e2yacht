@@ -37,20 +37,20 @@
 }
 .crewName {
     color: black;
-    font-weight: var(--fontWeight-medium);
-    font-size: var(--fontSize-medium);
+    font-weight: 600;
+    font-size: var(--fontSize-12px);
+    line-height: 1.2;
     margin: auto;
     font-family: "utile-display", sans-serif;
 }
 .crewText{
     color: var(--color-darkGrey);
-    font-size: 8.5px;
-    /* width: 90%; */
+    font-size: clamp(7px, 2vw, 8px);
     line-height: 2;
     margin: auto;
 }
 .crewInfoCard {
-    padding: 10px;
+    padding: 15px;
 }
 .leftCrew {
     margin-right: 8px;
