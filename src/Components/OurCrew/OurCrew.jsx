@@ -19,7 +19,7 @@ function OurCrew() {
         <h3>Our Crew</h3>
       </div>
 
-      <h2 className='subtitlesHome'>The benefits of a full time crew without the expense yacht management, delivery and staffing.</h2>
+      <h2 className='subtitlesHome ourCrewH2'>The benefits of a full time crew without the expense yacht management, delivery and staffing.</h2>
       <p className='descriptionCrew'>
         Under the direction of United States Coast Guard Licensed Masters Elizabeth Shanahan and Eugenie Russell, 
         our experienced team of marine professionals offer dedicated and personalized service, no matter the size or type of assignment. 
@@ -33,7 +33,7 @@ function OurCrew() {
       <div className='ourCrewBrujula heroImages'>
       </div>
       
-      <h2 className='subtitlesHome'>Our Crew</h2>
+      <h2 className='subtitlesHome ourCrewH2'>Our Crew</h2>
       <div className='crewDataContainer'>
         {
           crew.map((e, i)=> {
