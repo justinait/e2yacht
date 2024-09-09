@@ -4,10 +4,10 @@ import './OurCrew.css'
 function OurCrew() {
   
   const crew = [
-    { name: 'Elizabeth Shanahan', text: 'Captain, 1600 T USCG Master, SA', image: '/images/ourCrewElizabeth.jpg', className: '' },
-    { name: 'Eugenie Russel', text: 'Captain, 1600 T USCG Master, SA', image: '/images/ourCrewEugene.jpg', className: ''},
-    { name: 'José Alejandro Cano', text: 'On the dock', image: '/images/ourCrewCano.jpg', className: ''},
-    { name: 'Odi Gutierrez', text: 'Office Manager', image: '/images/ourCrewEugene.jpg', className: ''},
+    { name: 'Elizabeth Shanahan', text: 'Captain, 1600 T USCG Master, SA', image: '/images/ourCrewElizabeth.jpg', className: 'leftCrew' },
+    { name: 'Eugenie Russel', text: 'Captain, 1600 T USCG Master, SA', image: '/images/ourCrewEugene.jpg', className: 'rightCrew'},
+    { name: 'José Alejandro Cano', text: 'On the dock', image: '/images/ourCrewCano.jpg', className: 'leftCrew'},
+    { name: 'Odi Gutierrez', text: 'Office Manager', image: '/images/ourCrewEugene.jpg', className: 'rightCrew'},
     { name: 'Miguel Sánchez Rodríguez', text: 'On the dock', image: '/images/ourCrewCano.jpg', className: ''},
   ]
 
@@ -38,7 +38,7 @@ function OurCrew() {
         {
           crew.map((e, i)=> {
             return(
-              <div className='cardCrew' key={i}>
+              <div className={`cardCrew ${e.className}`} key={i}>
                 <img src={e.image} alt={e.name} />
                 <div className='crewInfoCard'>
                   <p className='crewName'>{e.name}</p>

@@ -31,8 +31,8 @@
 .crewDataContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 20px;
+    justify-content: center;
 }
 .crewName {
     color: black;
@@ -50,4 +50,10 @@
 }
 .crewInfoCard {
     padding: 10px;
+}
+.leftCrew {
+    margin-right: 8px;
+}
+.rightCrew {
+    margin-left: 8px;
 }
