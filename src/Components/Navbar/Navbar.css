@@ -26,6 +26,15 @@
     align-items: center;
     justify-content: space-between;
 }
+.serviceDropdownItems {
+    line-height: 2;
+    font-weight: 400;
+}
 .activeNavbar{
     color: black;
+}
+.servicesNavbar {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
 }
