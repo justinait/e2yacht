@@ -28,7 +28,7 @@ function Footer() {
         </div>
 
         <div className='indice'>
-            <section>
+            <section className='homeSectionFooter'>
                 <h6>Home</h6>
                 <Link className='linksHomeFooterIndice' to='crew'>Our Crew </Link>
                 <Link className='linksHomeFooterIndice' to='contact'>Contact Us </Link>
@@ -38,11 +38,12 @@ function Footer() {
                 <h6>Location</h6>
                 <p className='locationFooter'>Located in Beautiful Paradise Village Marina, Nuevo Vallarta, Nayarit, 63732, Mexico</p>
             </section>
-            <section>
+            <section className='contactSectionFooter'>
                 <h6>Contact</h6>
-                <p className='locationFooter'>info@e2yachtservices.com</p>
+                <p className='locationFooter underline marginbottom'>info@e2yachtservices.com</p>
+                {/* <br /> */}
                 <p className='locationFooter'>Office: +52 322 297 4065</p>
-                <p className='locationFooter'>WhatsApp: +52 322-134-7397</p>
+                <p className='locationFooter underline'>WhatsApp: +52 322-134-7397</p>
                 <p className='locationFooter'>USA: #1-714-412-6180</p>
             </section>
         </div>
