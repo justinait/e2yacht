@@ -6,6 +6,16 @@ function MarineSurvey() {
   const [open, setOpen] = useState(false);
   const [service, setService] = useState('');
 
+  const openPDF = () => {
+    const pdfPath = '/SAMS.pdf';  // Ruta del archivo en tu servidor o local
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.target = '_blank';  // Abre en una nueva pestaña
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const faqs = [
     { 
       question: 'How long does a survey take?', 
@@ -104,6 +114,14 @@ function MarineSurvey() {
             </div>
           </div>
 
+          <div>
+            <p> <strong>Other documents:</strong></p>
+            <ul>
+              <li onClick={openPDF} style={{cursor: 'pointer'}}>
+                Certificate from SAMS
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

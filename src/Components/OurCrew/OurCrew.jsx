@@ -49,7 +49,6 @@ function OurCrew() {
           })
         }
       </div>
-      
     </div>
   )
 }
