@@ -48,8 +48,7 @@ body {
   background-size: cover;
   padding: 30px 20.73px;
   border-radius: 20px;
-  height: 260px;
-  height: 280px;
+  min-height: 68vw;
 }
 
 .heroImages h3 {
