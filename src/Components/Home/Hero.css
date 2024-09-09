@@ -8,11 +8,12 @@ h1 {
     font-size: var(--fontSize-30px);
     margin: 0;
     font-family: "utile-display", sans-serif;
+    letter-spacing: 0.02rem;
 }
 .heroSubtitle {
     font-weight: var(--fontWeight-normal);
     font-size: 18px;
-    font-size: var(--fontSize-xlarge);
+    font-size: var(--fontSize-18px);
 }
 .separator {
     width: 12.5%;
@@ -21,7 +22,7 @@ h1 {
 .heroDescription {
     line-height: 1.5;
     font-size: 14px;
-    font-size: 12px;
+    font-size: var(--fontSize-14px);
 }
 .heroDescription strong {
     font-weight: 600;
@@ -34,7 +35,7 @@ h1 {
 }
 .button{
     font-size: 16px;
-    font-size: var(--fontSize-large);
+    font-size: var(--fontSize-16px);
     font-weight: var(--fontWeight-bold);
     text-transform: uppercase;
     width: 27.5vw;
