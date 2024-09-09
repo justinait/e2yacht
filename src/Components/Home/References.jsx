@@ -4,8 +4,8 @@ import './References.css'
 function References() {
  
   const references = [
-    { name: 'Harold Ziegler, MV Ziggy, 2009 Hatteras 72’', text: '“Elizabeth, I wanted to thank you and let you know that I recommend you as a delivery captain. You completed my delivery from the Bahamas to Michigan in a timely fashion. There were times that you ran the boat all night in order to get it back to Michigan and meet my scheduled trip. I appreciate your dedication and commitment to making things happen.”', className: '' },
-    { name: 'Richard James Markie – Harbor Master, Paradise Village Marina', text: '“Elizabeth Shanahan is a great delivery captain; I have recommended her several times and received good reports about her and her operation. I have known her for 5 plus years and consider her operation an accent to our marina.”', className: ''},
+    { name: 'Harold Ziegler, MV Ziggy, 2009 Hatteras 72’', text: '“Elizabeth, I wanted to thank you and let you know that I recommend you as a delivery captain. You completed my delivery from the Bahamas to Michigan in a timely fashion. There were times that you ran the boat all night in order to get it back to Michigan and meet my scheduled trip. I appreciate your dedication and commitment to making things happen.”', className: 'firstReview' },
+    { name: 'Richard James Markie - Harbor Master, Paradise Village Marina', text: '“Elizabeth Shanahan is a great delivery captain; I have recommended her several times and received good reports about her and her operation. I have known her for 5 plus years and consider her operation an accent to our marina.”', className: ''},
     { name: 'The Riley’s - Nuevo Vallarta, Paradise Village Hatteras 52', text: '“Thank you again for all of your help and assistance with recent repairs, maintenance and project management. We appreciate E2’s professional level of service and the ability to communicate easily with your team. The full range of services you provide is particularly helpful when boat owners must manage their boats from afar.”', className: ''},
     { name: 'Dick and Lee Burd, MV Lion Heart, Defever 49', text: '“Elizabeth, we want to thank you for the years of taking care of and running our yacht. You managed our yacht with professionalism, from having her clean and provisioned as we requested to managing the hardwork in our absence. Your attention to detail in the ongoing maintenance a yacht requires was greatly appreciated. Your skills as captain and in handling the yacht in all sorts of seas and weather are impressive.', className: ''},
     { name: 'Phileta and Dorothy', text: '"Sometimes in life we\'re lucky enough to meet the perfect person to do the perfect job. Eugenie\'s extensive sailing knowledge and experience is shared with gentleness and grace. She respects and understands both her craft and students. She\s honest, humorous, tri-lingual (!), strong in body, mind and spirit and a delight to be with whether sailing or on land. Thanks Eugenie!”', className: ''},
@@ -66,7 +66,7 @@ function References() {
         {
           references.map((e, i)=> {
             return(
-              <div className='referenceCard' key={i}>
+              <div className={`referenceCard ${e.className}`} key={i}>
                 <p className='referenceCardName'>{e.name}</p>
                 <p className='referenceCardText'>{e.text}</p>
               </div>
