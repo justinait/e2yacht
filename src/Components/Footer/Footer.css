@@ -1,14 +1,17 @@
 .footerContainer {
     background-color: var(--color-blue);
-    height: 70vh;
+    height: 50vh;
+    height: 465px;
+    padding: 1em 21px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .footerTitle {
-    font-size: var(--fontSize-2xlarge);
+    font-size: var(--fontSize-20px);
     font-weight: var(--fontWeight-medium);
     font-family: "utile-display", sans-serif;
+    letter-spacing: 0.02rem;
 }
 .logoFooter {
     width: 50%;

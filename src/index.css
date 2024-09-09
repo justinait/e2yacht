@@ -30,9 +30,11 @@ body {
 
 
   --fontSize-30px: clamp(25px, 7vw, 30px);
+  --fontSize-20px: clamp(18px, 5vw, 20px);
   --fontSize-18px: clamp(16px, 4.3vw, 18px);
-  --fontSize-14px: clamp(12.5px, 3.8vw, 14px);
   --fontSize-16px: clamp(14.5px, 4vw, 16px);
+  --fontSize-14px: clamp(12.5px, 3.8vw, 14px);
+  --fontSize-12px: clamp(11px, 3.2vw, 12px);
   
   /* chequear estos tamaños cuando tenga la tipo */
   
@@ -63,13 +65,7 @@ body {
   color: var(--color-darkGrey);
   text-transform: uppercase;
   font-size: 12px;
-}
-.subtitlesHome {
-  font-size: 30px;
-  font-weight: var(--fontWeight-normal);
-  font-size: var(--fontSize-30px);
-  color: var(--color-blue);
-  font-family: "utile-display", sans-serif;
+  margin: 1em 0;
 }
 
 .ourServicesTitleDiv{
@@ -94,7 +90,10 @@ h2 {
   font-size: var(--fontSize-30px);
   margin: 0;
   font-family: "utile-display", sans-serif;
+  color: var(--color-blue);
   letter-spacing: 0.02rem;
+  line-height: 1;
+  margin: 1rem 0;
 }
 
 
