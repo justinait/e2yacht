@@ -12,7 +12,7 @@
     font-size: 16px;
     font-weight: var(--fontWeight-medium);
     height: calc(100vh - 58px);
-    padding: 10px 21px;
+    padding: 10px 20.73px;
 }
 .dropdownItemsContainer {
     display: flex;

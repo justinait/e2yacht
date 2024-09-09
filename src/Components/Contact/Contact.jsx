@@ -23,7 +23,7 @@ function Contact() {
       <div className='contactHero heroImages'>
         <br />
         <h3>Visit, call or send email</h3>
-        <p>And we will get back to you</p>
+        <p className='contactHeroP'>And we will get back to you</p>
       </div>
 
       <div className='cardsContactContainer'>

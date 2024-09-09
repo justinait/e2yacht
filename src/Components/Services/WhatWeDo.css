@@ -4,8 +4,9 @@
 .whatWeDoTextContainer {
     color: #000B1B;
     text-transform: capitalize;
-    font-size: var(--fontSize-medium);
+    font-size: var(--fontSize-12pxServices);
     padding-bottom: 5px;
+    font-weight: 400;
 }
 
 .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
@@ -20,8 +21,9 @@ li a {
 
 .managementTextContainer {
     color: #000B1B;
-    font-size: var(--fontSize-medium);
+    font-size: var(--fontSize-12pxServices);
     padding-bottom: 5px;
+    font-weight: 300;
 }
 
 li a {
@@ -40,9 +42,14 @@ li a {
     font-size: clamp(13px, 3vw, 15px);
     font-weight: var(--fontWeight-bold);
     margin-top: 0;
+    margin-bottom: 0 ;
 }
 .managementTextContainer ol li {
     padding: 2px 0;
+}
+.olManagement {
+    
+    margin-top: 0.5em;
 }
 .boatsWeManage {
     display: flex;

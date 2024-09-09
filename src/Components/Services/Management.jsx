@@ -45,7 +45,7 @@ function Management() {
         <div className='boatsWeManage'>
           <div>
             <p className='managementh6'>Power boats</p>
-            <ol>
+            <ol className='olManagement'>
               <li>Horizon 70'</li>
               <li>Princess 65’</li>
               <li>Johnson 65’</li>
@@ -59,7 +59,7 @@ function Management() {
 
           <div>
             <p className='managementh6'>Sailboats</p>
-            <ol>
+            <ol className='olManagement'>
               <li>Peterson 44’</li>
               <li>Island Packet 40’</li>
               <li>JLiberty 41’</li>
