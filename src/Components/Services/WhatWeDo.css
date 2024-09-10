@@ -82,6 +82,12 @@ li a {
     background-size: cover;
     background-position: top;
 }
+.maritimeAssetHero{
+    
+    background-image: url('/public/images/maritimeRecovery.jpg');  
+    background-size: cover;
+    background-position: center;
+}
 
 /* maritime survey */
 .serviceItemName p {

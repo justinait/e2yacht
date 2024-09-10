@@ -5,7 +5,7 @@ function MaritimeRecovery() {
   return (
     
     <div className='homeContainers'>
-      <div className='captainAndCrewHero heroImages'>
+      <div className='maritimeAssetHero heroImages'>
         <br />
         <h3>Maritime Asset Recovery</h3>
       </div>
