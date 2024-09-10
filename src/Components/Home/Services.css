@@ -34,3 +34,10 @@
     display: flex;
     align-items: flex-start;
 }
+@media(min-width:600px) {
+    .homeServiceName {
+        font-size: var(--fontSize-12px);
+        height: 32px;
+        margin-top: 6px;
+    }
+}
