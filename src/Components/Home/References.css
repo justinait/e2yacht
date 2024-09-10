@@ -37,4 +37,12 @@
     .firstReview {
         margin-left: 15vw;
     }
+    .referenceCardName {
+        font-size: var(--fontSize-14px);
+        line-height: unset;
+    }
+    .referenceCardText {
+        line-height: unset;
+        font-size: var(--fontSize-12px);
+    }
 }
