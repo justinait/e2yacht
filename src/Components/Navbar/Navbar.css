@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 23px;
+    padding: 0 5.5%;
     height: 58px;
 }
 .dropdownHeader {
@@ -13,6 +14,7 @@
     font-weight: var(--fontWeight-medium);
     height: calc(100vh - 58px);
     padding: 10px 20.73px;
+    padding: 10px 4.8%;
 }
 .dropdownItemsContainer {
     display: flex;
@@ -37,4 +39,24 @@
     display: flex;
     flex-direction: column;
     font-size: 12px;
+}
+@media(min-width: 600px) {
+    .navbar {
+        height: 70px;
+        padding: 0 6%;
+    }
+    .logoNavbar {
+        width: 160px;
+    }
+
+}
+@media(min-width: 700px) {
+    .navbar {
+        height: 80px;
+        padding: 0 6%;
+    }
+    .logoNavbar {
+        width: 160px;
+    }
+
 }

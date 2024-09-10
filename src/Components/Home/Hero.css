@@ -2,6 +2,7 @@
     background-image: url('/public/images/hero.jpg');
     background-position: left top;
     margin: 0 20.73px;
+    margin: 0px 4.8%;
     background-size: cover;
 }
 h1 {
@@ -55,4 +56,22 @@ h1 {
 }
 a {
     text-decoration: none;
+}
+
+@media(min-width:600px){
+    .heroHome {
+        margin: 0px 6%;
+    }
+    .buttonsHero {
+        justify-content: flex-start;
+    }
+    .button {
+        width: 24vw;
+    }
+    .learnMore {
+        margin-right: 2em;
+    }
+    .separator {
+        width: 10%;
+    }
 }

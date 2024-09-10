@@ -1,6 +1,7 @@
 .contactHero {
     background-image: url('/public/images/contactHero.jpg');
     margin: 0 20.73px;    
+    margin: 0px 4.8%;
     background-size: 180%;
     background-position: center top
 }
@@ -60,6 +61,7 @@
 }
 .contactFormBigContainer {
     margin: 0 20.73px;
+    margin: 0px 4.8%;
 }
 .contactHeroP {
     font-size: var(--fontSize-14px);
@@ -101,14 +103,11 @@
 }
 .formButton {
     margin-bottom: 20.73px !important;
+    margin-bottom: 4.8% !important;
     margin-top: 0px;
     border: none;
     width: 50% !important;
     font-family: 'Libre Franklin Variable', sans-serif !important;
-}
-.button:hover {
-    background-color: var(--color-blue);
-    cursor: pointer;
 }
 .learnMore:hover{
     color: var(--color-blue);

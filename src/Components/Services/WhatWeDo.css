@@ -8,7 +8,7 @@
 .whatWeDoTextContainer {
     color: #000B1B;
     text-transform: capitalize;
-    font-size: var(--fontSize-12pxServices);
+    font-size: var(--fontSize-12px-services);
     padding-bottom: 5px;
     font-weight: 400;
     
@@ -26,7 +26,7 @@ li a {
 
 .managementTextContainer {
     color: #000B1B;
-    font-size: var(--fontSize-12pxServices);
+    font-size: var(--fontSize-12px-services);
     padding-bottom: 5px;
     font-weight: 300;
 }
@@ -128,7 +128,7 @@ li a {
 .servicesText {
     width: 100%;
     margin: 0;
-    font-size: var(--fontSize-small);
+    font-size: var(--fontSize-12px);
 }
 .serviceOpenContainer {
     border-top: 1px solid black;
@@ -151,7 +151,7 @@ li a {
     width: 80%;
     margin: 0;
     font-size: 12px;
-    font-size: var(--fontSize-medium);
+    font-size: var(--fontSize-12px);
     font-weight: 700;
 }
 .servicesContainer{

@@ -20,23 +20,14 @@ body {
   --color-blue: #073460;
   --color-lightBlue: #165BBB;
 
-  --fontSize-base: clamp(16px, 3vw, 21px);
-  --fontSize-small: clamp(10.4px, 2.5vw, 13px);
-  --fontSize-medium: clamp(11.5px, 2.5vw, 15px);
-  --fontSize-large: clamp(14px, 3vw, 17px);
-  --fontSize-xlarge: clamp(16px, 3.5vw, 21px);
-  --fontSize-2xlarge: clamp(18px, 3vw, 24px);
-  --fontSize-3xlarge: clamp(22px, 3vw, 24px);
-
-
-  --fontSize-30px: clamp(25px, 7vw, 30px);
-  --fontSize-20px: clamp(18.5px, 5vw, 20px);
-  --fontSize-18px: clamp(16px, 4.3vw, 18px);
-  --fontSize-16px: clamp(14.5px, 4vw, 16px);
-  --fontSize-14px: clamp(12.5px, 3.8vw, 14px);
-  --fontSize-12px: clamp(10.5px, 2.5vw, 12px);
-  --fontSize-10px: clamp(8.8px, 2vw, 10px);
-  --fontSize-12pxServices: clamp(10.35px, 2.5vw, 12px);
+  --fontSize-30px: clamp(25px, 7vw, 40px);
+  --fontSize-20px: clamp(18.5px, 5vw, 22px);
+  --fontSize-18px: clamp(16px, 4.3vw, 19px);
+  --fontSize-16px: clamp(14.5px, 4vw, 17px);
+  --fontSize-14px: clamp(12.5px, 3.8vw, 15px);
+  --fontSize-12px-services: clamp(10.35px, 2.5vw, 14px);
+  --fontSize-12px: clamp(10.5px, 2.5vw, 14px);
+  --fontSize-10px: clamp(8.8px, 2vw, 11px);
   
   /* chequear estos tamaños cuando tenga la tipo */
   
@@ -44,8 +35,10 @@ body {
   --fontWeight-medium: 500;
   --fontWeight-bold: 700;
 }
+
 .heroImages {
   padding: 30px 20.73px;
+  padding: 30px 4.8%;
   border-radius: 20px;
   min-height: 68vw;
 }
@@ -59,6 +52,7 @@ body {
 
 .homeContainers {
   padding: 0 20.73px;
+  padding: 0px 4.8%;
 }
 
 .titlesHome {
@@ -95,16 +89,23 @@ h2 {
   line-height: 1;
   margin: 1rem 0;
 }
-
-
-/* @media(min-width:1000px) {
-  
-
-  :root {
-    --fontSize-large: 24px;32
-    --fontSize-xlarge: 32px;40
-    --fontSize-2xlarge: 40px;48
-    --fontSize-3xlarge: 48px;52
-    
+@media(min-width: 600px){
+  .heroImages {
+    padding: 7.2% 7.2% 0;
   }
-} */
+
+}
+@media(min-width: 700px) {
+  
+  :root {
+    --fontSize-30px: clamp(40px, 10vw, 52px);
+    --fontSize-20px: clamp(21px, 5vw, 24px);
+    --fontSize-18px: clamp(19px, 4.3vw, 21px);
+    --fontSize-16px: clamp(17px, 4vw, 19px);
+    --fontSize-14px: clamp(15px, 3.8vw, 18px);
+
+    --fontSize-12px-services: clamp(10.35px, 2.5vw, 12px);
+    --fontSize-12px: clamp(10.5px, 2.5vw, 12px);
+    --fontSize-10px: clamp(8.8px, 2vw, 10px);
+  }
+}
