@@ -45,7 +45,6 @@ body {
   --fontWeight-bold: 700;
 }
 .heroImages {
-  background-size: cover;
   padding: 30px 20.73px;
   border-radius: 20px;
   min-height: 68vw;

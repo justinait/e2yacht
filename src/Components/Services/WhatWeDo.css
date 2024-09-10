@@ -1,5 +1,9 @@
 .whatHero {
     background-image: url('/public/images/whatWeDoHero.jpg');
+    
+    background-size: cover;
+    background-position: -90px top;
+    background-position: 59%;
 }
 .whatWeDoTextContainer {
     color: #000B1B;
@@ -7,6 +11,7 @@
     font-size: var(--fontSize-12pxServices);
     padding-bottom: 5px;
     font-weight: 400;
+    
 }
 
 .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
@@ -59,15 +64,23 @@ li a {
 
 .deliveriesHero {
     background-image: url('/public/images/deliveriesHero.jpg');   
+    background-size: cover;
+    background-position: center;
 }
 .instructionHero {
+    background-size: cover;
+    background-position: center;
     background-image: url('/public/images/instructionHero.jpg');  
 }
 .marineSurveyHero  {
     background-image: url('/public/images/marineSurveyHero.jpg');  
+    background-size: cover;
+    background-position: top;
 }
 .captainAndCrewHero {
     background-image: url('/public/images/captainAndCrewServices.jpg');  
+    background-size: cover;
+    background-position: top;
 }
 
 /* maritime survey */
