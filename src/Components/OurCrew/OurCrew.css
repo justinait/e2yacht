@@ -1,5 +1,10 @@
 .ourCrewHero {
-    background-image: url('/public/images/hero.jpg');
+    background-image: url('/public/images/heroPc.jpg');
+    background-position: top right;
+
+    
+    background-size: 230% !important;
+    background-position: -320px top;
 }
 .ourCrewH2 {
     margin-top: 1.5rem;

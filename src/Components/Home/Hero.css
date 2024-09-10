@@ -1,6 +1,6 @@
 .heroHome {
     background-image: url('/public/images/hero.jpg');
-    background-position: left;
+    background-position: left top;
     margin: 0 20.73px;
 }
 h1 {
