@@ -67,6 +67,7 @@ a {
     }
     .button {
         width: 24vw;
+        padding: 22px;
     }
     .learnMore {
         margin-right: 2em;

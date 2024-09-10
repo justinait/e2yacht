@@ -109,13 +109,13 @@ h2 {
   
   :root {
     --fontSize-30px: clamp(40px, 10vw, 52px);
-    --fontSize-20px: clamp(21px, 5vw, 24px);
+    --fontSize-20px: clamp(22px, 4vw, 32px);
     --fontSize-18px: clamp(19px, 4.3vw, 21px);
     --fontSize-16px: clamp(17px, 4vw, 19px);
     --fontSize-14px: clamp(15px, 3.8vw, 18px);
 
     --fontSize-12px-services: clamp(12.5px, 2.5vw, 14px);
-    --fontSize-12px: clamp(12.5px, 2.5vw, 14px);
-    --fontSize-10px: clamp(8.8px, 2vw, 10px);
+    --fontSize-12px: clamp(13px, 1.9vw, 15px);
+    --fontSize-10px: clamp(10.5px, 2vw, 12px);
   }
 }

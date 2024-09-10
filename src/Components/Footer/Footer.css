@@ -86,3 +86,28 @@
 .marginbottom {
     margin-bottom: 1em;
 }
+
+@media(min-width:600px) {
+    .footerContainer {
+        height: 600px;
+    }
+    .logoFooter {
+        width: 32%;
+    }
+    .socialMediaCircle img {
+        width: 30px;
+    }
+    .socialMediaCircle {
+        width: 45px;
+        height: 45px;
+    }
+    .homeSectionFooter {
+        width: 25% !important;
+    }
+    .indice section {
+        width: 30% ;
+    }
+    .contactSectionFooter {
+        width: 30% !important;
+    }
+}
