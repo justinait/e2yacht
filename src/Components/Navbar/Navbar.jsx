@@ -3,7 +3,6 @@ import './Navbar.css'
 import logo from '/icons/logoNavbar.png'
 import menu from '/icons/burgerMenu.png'
 import CloseIcon from '/icons/closeMenu.png'
-import arrow from '/icons/arrowNavbar.png'
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -48,6 +47,7 @@ function Navbar() {
     } else {
       setSelectedCategory('')
     }
+    setSelectedService('')
       
   }
 
