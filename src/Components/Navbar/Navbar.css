@@ -63,3 +63,15 @@
     }
 
 }
+@media (min-width: 1000px) {
+    .logoNavbar {
+        width: 170px;
+    }
+    .burgerMenuIcon {
+        width: 24px;
+    }
+    .navbar {
+        height: 90px;
+        padding: 0 8%;
+    }
+}

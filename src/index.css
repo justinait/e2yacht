@@ -135,6 +135,34 @@ h2 {
 }
 @media (min-width: 700px) {
   .ourServicesTitleDiv {
-      width: 20vw;
+    width: 20vw;
+  }
+}
+@media (min-width: 1000px) {
+  /* h1 {
+    font-size: clamp(40px, 6.8vw, 64px);
+  } */
+  /* voy cambiando 18 y 14 */
+  :root {
+    --fontSize-30px: clamp(40px, 7vw, 52px);
+    --fontSize-20px: clamp(22px, 4vw, 32px);
+    --fontSize-18px: clamp(26px, 2.8vw, 28px);
+    --fontSize-16px: clamp(17px, 3vw, 19px);
+    --fontSize-14px: clamp(15px, 2.8vw, 23px);
+
+    --fontSize-12px-services: clamp(12.5px, 2.2vw, 15px);
+    --fontSize-12px: clamp(15px, 2vw, 21px);
+    --fontSize-10px: clamp(10.5px, 2vw, 12px);
+  }
+  .heroImages {
+    /* padding: 8% 8% 0;
+    min-height: 55vw; */
+    
+    padding: 8%;
+    min-height: unset;
+  }
+  .titlesHome {
+    font-size: 18px;
+    margin: 2em 0;
   }
 }

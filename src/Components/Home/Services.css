@@ -41,3 +41,9 @@
         margin-top: 6px;
     }
 }
+@media(min-width:1000px) {
+    .homeServiceName {
+        height: 45px;
+        margin-top: 8px;
+    }
+}

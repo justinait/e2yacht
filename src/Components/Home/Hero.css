@@ -76,3 +76,15 @@ a {
         width: 10%;
     }
 }
+@media (min-width:1000px){
+    .heroDescription {
+        margin: 2rem 0;
+    }
+    .heroSubtitle {
+        width: 69%;
+    }
+    .button {
+        width: 17vw;
+        margin-top: 1rem;
+    }
+}
