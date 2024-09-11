@@ -168,9 +168,42 @@
         width: 40% !important;
     }
 }
-
+@media (min-width: 700px) {
+    .cardContactText {
+        height: 62px;
+    }
+}
 @media(min-width: 1000px){
     .contactHero {
         margin: 0px 8%;
+    }
+    .cardContactDiv h5 {
+        margin: 1rem;
+    }    
+    .cardContactText {
+        height: 70px;
+    }
+    .cardContactDiv {
+        margin: 30px 0;
+        border-radius: 15px ;
+        width: 31vw;
+        height: 25vw;
+        padding: 25px;
+    }
+    .contactIcon {
+        width: 31px;
+    }
+    .contactIconLocation {
+        width: 25px;
+    }
+    .contactImageCircle {
+        width: 50px;
+        height: 50px;
+    }
+    .inputContact {
+        padding: 10px 16px;
+    }
+    .formButton {
+        width: 40% !important;
     }
 }
