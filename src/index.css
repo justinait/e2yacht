@@ -92,6 +92,7 @@ h2 {
 @media(min-width: 600px){
   .heroImages {
     padding: 7.2% 7.2% 0;
+    margin: 0px 6%;
   }
   .titlesHome {
     font-size: 14px;
