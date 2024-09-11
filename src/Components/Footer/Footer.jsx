@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className='footerContainer homeContainers'>
         
-        <h3 className='footerTitle'>The benefits of a full time crew without the expense yacht management, delivery and staffing.</h3>
+        <h3 className='footerTitle'>The benefits of a full time crew without the <br className='tablet1000'/> expense yacht management, delivery and staffing.</h3>
         
         <img src={logo} alt="E2 yacht services" className='logoFooter' />
         

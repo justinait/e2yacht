@@ -2,8 +2,6 @@
     background-color: var(--color-blue);
     height: 50vh;
     height: 465px;
-    padding: 1em 20.73px !important;
-    padding: 1em 4.8% !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,11 +86,15 @@
 }
 
 @media(min-width:600px) {
+    .footerTitle {
+        margin-bottom: 0;
+    }
     .footerContainer {
-        height: 600px;
+        height: 550px;
     }
     .logoFooter {
         width: 32%;
+        margin: 2em 0;
     }
     .socialMediaCircle img {
         width: 30px;
@@ -100,6 +102,30 @@
     .socialMediaCircle {
         width: 45px;
         height: 45px;
+    }
+    .homeSectionFooter {
+        width: 25% !important;
+    }
+    .indice section {
+        width: 30% ;
+    }
+    .contactSectionFooter {
+        width: 30% !important;
+    }
+}
+@media(min-width:1000px){
+    .logoFooter {
+        width: 28%;
+    }
+    .footerContainer {
+        height: 650px;
+    }
+    .socialMediaCircle img {
+        width: 35px;
+    }
+    .socialMediaCircle {
+        width: 50px;
+        height: 50px;
     }
     .homeSectionFooter {
         width: 25% !important;
