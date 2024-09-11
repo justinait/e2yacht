@@ -46,3 +46,9 @@
         font-size: var(--fontSize-12px);
     }
 }
+@media(min-width:1000px){
+    .referenceCard {
+        max-width: unset;
+        padding: 40px;
+    }
+}

@@ -168,3 +168,9 @@
         width: 40% !important;
     }
 }
+
+@media(min-width: 1000px){
+    .contactHero {
+        margin: 0px 8%;
+    }
+}
