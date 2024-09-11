@@ -175,6 +175,15 @@ li a {
     }
     
     .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
-        padding-left: 23px;
+        padding-left: 20px;
+    }
+}
+@media(min-width:1000px){
+    .separatorManagement {
+        margin: 2em 0;
+    }
+    
+    .servicesItemTitle, .servicesText {
+        font-size: var(--fontSize-12px-services);
     }
 }
