@@ -41,8 +41,8 @@
     display: flex;
     flex-direction: column;
     
-    padding-top: 8px;
-    border-top: 1px solid black;
+    padding: 8px 0 18px;
+    border-top: 1px solid #000B1B;
 }
 @media(min-width: 600px) {
     .navbar {
@@ -54,6 +54,12 @@
     }
     .dropdownHeader {
         padding: 10px 6%;
+    }
+    .dropdownItems {
+        font-size: 20px;
+    }
+    .serviceDropdownItems {
+        font-size: 15px;
     }
 
 }
@@ -67,6 +73,15 @@
     }
     .burgerMenuIcon {
         width: 22px;
+    }
+    .dropdownHeader {
+        padding: 10px 8.3%;
+    }
+    .dropdownItems {
+        font-size: 20px;
+    }
+    .serviceDropdownItems {
+        font-size: 15px;
     }
 
 }
