@@ -17,13 +17,13 @@
 .ourCrewBrujula {
     padding: 0 !important;
     background-image: url('/public/images/ourCrewSea.jpg');
-    background-position-y: center;
-    height: 265px !important;
+    height: 265px !important; 
+    background-position: center;
+    background-size: cover;
 }
 .cardCrew {
     width: 48%;
     width: 42vw;
-    /* border: 1px solid #80858D; */
     background-color: #f5f5f5;
     margin-bottom: 20px;
     border-radius: 10.5px;
@@ -62,4 +62,22 @@
 }
 .rightCrew {
     margin-left: 8px;
+}
+@media(min-width:600px){
+    .ourCrewHero{
+        background-size: 250%;
+        background-position: -109% center;
+    }
+    .ourCrewH2 {
+        margin-top: 2rem;
+    }
+    .ourCrewBrujula {
+        height: 60vw !important;
+        min-height: unset !important;
+    }
+    .crewText{
+        font-size: clamp(8px, 1.6vw, 10px);
+        line-height: 2;
+        margin: auto;
+    }
 }
