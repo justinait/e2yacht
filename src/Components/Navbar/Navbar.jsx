@@ -24,7 +24,7 @@ function Navbar() {
     { name: 'Yacht Deliveries', id: 'deliveries', className: ''},
     { name: 'Private Instructions', id: 'instruction', className: ''},
     { name: 'Marine Survey', id: 'marinesurvey', className: ''},
-    { name: 'Captain and crew services', id: 'captainandcrew', className: '' },
+    { name: 'Captain And Crew Services', id: 'captainandcrew', className: '' },
     { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''}
   ]
 

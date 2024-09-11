@@ -52,7 +52,7 @@ body {
 
 .homeContainers {
   padding: 0 20.73px;
-  padding: 0px 4.8%;
+  padding: 0px 4.8% 3%;
 }
 
 .titlesHome {
@@ -98,7 +98,7 @@ h2 {
   }
 
   .homeContainers {
-    padding: 0px 6%;
+    padding: 0px 6% 3%;
   }
   h2 {
     font-size: var(--fontSize-30px);

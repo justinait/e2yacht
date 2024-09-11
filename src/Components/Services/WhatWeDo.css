@@ -170,4 +170,11 @@ li a {
     .managementh6 {
         font-size: clamp(13px, 2.3vw, 15.5px);
     }
+    .captainAndCrewHero h3 {
+        font-size: 45px;
+    }
+    
+    .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
+        padding-left: 23px;
+    }
 }
