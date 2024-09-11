@@ -162,3 +162,9 @@ li a {
     margin-top: 35px;
     margin-bottom: 1.2em;
 }
+
+@media(min-width: 600px){
+    .managementh5 {
+        font-size: clamp(15px, 2.8vw, 18px);
+    }
+}
