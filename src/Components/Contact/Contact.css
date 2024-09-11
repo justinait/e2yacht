@@ -130,3 +130,38 @@
     left: 16px;
     font-size: 12px;
 }
+
+
+@media(min-width: 600px){
+    .contactHeroP {
+        font-size: clamp(20px, 3.4vw, 33px);
+    }
+    .cardContactDiv {
+        margin: 14px 0;
+        width: 35vw;
+        height: 32vw;
+        padding: 10px;
+    }
+    .cardsContactContainer {    
+        margin: 0px 4.8%;
+    }
+    .contactIcon {
+        width: 27px;
+    }
+    .contactIconLocation {
+        width: 20px;
+    }
+    .contactImageCircle {
+        width: 43px;
+        height: 43px;
+    }
+    .cardContactText {
+        height: 55px;
+    }
+    .inputContact {
+        padding: 10px 16px;
+    }
+    .formButton {
+        width: 40% !important;
+    }
+}
