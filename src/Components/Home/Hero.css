@@ -89,5 +89,6 @@ a {
     .button {
         width: 17vw;
         margin-top: 1rem;
+        border-radius: 8px;
     }
 }

@@ -81,3 +81,33 @@
         margin: auto;
     }
 }
+@media(min-width:1000px){
+    
+    .ourCrewBrujula {
+        height: 50vw !important;
+        min-height: unset !important;
+        margin: 2em 0px;
+    }
+    .cardCrew {
+        width: 39.8vw;
+    }
+    .leftCrew {
+        margin-right: 15px;
+    }
+    .rightCrew {
+        margin-left: 15px;
+    }
+    .cardCrew img {
+        height: calc(38vw - 20px);
+        border-radius: 20px 20px 0 0;
+    }
+    .crewText{
+        font-size: clamp(8px, 1.6vw, 12px);
+    }
+    .crewInfoCard {
+        padding: 23px;
+    }
+    .ourCrewH2 {
+        margin-top: 3rem;
+    }
+}

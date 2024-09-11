@@ -160,11 +160,9 @@ h2 {
     padding: 0px 8% 3%;
   }
   .heroImages {
-    /* padding: 8% 8% 0;
-    min-height: 55vw; */
-    
+    border-radius: 35px;
     padding: 8%;
-    min-height: unset;
+    min-height: 33vh;
   }
   .titlesHome {
     font-size: 18px;
@@ -174,4 +172,7 @@ h2 {
   .tablet1000 {
     display: block;
   } 
+  h2 {
+    margin: 3rem 0;
+  }
 }
