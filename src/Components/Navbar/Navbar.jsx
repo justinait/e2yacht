@@ -9,10 +9,11 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('')
+  const [selectedService, setSelectedService] = useState('')
 
   const sections = [
     { name: 'Home', id: '', className: '' },
-    { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png' },
+    { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
     { name: 'Contact', id: 'contact', className: ''}
@@ -76,6 +77,10 @@ function Navbar() {
       setOpenMenu(true)
     }
   }
+  const handleServiceClick =(id) => {
+    handleClose(id)
+    setSelectedService(id)
+  }
   return (
     <div className='navbarContainer'>
     <div className='navbar'>
@@ -102,22 +107,25 @@ function Navbar() {
             >
               <div className={selectedCategory === e.id ? 'dropdownItems activeNavbar' : 'dropdownItems'}>
                 {e.name}
-                {e.image && <img src={e.image} alt="Arrow" />}
+                {e.image && 
+                  (!dropdown ? <img src={e.image} alt="Arrow" /> : <img src={e.image2} alt="Arrow" />)
+                  
+                }
               </div>
-              <div className='servicesNavbar'>
-                {(e.id === 'services' && dropdown) &&
-                  services.map((service, index) => (
+              {(e.id === 'services' && dropdown) &&
+                <div className='servicesNavbar'>
+                  {services.map((service, index) => (
                     <Link
                       key={index}
                       to={`/${service.id}`}
-                      onClick={() => handleClose(service.id)}
-                      className={selectedCategory === service.id ? 'dropdownItems serviceDropdownItems activeNavbar' : 'dropdownItems serviceDropdownItems'}
+                      onClick={() => handleServiceClick(service.id)}
+                      className={selectedService === service.id ? 'dropdownItems serviceDropdownItems activeNavbar' : 'dropdownItems serviceDropdownItems'}
                     >
                       {service.name}
                     </Link>
-                  ))
-                }
-              </div>
+                  ))}
+                </div>
+              }
             </Link>
           ))}
         </div>
