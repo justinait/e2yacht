@@ -58,7 +58,7 @@ function References() {
   }, []);
 
   return (
-    <div className='homeContainers whereHomeContainer'>
+    <div className='homeContainers referencesHomeContainer'>
         
       <h5 className='titlesHome'>References</h5>
       <h2 className='subtitlesHome'>Create new experiences by working with us</h2>

@@ -93,6 +93,9 @@ h2 {
 .tablet1000 {
   display: none;
 }
+.onlyForDesktop {
+  display: none;
+}
 
 @media(min-width: 600px){
   .heroImages {
@@ -197,8 +200,12 @@ h2 {
   .notForDesktop {
     display: none;
   }
+  .onlyForDesktop {
+    display: block;
+  }
   .titlesHome {
     margin: 5em 0 1em;
+    font-size: 16px;
   }
   h2 {
     margin: 2rem 0;

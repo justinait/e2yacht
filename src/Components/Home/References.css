@@ -5,6 +5,10 @@
     border-radius: 15.27px;
     flex: 0 0 50vw;
 }
+.referencesHomeContainer {
+    margin: 40px 0;
+}
+
 .referenceCardName {
     color: var(--color-blue);
     font-weight: 600;
@@ -50,5 +54,24 @@
     .referenceCard {
         max-width: unset;
         padding: 40px;
+    }
+}
+
+@media(min-width:1200px){
+    .referenceCard {
+        flex: 0 0 19vw;
+        height: fit-content;
+        padding: 30px;
+    }
+    .firstReview {
+        margin-left: 7vw;
+    }
+    .referenceCardName {
+        font-size: var(--fontSize-18px);
+        font-weight: 700;
+    }
+    .referenceCardText {
+        font-size: var(--fontSize-16px);
+        color: rgba(0, 0, 0, 0.8);
     }
 }

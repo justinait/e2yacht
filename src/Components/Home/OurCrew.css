@@ -8,3 +8,31 @@
     display: block;
     margin: 1em 0;
 }
+.ourCrewHomeText {
+    display: none;
+}
+
+@media(min-width:1200px){
+    .ourCrewHomeText{
+        display: block;
+        color: black;
+        font-size: clamp(14.5px, 1.23vw, 16px)
+    }
+    .ourCrewImageHome {
+        width: 50%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .ourCrewHomeContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+    .ourCrewFirstDiv {
+        width: 45%;
+    }
+    .ourCrewFirstDiv .titlesHome {
+        margin-top: 0;
+    }
+}

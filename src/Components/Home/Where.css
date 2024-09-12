@@ -1,3 +1,12 @@
 .whereHomeContainer {
     margin: 40px 0;
 }
+@media(min-width:1200px){
+    .whereHomeContainer {
+        padding: 0 !important;
+        margin: 0px 2%;
+    }
+    .whereHomeTitles {
+        padding: 0px 6% 0%;
+    }
+}
