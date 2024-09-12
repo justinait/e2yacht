@@ -80,3 +80,8 @@
         flex: 0 0 17vw;
     }
 }
+@media(min-width:1800px){
+    .referenceCard {
+        flex: 0 0 15vw;
+    }
+}

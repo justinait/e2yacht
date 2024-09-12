@@ -129,3 +129,8 @@
         font-weight: 300;
     }
 }
+@media(min-width:1800px){
+    .logoNavbar {
+        width: 195px;
+    }
+}

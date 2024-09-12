@@ -16,3 +16,8 @@
         border-radius: 15px;
     }   
 }
+@media(min-width:1800px){
+    .mapContainer{
+        height: 550px;
+    }   
+}

@@ -27,12 +27,16 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-
     }
     .ourCrewFirstDiv {
         width: 46%;
     }
     .ourCrewFirstDiv .titlesHome {
         margin-top: 0;
+    }
+}
+@media(min-width:1800px){
+    .ourCrewHomeText{
+        font-size: var(--fontSize-16px)
     }
 }

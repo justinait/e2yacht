@@ -130,3 +130,9 @@ a {
         width: 9vw;
     }
 }
+@media(min-width:1800px){
+    
+    h1 {
+        font-size: 56px;
+    }
+}

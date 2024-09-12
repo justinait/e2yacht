@@ -97,3 +97,12 @@
         width: 31%;
     }
 }
+@media(min-width:1800px) {
+    .homeServiceName {
+        font-size: var(--fontSize-16px);
+    }
+    .homeServiceText {
+        font-size: clamp(12.5px, 1.1vw, 17px);
+        height: 110px;
+    }
+}

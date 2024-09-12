@@ -223,3 +223,18 @@ h2 {
     margin: 1.5rem 0;
   }
 }
+
+@media(min-width: 1800px){
+  
+  :root {
+    --fontSize-30px: 55px;
+    --fontSize-20px: 24px;
+    --fontSize-18px: 21px;
+    --fontSize-16px: 19px;
+    --fontSize-14px: 17px;
+
+    --fontSize-12px-services: 13px;
+    --fontSize-12px: 15px;
+    --fontSize-10px: 12px;
+  }
+}
