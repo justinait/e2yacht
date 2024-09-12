@@ -179,22 +179,28 @@ h2 {
 }
 @media (min-width: 1200px) {
   .heroImages {
-    padding: 9% 8% 6%;
+    padding: 8% 8% 5%;
     border-radius: 20px;
   }
 
   :root {
-    --fontSize-30px: clamp(40px, 7vw, 50px);
+    --fontSize-30px: clamp(40px, 3vw, 50px);
     --fontSize-20px: clamp(18.5px, 5vw, 22px);
-    --fontSize-18px: clamp(16px, 4.3vw, 19px);
+    --fontSize-18px: clamp(16px, 1.4vw, 19px);
     --fontSize-16px: clamp(16px, 1.3vw, 17px);
-    --fontSize-14px: clamp(14px, 1.2vw, 16px);
+    --fontSize-14px: clamp(14px, 1.1vw, 16px);
 
-    --fontSize-12px-services: clamp(12.5px, 2.2vw, 15px);
+    --fontSize-12px-services: clamp(12.5px, 1vw, 15px);
     --fontSize-12px: clamp(15px, 2vw, 21px);
     --fontSize-10px: clamp(12px, 1.5vw, 14px);
   }
   .notForDesktop {
     display: none;
+  }
+  .titlesHome {
+    margin: 5em 0 1em;
+  }
+  h2 {
+    margin: 2rem 0;
   }
 }

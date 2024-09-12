@@ -10,6 +10,10 @@
     box-shadow: 0.3px 0.3px 4.11px 0px #e9eaeb;
 
 }
+
+.homeServiceText {
+    display: none;
+}
 .servicesCardHome img {
     border-radius: 10.5px 10.5px 0 0;
     width: 100%;
@@ -51,5 +55,29 @@
     }
     .servicesCardHome {
         border-radius: 20px;
+    }
+}
+@media(min-width:1200px) {
+    .homeServiceName {
+        height: unset;
+        margin: 0.7em auto;
+        font-size: var(--fontSize-12px-services);
+    }
+    .servicesCardHome img {
+        border-radius: 20px 20px 0 0;
+    }
+    .servicesCardHome {
+        border-radius: 18px;
+        width: 30%;
+        margin-bottom: 45px;
+    }
+    .homeServiceText {
+        display: block;
+        width: 90%;
+        margin: auto;
+        color: #000B1B;
+        height: 83px;
+        font-size: var(--fontSize-12px-services);
+        text-transform: capitalize;
     }
 }
