@@ -210,6 +210,9 @@ h2 {
   h2 {
     margin: 2rem 0;
   }
+  .homeContainers {
+    padding: 0px 9.8% 3%;
+  }
 }
 
 @media(min-width:1400px){
