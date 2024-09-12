@@ -193,7 +193,7 @@ h2 {
     --fontSize-16px: clamp(16px, 1.3vw, 17px);
     --fontSize-14px: clamp(14px, 1.1vw, 15px);
 
-    --fontSize-12px-services: clamp(12.5px, 1vw, 15px);
+    --fontSize-12px-services: clamp(12.5px, 1vw, 16px);
     --fontSize-12px: clamp(15px, 2vw, 21px);
     --fontSize-10px: clamp(12px, 1.5vw, 14px);
   }
@@ -209,5 +209,14 @@ h2 {
   }
   h2 {
     margin: 2rem 0;
+  }
+}
+
+@media(min-width:1400px){
+  .titlesHome {
+    margin: 6em 0 1em;
+  }
+  h2 {
+    margin: 1.5rem 0;
   }
 }

@@ -82,3 +82,21 @@
         text-transform: capitalize;
     }
 }
+
+@media(min-width:1400px) {
+    .homeServiceName {
+        width: 89%;
+        margin: 0.9em auto 0.6em;
+    }
+    .homeServiceText {
+        width: 89%;
+        height: 100px;
+        font-size: clamp(12.5px, 1.03vw, 16px);
+    }
+    .servicesCardHome {
+        width: 31%;
+    }
+    .ourCrewFirstDiv {
+        width: 42%;
+    }
+}
