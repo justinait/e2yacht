@@ -75,6 +75,9 @@ a {
     .separator {
         width: 10%;
     }
+    h1 {
+      font-size: clamp(40px, 6.8vw, 52px);
+    }
 }
 @media (min-width:1000px){
     .heroHome {
@@ -91,4 +94,30 @@ a {
         margin-top: 1rem;
         border-radius: 8px;
     }
+}
+@media (min-width: 1200px) {
+    .heroHome {
+        margin: 0px 2%;
+        background-image: url('/public/images/heroPc.jpg');
+    }
+    .heroSubtitle {
+        width: 50%;
+        margin: 2rem 0;
+    }
+    h1 {
+      font-size: clamp(40px, 6.8vw, 50px);
+    }
+    .heroDescription {
+        font-weight: 200;
+    }
+
+    .separator {
+        width: 6%;
+    }
+    .button {
+        width: 10vw;
+        padding: 18px;
+        border-radius: 5px;
+    }
+
 }

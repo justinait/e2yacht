@@ -93,6 +93,7 @@ h2 {
 .tablet1000 {
   display: none;
 }
+
 @media(min-width: 600px){
   .heroImages {
     padding: 7.2% 7.2% 0;
@@ -108,9 +109,6 @@ h2 {
     font-size: var(--fontSize-30px);
     margin: 1.5rem 0;
     margin: 2rem 0;
-  }
-  h1 {
-    font-size: clamp(40px, 6.8vw, 52px);
   }
   :root {
     --fontSize-30px: clamp(40px, 7.2vw, 56px);
@@ -177,5 +175,26 @@ h2 {
   }
   .ourServicesTitleDiv {
     width: 18vw;
+  }
+}
+@media (min-width: 1200px) {
+  .heroImages {
+    padding: 9% 8% 6%;
+    border-radius: 20px;
+  }
+
+  :root {
+    --fontSize-30px: clamp(40px, 7vw, 50px);
+    --fontSize-20px: clamp(18.5px, 5vw, 22px);
+    --fontSize-18px: clamp(16px, 4.3vw, 19px);
+    --fontSize-16px: clamp(16px, 1.3vw, 17px);
+    --fontSize-14px: clamp(14px, 1.2vw, 16px);
+
+    --fontSize-12px-services: clamp(12.5px, 2.2vw, 15px);
+    --fontSize-12px: clamp(15px, 2vw, 21px);
+    --fontSize-10px: clamp(12px, 1.5vw, 14px);
+  }
+  .notForDesktop {
+    display: none;
   }
 }
