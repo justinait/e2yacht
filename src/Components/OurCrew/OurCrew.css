@@ -133,4 +133,19 @@
     .ourCrewSectionFirstDiv .ourCrewH2 {
         margin-top: 0;
     }
+    .cardCrew {
+        width: 31%;
+        margin: 1%;
+    }
+    .cardCrew img {
+        height: unset;
+        border-radius: 20px 20px 0 0;
+        aspect-ratio: 4 / 3 !important;
+    }
+    /* .crewContainerCenter {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
 }

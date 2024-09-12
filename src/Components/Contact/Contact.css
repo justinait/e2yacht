@@ -211,3 +211,44 @@
         width: 30% !important;
     }
 }
+
+@media(min-width:1200px){
+    .contactHero {
+        background-size: cover;
+        background-position: center -200px;
+        min-height: 24vh !important;
+        text-align: center;
+        padding: 4% 8% 5% !important;
+    } 
+    .contactHeroP {
+        font-size: var(--fontSize-18px);
+    }
+    .cardContactDiv {
+        width: 19%;
+        height: 15vw;
+        margin: 15px;
+        margin-top: 0;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .cardsContactContainer {
+        justify-content: center;
+        position: relative;
+        top: -30px;
+        padding: 0;
+        z-index: 100;
+    }
+    .cardContactText {
+        font-size: var(--fontSize-14px);
+    }
+    .contactIcon {
+        width: 27px;
+    }    
+    .contactIconLocation {
+        width: 21px;
+    }
+    .cardContactDiv h5 {
+        font-size: var(--fontSize-18px);
+    }
+}

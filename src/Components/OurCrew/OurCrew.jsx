@@ -19,7 +19,7 @@ function OurCrew() {
         <h3>Our Crew</h3>
       </div>
 
-      <div className='homeContainers'>
+      <div className='homeContainers crewContainerCenter'>
         <div className='ourCrewSectionFirstDiv'>
           <div className='ourCrewInformation'>
             <h2 className='subtitlesHome ourCrewH2'>The benefits of a full time crew without the expense yacht management, delivery and staffing.</h2>
