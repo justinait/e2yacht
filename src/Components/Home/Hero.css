@@ -101,7 +101,6 @@ a {
         background-image: url('/public/images/heroPc.jpg');
     }
     .heroSubtitle {
-        width: 50%;
         margin: 2rem 0;
     }
     h1 {
@@ -120,5 +119,14 @@ a {
         padding: 15px;
         border-radius: 5px;
     }
+    .heroDescription strong {
+        font-weight: 500;
+    }
 
+}
+
+@media(min-width:1400px){
+    .button {
+        width: 9vw;
+    }
 }

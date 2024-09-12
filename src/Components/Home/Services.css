@@ -65,6 +65,7 @@
     }
     .servicesCardHome img {
         border-radius: 20px 20px 0 0;
+        aspect-ratio: 16 / 10 !important;
     }
     .servicesCardHome {
         border-radius: 18px;
