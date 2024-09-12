@@ -50,7 +50,7 @@ body {
   font-family: "utile-display", sans-serif;
 }
 
-.homeContainers {
+.homeContainers, .otherSectionsContainers {
   padding: 0 20.73px;
   padding: 0px 4.8% 3%;
 }
@@ -105,7 +105,7 @@ h2 {
     font-size: 15px;
   }
 
-  .homeContainers {
+  .homeContainers, .otherSectionsContainers {
     padding: 0px 6% 3%;
   }
   h2 {
@@ -157,7 +157,7 @@ h2 {
     --fontSize-10px: clamp(12px, 1.5vw, 14px);
   }
   
-  .homeContainers {
+  .homeContainers, .otherSectionsContainers {
     padding: 0px 8% 3%;
   }
   .heroImages {
@@ -184,6 +184,7 @@ h2 {
   .heroImages {
     padding: 8% 8% 5%;
     border-radius: 20px;
+    margin: 0px 2%;
   }
 
   :root {
@@ -212,6 +213,9 @@ h2 {
   }
   .homeContainers {
     padding: 0px 9.8% 3%;
+  }
+  .otherSectionsContainers {
+    padding: 0;
   }
 }
 

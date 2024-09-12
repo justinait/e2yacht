@@ -106,7 +106,7 @@ function Contact() {
         </form>
       </div>
 
-      <div className='homeContainers ourCrewHomeContainer'>
+      <div className='otherSectionsContainers ourCrewHomeContainer'>
         <h5 className='titlesHome'>WHERE WE ARE</h5>
         <h2 className='subtitlesHome'>Visit us</h2>
 

@@ -111,3 +111,26 @@
         margin-top: 3rem;
     }
 }
+@media(min-width:1200px){
+    .ourCrewSectionFirstDiv {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;        
+        margin: 5em 0;
+    }
+    .ourCrewBrujula {
+        width: 50%;
+        margin: 0 !important;
+        height: 450px !important;
+    }
+    .ourCrewInformation {
+        width: 46%;
+    }
+    .descriptionCrew {
+        font-size: clamp(14.5px, 1.23vw, 16px);
+    }
+    .ourCrewSectionFirstDiv .ourCrewH2 {
+        margin-top: 0;
+    }
+}
