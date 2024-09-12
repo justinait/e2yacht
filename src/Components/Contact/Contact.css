@@ -251,4 +251,13 @@
     .cardContactDiv h5 {
         font-size: var(--fontSize-18px);
     }
+    .contactFormBigContainer {
+        width: 60%;
+        margin: auto;
+        display: flex;
+    }
+    .contactBigSubtitle {
+        width: 42%;
+        font-size: clamp(40px, 3vw, 48px);
+    }
 }
