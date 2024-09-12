@@ -108,7 +108,7 @@ function Navbar() {
               <div className={selectedCategory === e.id ? 'dropdownItems activeNavbar' : 'dropdownItems'}>
                 {e.name}
                 {e.image && 
-                  (!dropdown ? <img src={e.image} alt="Arrow" /> : <img src={e.image2} alt="Arrow" />)
+                  (!dropdown ? <img src={e.image} alt="Arrow" className='arrowNavbar' /> : <img src={e.image2} alt="Arrow"  className='arrowNavbar'/>)
                   
                 }
               </div>

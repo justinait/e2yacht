@@ -97,3 +97,35 @@
         padding: 0 8.3%;
     }
 }
+
+@media (min-width: 1000px) {
+    .logoNavbar {
+        width: 187px;
+    }
+    .arrowNavbar {
+        display: none;
+    }
+    .burgerMenuIcon {
+        display: none;
+    }
+    .navbar {
+        height: 122px;
+        padding: 0 9.86%;
+    }
+    .dropdownItemsContainer {
+        flex-direction: row;
+    }
+    .navbarContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .dropdownHeader {
+        height: unset;
+    }
+    .dropdownItems {
+        padding: 0 20px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
