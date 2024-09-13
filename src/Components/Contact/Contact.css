@@ -253,11 +253,23 @@
     }
     .contactFormBigContainer {
         width: 60%;
-        margin: auto;
+        margin: 40px auto;
         display: flex;
+        justify-content: space-around;
     }
     .contactBigSubtitle {
         width: 42%;
         font-size: clamp(40px, 3vw, 48px);
+        margin: 0;
+    }
+    .contactForm {
+        width: 50%;
+    }
+    .inputContact {
+        padding: 8px 16px;
+        border-radius: 5px;
+    }
+    .formButton {
+        width: 45% !important;
     }
 }

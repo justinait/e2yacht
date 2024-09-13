@@ -3,6 +3,7 @@ import './Contact.css'
 import location from '/icons/location.png'
 import phone from '/icons/telefono.png'
 import mail from '/icons/Correo.png'
+import Maps from '../Maps/Maps'
 
 function Contact() {
   const [name, setName] = useState('');
@@ -56,7 +57,7 @@ function Contact() {
       <div className='contactFormBigContainer'>
         <h2 className='contactBigSubtitle'>We’d love to hear from you</h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='contactForm'>
           <div className='inputContainer'>
             <label htmlFor="name" className={`floatingLabel ${name && 'floatingLabelActive'}`}>Name*</label>
             <input 
@@ -106,11 +107,11 @@ function Contact() {
         </form>
       </div>
 
-      <div className='otherSectionsContainers ourCrewHomeContainer'>
+      <div className=' homeContainers'>
         <h5 className='titlesHome'>WHERE WE ARE</h5>
         <h2 className='subtitlesHome'>Visit us</h2>
 
-        {/* <img src={} alt="" className='ourCrewImageHome'/> */}
+        <Maps />
         
       </div>
     </div>
