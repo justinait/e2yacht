@@ -187,3 +187,9 @@ li a {
         font-size: var(--fontSize-12px-services);
     }
 }
+@media(min-width:1200px) {
+    .servicesTitles {
+        
+        margin: 2em 0 !important;
+    }
+}
