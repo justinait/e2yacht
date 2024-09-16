@@ -185,6 +185,7 @@ h2 {
     padding: 8% 8% 5%;
     border-radius: 20px;
     margin: 0px 2%;
+    min-height: 39vh;
   }
 
   :root {
