@@ -211,7 +211,7 @@ h2 {
   h2 {
     margin: 2rem 0;
   }
-  .homeContainers {
+  .homeContainers, .crewContainerCenter {
     padding: 0px 9.8% 3%;
   }
   .otherSectionsContainers {
