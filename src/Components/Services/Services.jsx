@@ -16,8 +16,8 @@ function MarineSurvey() {
         { id:'MTCdSa4CoLGEDifffliX', url: 'deliveries' },
         { id:'fSm9K9jTJrhQMIm9EQi9', url: 'captainandcrew' },
         { id:'gKZZCIdSLCvrLvluErtn', url: 'marinesurvey' },
-        { id:'lBfaNohObxnyr8mDu7uF', url: 'management' }
-        // maritimerecovery
+        { id:'lBfaNohObxnyr8mDu7uF', url: 'management' },
+        { id:'NaXg0p4djLdC7BXcRj6Q', url: 'maritimerecovery' }
     ]
 
     const openPDF = () => {
