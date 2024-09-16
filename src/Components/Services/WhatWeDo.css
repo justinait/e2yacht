@@ -1,6 +1,5 @@
 .whatHero {
     background-image: url('/public/images/whatWeDoHero.jpg');
-    
     background-size: cover;
     background-position: -90px top;
     background-position: 59%;
@@ -11,7 +10,6 @@
     font-size: var(--fontSize-12px-services);
     padding-bottom: 5px;
     font-weight: 400;
-    
 }
 
 .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {

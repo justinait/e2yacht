@@ -14,6 +14,7 @@ import MarineSurvey from './Components/Services/MarineSurvey';
 import CaptainAndCrewServices from './Components/Services/CaptainAndCrewServices';
 import MaritimeRecovery from './Components/Services/MaritimeRecovery';
 import '@fontsource-variable/libre-franklin/wght-italic.css';
+import Services from './Components/Services/Services';
 
 function App() {
 
@@ -26,13 +27,17 @@ function App() {
         <Route path='/' element={< Home />} />
         <Route path='/crew' element={< OurCrew />} />
         <Route path='/contact' element={< Contact />} />
+
+        <Route path='/:serviceId' element={< Services />} />
+
+        {/*
         <Route path='/whatwedo' element={< WhatWeDo />} />
         <Route path='/management' element={< Management />} />
         <Route path='/deliveries' element={< Deliveries />} />
         <Route path='/instruction' element={< Instruction />} />
         <Route path='/marinesurvey' element={< MarineSurvey />} />
         <Route path='/captainandcrew' element={< CaptainAndCrewServices />} />
-        <Route path='/maritimerecovery' element={< MaritimeRecovery />} />
+        <Route path='/maritimerecovery' element={< MaritimeRecovery />} /> */}
         
       </Routes>
       

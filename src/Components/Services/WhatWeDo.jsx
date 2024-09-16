@@ -30,6 +30,12 @@ function WhatWeDo() {
             <li>Complete <Link to='/management'>yacht and project management.</Link></li>
             <li>Hands-on, <Link to='/instruction'>personal training and instruction.</Link> </li>
           </ul>
+          {/* 
+          <ul>
+            {data.map((item, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: item.content }} />
+            ))}
+          </ul> */}
         </div>
       </div>
     </div>

@@ -1,0 +1,169 @@
+import React, { useEffect, useState } from 'react'
+import menu from '/icons/servicesMenu.png'
+import db from '../../../firebaseConfig';
+import { useParams } from 'react-router-dom';
+import { doc, getDoc } from 'firebase/firestore';
+
+function MarineSurvey() {
+
+    const [open, setOpen] = useState(false);
+    const [service, setService] = useState([]);
+    const [serviceOpen, setServiceOpen] = useState('')
+    
+    const idsDb = [
+        { id:'4FhrJKKewjFt9nqAHBbo', url: 'whatwedo' },
+        { id:'8LTZWLq9gcpA4wN9j709', url: 'instruction' },
+        { id:'MTCdSa4CoLGEDifffliX', url: 'deliveries' },
+        { id:'fSm9K9jTJrhQMIm9EQi9', url: 'captainandcrew' },
+        { id:'gKZZCIdSLCvrLvluErtn', url: 'marinesurvey' },
+        { id:'lBfaNohObxnyr8mDu7uF', url: 'management' }
+        // maritimerecovery
+    ]
+
+    const openPDF = () => {
+        const pdfPath = '/SAMS.pdf';
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const faqs = [
+        { 
+        question: 'How long does a survey take?', 
+        text: 'I recommend that you be there to open any locks and give me permission to board and inspect. The survey can run anywhere from 2 to 10 hours depending on the size of the vessel and 2 to 8 hours in the office to thoroughly prepare the survey report. Larger yachts and commercial vessels may take me 2-3 days to conduct a thorough physical survey.', 
+        className: ''
+        },
+        { 
+        question: 'Can I be present at the time of the survey?', 
+        text: 'I welcome all clients to be present, and I have no problem explaining as I conduct the survey.', 
+        className: '' 
+        },
+        { 
+        question: 'How does one prepare the boat for a marine survey?', 
+        text: 'The boat must be plugged into shore power, all batteries hooked up, charged and installed. All manuals, maintenance log, receipts, registration, USCG Documentation Papers, and a copy of the previous survey must be onboard. If a sailboat, masts and spars must be moved to ground level. Additionally, Please provide the Buyer / Owner/ Brokers\'s Name, Mailing and E-mail address, Phone Number as well as the Make and Model of Vessel, HIN (Hull Identification Number), specific location of vessel and mast if un-stepped, and notes pertaining to access of the vessel. <br/><br/> IMPORTANT: Prior to any survey please ensure the vessel is clean and clear of any personal effects, gear, oil / water in bilge, furniture or other items which might block access or vision. The vessel will be surveyed as found, and only to the extent of what can be seen, what is accessible and what is limited.', 
+        className: '' 
+        },
+        { 
+        question: 'Fiberglass hulls can blister, why are they still better than wood, steel or aluminum?', 
+        text: 'The basic facts of life, physics, and chemistry are that Steel, Aluminum and Wood all require constant maintenance, which, if neglected would have far more severe effects on structural integrity over a shorter time period. A fiberglass boat will likely withstand prolonged neglect without the hull being weakened. Ingress of moisture (which can lead to blistering) occurs over years and in the end, might not even result in the formation of a blister (or chemical change in properties of the GRP matrix).', 
+        className: 'bigServicesText biggerLetter' 
+        }
+    ];
+
+    const handleOpen = (e) => {
+        setOpen(true);
+        setServiceOpen(e.question);
+    }
+    const handleClose =(e)=>{
+        setOpen(false)
+        setServiceOpen('')
+    }
+    const { serviceId } = useParams();
+
+    const findId = idsDb.find(e => e.url === serviceId);
+
+    const getService = async () => {
+        if (findId) {
+            const docRef = doc(db, 'services', findId.id); // Aquí accedes directamente al id
+            const docSnapshot = await getDoc(docRef);
+        
+            let serviceData = docSnapshot.data();
+            serviceData.url = docSnapshot.id;
+            
+            console.log(findId.url);
+            return serviceData;
+          } else {
+            console.error('findId no encontrado');
+            return null;
+          }
+          
+    }
+  
+  useEffect(() => {
+    
+    getService()
+    .then(res => {
+      if (res) {
+        setService(res);
+      }
+    });
+          
+  }, [serviceId])
+  const { name, firstText, image, secondText, ul } = service;
+
+
+  return (
+    <div>
+      <div className='homeContainers'>
+        <div className='marineSurveyHero heroImages'>
+          <br />
+          <h3>{name}</h3>
+        </div>
+
+        <div className='ourServicesTitleDiv'>
+          <img src={menu} alt="" className='menuServices' />
+          <h5 className='titlesHome servicesTitles'>Our Services</h5>
+        </div>
+
+        <div className='managementTextContainer'>
+            <p>{firstText}</p>
+            <ul>
+                {
+                    ul?.map(e => (
+                        <li>{e}</li>
+                    ))
+                }
+            </ul>
+
+            <p>{secondText}          </p>
+            
+            {
+                findId.url == 'marinesurvey' &&
+                <div>
+                    <p className='managementh5 faqsTitle'>Frequently Asked Questions:</p>
+                    <div className='servicesItemsContainer'>
+                    {
+                        faqs.map((e, i)=> {
+                        return (
+                            <div className='serviceItem' key={i}>
+
+                                <div className='serviceItemName'>
+                                    <p className='servicesItemTitle'>{e.question}</p>
+                                    {(open && serviceOpen == e.question) ?
+                                    <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
+                                    <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
+                                    }
+                                </div>
+                                {
+                                    (open && serviceOpen == e.question) &&
+                                    <div className='serviceOpenContainer'>
+                                    <p dangerouslySetInnerHTML={{ __html: e.text }} className={`servicesText ${e.className}`}></p>
+                                    </div>
+                                }
+                            </div>
+                        )
+                        })
+                    }
+
+                    </div>
+                </div>
+            }
+
+            <div>
+                <p> <strong>Other documents:</strong></p>
+                <ul>
+                <li onClick={openPDF} style={{cursor: 'pointer'}}>
+                    Certificate from SAMS
+                </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default MarineSurvey
