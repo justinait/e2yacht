@@ -99,6 +99,8 @@ a {
     .heroHome {
         margin: 0px 2%;
         background-image: url('/public/images/heroPc.jpg');
+        background-size: 100%;
+        background-position: center;
     }
     .heroSubtitle {
         margin: 2rem 0;

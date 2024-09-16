@@ -112,6 +112,9 @@
     }
 }
 @media(min-width:1200px){
+    .ourCrewHero {
+        background-size: 100%;
+    }
     .ourCrewSectionFirstDiv {
         display: flex;
         flex-direction: row-reverse;
