@@ -1,14 +1,18 @@
-.whatHero {
+.whatwedoHero, .managementHero {
     background-image: url('/public/images/whatWeDoHero.jpg');
     background-size: cover;
     background-position: -90px top;
     background-position: 59%;
 }
-.whatWeDoTextContainer {
+
+.managementTextContainer {
     color: #000B1B;
-    text-transform: capitalize;
     font-size: var(--fontSize-12px-services);
     padding-bottom: 5px;
+    font-weight: 300;
+}
+.whatWeDoTextContainer {
+    text-transform: capitalize;
     font-weight: 400;
 }
 
@@ -22,16 +26,6 @@ li a {
     color: var(--color-lightBlue);
 }
 
-.managementTextContainer {
-    color: #000B1B;
-    font-size: var(--fontSize-12px-services);
-    padding-bottom: 5px;
-    font-weight: 300;
-}
-
-li a {
-    color: var(--color-lightBlue);
-}
 .separatorManagement {
     width: 100%;
     border-top: 1px black solid;
@@ -51,7 +45,6 @@ li a {
     padding: 2px 0;
 }
 .olManagement {
-    
     margin-top: 0.5em;
 }
 .boatsWeManage {
@@ -70,18 +63,17 @@ li a {
     background-position: center;
     background-image: url('/public/images/instructionHero.jpg');  
 }
-.marineSurveyHero  {
+.marinesurveyHero  {
     background-image: url('/public/images/marineSurveyHero.jpg');  
     background-size: cover;
     background-position: top;
 }
-.captainAndCrewHero {
+.captainandcrewHero {
     background-image: url('/public/images/captainAndCrewServices.jpg');  
     background-size: cover;
     background-position: top;
 }
-.maritimeAssetHero{
-    
+.maritimerecoveryHero{
     background-image: url('/public/images/maritimeRecovery.jpg');  
     background-size: cover;
     background-position: center;

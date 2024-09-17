@@ -4,7 +4,7 @@ import db from '../../../firebaseConfig';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 
-function MarineSurvey() {
+function Services() {
 
     const [open, setOpen] = useState(false);
     const [service, setService] = useState([]);
@@ -67,7 +67,7 @@ function MarineSurvey() {
 
     const getService = async () => {
         if (findId) {
-            const docRef = doc(db, 'services', findId.id); // Aquí accedes directamente al id
+            const docRef = doc(db, 'services', findId.id);
             const docSnapshot = await getDoc(docRef);
         
             let serviceData = docSnapshot.data();
@@ -92,73 +92,134 @@ function MarineSurvey() {
     });
           
   }, [serviceId])
-  const { name, firstText, image, secondText, ul } = service;
+  const { name, firstText, secondText, ul, extras } = service;
 
 
   return (
     <div>
-      <div className='homeContainers'>
-        <div className='marineSurveyHero heroImages'>
+      <div className='otherContainers'>
+
+        <div  className={`heroImages ${findId.url}Hero`}>
           <br />
           <h3>{name}</h3>
         </div>
 
-        <div className='ourServicesTitleDiv'>
-          <img src={menu} alt="" className='menuServices' />
-          <h5 className='titlesHome servicesTitles'>Our Services</h5>
-        </div>
+        <div className='homeContainers'>
 
-        <div className='managementTextContainer'>
-            <p>{firstText}</p>
-            <ul>
+            <div className='ourServicesTitleDiv'>
+                <img src={menu} alt="" className='menuServices' />
+                <h5 className='titlesHome servicesTitles'>Our Services</h5>
+            </div>
+
+            <div className='whatWeDoTextContainer managementTextContainer'>
+                <p>{firstText}</p>
+                
                 {
-                    ul?.map(e => (
-                        <li>{e}</li>
-                    ))
+                    service.subtitle && (
+                        <p className='`${name}=`managementh5'> {service.subtitle} </p>
+                    )
                 }
-            </ul>
 
-            <p>{secondText}          </p>
-            
-            {
-                findId.url == 'marinesurvey' &&
-                <div>
-                    <p className='managementh5 faqsTitle'>Frequently Asked Questions:</p>
-                    <div className='servicesItemsContainer'>
-                    {
-                        faqs.map((e, i)=> {
-                        return (
-                            <div className='serviceItem' key={i}>
-
-                                <div className='serviceItemName'>
-                                    <p className='servicesItemTitle'>{e.question}</p>
-                                    {(open && serviceOpen == e.question) ?
-                                    <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
-                                    <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
-                                    }
-                                </div>
-                                {
-                                    (open && serviceOpen == e.question) &&
-                                    <div className='serviceOpenContainer'>
-                                    <p dangerouslySetInnerHTML={{ __html: e.text }} className={`servicesText ${e.className}`}></p>
-                                    </div>
-                                }
-                            </div>
-                        )
-                        })
-                    }
-
-                    </div>
-                </div>
-            }
-
-            <div>
-                <p> <strong>Other documents:</strong></p>
                 <ul>
-                <li onClick={openPDF} style={{cursor: 'pointer'}}>
-                    Certificate from SAMS
-                </li>
+                    {
+                    ul?.map(e => (
+                        <li dangerouslySetInnerHTML={{ __html: e }}></li>
+                    ))
+                    }
                 </ul>
+
+                <p>{secondText}</p>
+                
+                {service.ul2 &&
+                <ul>
+                    {
+                    service.ul2?.map(e => (
+                        <li dangerouslySetInnerHTML={{ __html: e }}></li>
+                    ))
+                    }
+                </ul>
+                }
+                
+                {service.thirdText &&
+                    <p>{service.thirdText}</p>
+                }
+
+                {/* marine survey */}
+                {
+                    findId.url == 'marinesurvey' &&
+                    <>
+                        <div>
+                            <p className='managementh5 faqsTitle'>Frequently Asked Questions:</p>
+                            <div className='servicesItemsContainer'>
+                            {
+                                faqs.map((e, i)=> {
+                                return (
+                                    <div className='serviceItem' key={i}>
+
+                                        <div className='serviceItemName'>
+                                            <p className='servicesItemTitle'>{e.question}</p>
+                                            {(open && serviceOpen == e.question) ?
+                                            <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
+                                            <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
+                                            }
+                                        </div>
+                                        {
+                                            (open && serviceOpen == e.question) &&
+                                            <div className='serviceOpenContainer'>
+                                            <p dangerouslySetInnerHTML={{ __html: e.text }} className={`servicesText ${e.className}`}></p>
+                                            </div>
+                                        }
+                                    </div>
+                                )
+                                })
+                            }
+
+                            </div>
+                        </div>
+                        <div>
+                            <p> <strong>Other documents:</strong></p>
+                            <ul>
+                            <li onClick={openPDF} style={{cursor: 'pointer'}}>
+                                Certificate from SAMS
+                            </li>
+                            </ul>
+                        </div>
+                    </>
+                }
+
+                {/* management */}
+                {
+                    findId.url == 'management' &&
+                    <>
+                        <div className='separatorManagement'></div>
+                        <p className='managementh5'>Yachts under our care</p>
+                        <div className='boatsWeManage'>
+                            <div>
+                                <p className='managementh6'>{extras?.name}</p>
+                                <ol className='olManagement'>
+                                    {
+                                    extras?.ol?.map(e => (
+                                        <li>{e}</li>
+                                    ))
+                                    }
+                                </ol>
+                            </div>
+
+                            <div>
+                                <p className='managementh6'>{extras?.name2}</p>
+                                <ol className='olManagement'>
+                                    {
+                                    extras?.ol2?.map(e => (
+                                        <li>{e}</li>
+                                    ))
+                                    }
+                                </ol>
+                            </div>
+                        
+                        </div>
+                    </>
+                }
+
             </div>
         </div>
       </div>
@@ -166,4 +227,4 @@ function MarineSurvey() {
   )
 }
 
-export default MarineSurvey
+export default Services
