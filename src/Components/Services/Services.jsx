@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import menu from '/icons/servicesMenu.png'
 import db from '../../../firebaseConfig';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import './Services.css'
+import { ServiceContext } from '../context/ServiceContext';
 
 function Services() {
 
     const [open, setOpen] = useState(false);
     const [service, setService] = useState([]);
     const [serviceOpen, setServiceOpen] = useState('')
+    const { setSelectedService, selectedService } = useContext(ServiceContext);
+    const { serviceId } = useParams();
+
     
     const idsDb = [
         { id:'4FhrJKKewjFt9nqAHBbo', url: 'whatwedo' },
@@ -19,6 +23,18 @@ function Services() {
         { id:'gKZZCIdSLCvrLvluErtn', url: 'marinesurvey' },
         { id:'lBfaNohObxnyr8mDu7uF', url: 'management' },
         { id:'NaXg0p4djLdC7BXcRj6Q', url: 'maritimerecovery' }
+    ]
+    
+    const findId = idsDb.find(e => e.url === serviceId);
+
+    const services = [
+        { name: 'What We Do', id: 'whatwedo', className: '' },
+        { name: 'Yacht Management', id: 'management', className: ''},
+        { name: 'Yacht Deliveries', id: 'deliveries', className: ''},
+        { name: 'Private Instructions', id: 'instruction', className: ''},
+        { name: 'Marine Survey', id: 'marinesurvey', className: ''},
+        { name: 'Captain And Crew Services', id: 'captainandcrew', className: '' },
+        { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''}
     ]
 
     const openPDF = () => {
@@ -62,9 +78,6 @@ function Services() {
         setOpen(false)
         setServiceOpen('')
     }
-    const { serviceId } = useParams();
-
-    const findId = idsDb.find(e => e.url === serviceId);
 
     const getService = async () => {
         if (findId) {
@@ -82,21 +95,24 @@ function Services() {
           }
           
     }
-  
-  useEffect(() => {
+    useEffect(() => {
+        setSelectedService(serviceId);
+    }, [serviceId, setSelectedService]);
     
-    getService()
-    .then(res => {
-      if (res) {
-        setService(res);
-      }
-    });
-          
-  }, [serviceId])
-  const { name, firstText, secondText, ul, extras } = service;
+    useEffect(() => {
+        
+        getService()
+        .then(res => {
+        if (res) {
+            setService(res);
+        }
+        });
+            
+    }, [serviceId])
+    const { name, firstText, secondText, ul, extras } = service;
 
 
-  return (
+    return (
     <div className='otherSectionsContainers'>
 
         <div  className={`heroImages ${findId.url}Hero`}>
@@ -109,6 +125,22 @@ function Services() {
             <div className='ourServicesTitleDiv'>
                 <img src={menu} alt="" className='menuServices' />
                 <h5 className='titlesHome servicesTitles'>Our Services</h5>
+            </div>
+            <div className='servicesList'>
+                <div className='ourServicesTitleDivDesktop'>
+                    <img src={menu} alt="" className='menuServices' />
+                    <h5 className='titlesHome servicesTitles'>Services</h5>
+                </div>
+                {services.map((service, index) => (
+                    <Link
+                      key={index}
+                      to={`/${service.id}`}
+                      onClick={() => handleServiceClick(service.id)}
+                      className={selectedService === service.id ? 'dropdownItems serviceDropdownItems activeNavbar' : 'dropdownItems serviceDropdownItems'}
+                    >
+                      {service.name}
+                    </Link>
+                ))}
             </div>
 
             <div className={findId.url == 'whatwedo'? 'whatWeDoTextContainer' : 'managementTextContainer'}  >

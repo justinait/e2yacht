@@ -5,6 +5,23 @@
     background-position: 59%;
 }
 
+.ourServicesTitleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    margin-top: 15px;
+}
+.servicesTitles {
+    color: var(--color-blue) !important;    
+    margin: 1em 0;
+}
+
+.menuServices {
+    width: 10px;
+    height: 10px;
+}
+  
 .managementTextContainer {
     color: #000B1B;
     font-size: var(--fontSize-12px-services);
@@ -155,6 +172,9 @@ li a {
     margin-top: 35px;
     margin-bottom: 1.2em;
 }
+.servicesList {
+    display: none;
+}
 
 @media(min-width: 600px){
     .managementh5 {
@@ -170,19 +190,61 @@ li a {
     .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
         padding-left: 20px;
     }
+    
+  .ourServicesTitleDiv{
+    width: 23vw;
+  }
+
+  .servicesTitles {
+    margin: 1em 0;
+  }
+  .menuServices {
+    width: 17px;
+    height: unset;
+  }
+}
+@media (min-width: 700px) {
+  .ourServicesTitleDiv {
+    width: 20vw;
+  }
 }
 @media(min-width:1000px){
     .separatorManagement {
         margin: 2em 0;
     }
     
+  .ourServicesTitleDiv {
+    width: 18vw;
+  }
     .servicesItemTitle, .servicesText {
         font-size: var(--fontSize-12px-services);
     }
 }
 @media(min-width:1200px) {
     .servicesTitles {
-        
         margin: 2em 0 !important;
+    }
+    .otherSectionsContainers .homeContainers {
+        display: flex;
+        padding: 0 14%;
+        justify-content: space-between;
+    }
+    .ourServicesTitleDiv {
+        display: none;
+    }
+    .ourServicesTitleDivDesktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 10vw;
+        margin-top: 15px;
+    }
+    .servicesList {
+        display: block;
+        width: 35%;
+    }
+    
+    .whatWeDoTextContainer {
+        width: 85%;
     }
 }

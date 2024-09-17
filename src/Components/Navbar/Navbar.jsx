@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '/icons/logoNavbar.png'
 import menu from '/icons/burgerMenu.png'
 import CloseIcon from '/icons/closeMenu.png'
 import { Link } from 'react-router-dom';
+import { ServiceContext } from '../context/ServiceContext'
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('')
-  const [selectedService, setSelectedService] = useState('')
+  // const [selectedService, setSelectedService] = useState('')
 
+  const { selectedService, setSelectedService } = useContext(ServiceContext);
   const sections = [
     { name: 'Home', id: '', className: '' },
     { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
