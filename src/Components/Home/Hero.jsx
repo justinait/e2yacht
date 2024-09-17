@@ -20,7 +20,7 @@ function Hero() {
 
       <div className='buttonsHero'>
         <p className='button learnMore' onClick={handleScroll}>Learn More</p>
-        <Link to='/contact' className='button'>Contact us</Link>
+        <Link to='/contact' className='button contactButtonHover'>Contact us</Link>
       </div>
     </div>
   )

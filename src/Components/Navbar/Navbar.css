@@ -29,6 +29,9 @@
     justify-content: space-between;
     font-size: var(--fontSize-16px);
 }
+.dropdownItems:hover {
+    color: var(--color-lightBlue);
+}
 .serviceDropdownItems {
     line-height: 2.3;
     font-weight: 500;

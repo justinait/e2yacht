@@ -16,7 +16,7 @@ function Footer() {
         <img src={logo} alt="E2 yacht services" className='logoFooter' />
         
         <div className='contactFooter'>
-            <p className='button learnMore'>Contact Us</p>
+            <p className='button learnMore contactButtonHover'>Contact Us</p>
             <div className='socialMedia'>
                 <div className='socialMediaCircle'>
                     <img src={linkedin} alt="in" />

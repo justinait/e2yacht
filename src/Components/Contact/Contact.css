@@ -109,10 +109,6 @@
     width: 50% !important;
     font-family: 'Libre Franklin Variable', sans-serif !important;
 }
-.learnMore:hover{
-    color: var(--color-blue);
-    background-color: #fff;
-}
 .floatingLabel {
     position: absolute;
     top: 40%;
