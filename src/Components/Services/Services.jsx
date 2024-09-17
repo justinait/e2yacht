@@ -3,6 +3,7 @@ import menu from '/icons/servicesMenu.png'
 import db from '../../../firebaseConfig';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
+import './WhatWeDo.css'
 
 function Services() {
 
@@ -96,8 +97,7 @@ function Services() {
 
 
   return (
-    <div>
-      <div className='otherContainers'>
+    <div className='otherSectionsContainers'>
 
         <div  className={`heroImages ${findId.url}Hero`}>
           <br />
@@ -225,7 +225,6 @@ function Services() {
 
             </div>
         </div>
-      </div>
     </div>
   )
 }
