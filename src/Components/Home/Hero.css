@@ -41,6 +41,8 @@ h1 {
     text-transform: uppercase;
     width: 27.5vw;
     background: var(--color-lightBlue);
+    background: linear-gradient(to right, var(--color-lightBlue), var(--color-lightBlue)); /* Gradiente en estado normal, aunque es un color sólido */
+    
     color: white;
     padding: 15px 18px;
     border-radius: 5px;
@@ -51,16 +53,16 @@ h1 {
 }
 
 .learnMore {
-    background: white;
+    background: linear-gradient(to right, white, white); 
     color: var(--color-lightBlue);
     margin-top: 0;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out; 
     /* background-size: 200%;  */
 }
 .contactButtonHover {
-    background: var(--color-lightBlue);
+    background: linear-gradient(to right, var(--color-lightBlue), var(--color-lightBlue));
     color: white;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, background-size 0.3s ease-in-out;
     background-size: 200%;
 }
 .learnMore:hover{
