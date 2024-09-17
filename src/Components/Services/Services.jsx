@@ -135,8 +135,7 @@ function Services() {
                     <Link
                       key={index}
                       to={`/${service.id}`}
-                      onClick={() => handleServiceClick(service.id)}
-                      className={selectedService === service.id ? 'dropdownItems serviceDropdownItems activeNavbar' : 'dropdownItems serviceDropdownItems'}
+                      className={selectedService === service.id ? ' serviceListItems activeNavbar' : ' serviceListItems'}
                     >
                       {service.name}
                     </Link>
