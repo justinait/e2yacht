@@ -291,3 +291,9 @@ li a {
 
     }
 }
+@media(min-width:1400px) {
+    .ourServicesTitleDivDesktop {
+        
+        width: 9vw;
+    }
+}
