@@ -3,7 +3,7 @@ import menu from '/icons/servicesMenu.png'
 import db from '../../../firebaseConfig';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
-import './WhatWeDo.css'
+import './Services.css'
 
 function Services() {
 
