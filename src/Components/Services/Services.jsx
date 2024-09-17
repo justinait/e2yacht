@@ -226,7 +226,7 @@ function Services() {
                     findId.url == 'management' &&
                     <>
                         <div className='separatorManagement'></div>
-                        <p className='managementh5'>Yachts under our care</p>
+                        <p className='managementh5 managementh5Bigger'>Yachts under our care</p>
                         <div className='boatsWeManage'>
                             <div>
                                 <p className='managementh6'>{extras?.name}</p>

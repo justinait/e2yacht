@@ -288,12 +288,22 @@ li a {
     }
     .serviceItemName {
         margin: 18px 0;
+    }
+    .managementh5Bigger{
+        font-size: clamp(21px, 1.65vw, 26px);
+    }
+    .managementh6 {
 
+        font-size: clamp(16px, 1.3vw, 19px);
     }
 }
 @media(min-width:1400px) {
     .ourServicesTitleDivDesktop {
-        
-        width: 9vw;
+        width: 8.5vw;
+    }
+}
+@media(min-width:1400px) {
+    .ourServicesTitleDivDesktop {
+        width: 7vw;
     }
 }
