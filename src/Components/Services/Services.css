@@ -103,12 +103,6 @@ li a {
 .serviceItemName p {
     margin: 0;
 }
-.serviceItemTitle {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    padding-left: 3%;
-}
 .serviceItem {
     background: #F5F5F5;
     padding: 0% 4%;
@@ -176,6 +170,9 @@ li a {
     display: none;
 }
 
+.otherSectionsContainers .homeContainers {
+    padding: 0.6%;
+}
 @media(min-width: 600px){
     .managementh5 {
         font-size: clamp(15px, 2.8vw, 18px);
@@ -190,32 +187,34 @@ li a {
     .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {
         padding-left: 20px;
     }
-    
-  .ourServicesTitleDiv{
-    width: 23vw;
-  }
+    .marinesurveyHero {
+        background-position: center -120px;
+    }
+    .ourServicesTitleDiv{
+        width: 23vw;
+    }
 
-  .servicesTitles {
-    margin: 1em 0;
-  }
-  .menuServices {
-    width: 17px;
-    height: unset;
-  }
+    .servicesTitles {
+        margin: 1em 0;
+    }
+    .menuServices {
+        width: 17px;
+        height: unset;
+    }
 }
 @media (min-width: 700px) {
-  .ourServicesTitleDiv {
-    width: 20vw;
-  }
+    .ourServicesTitleDiv {
+        width: 20vw;
+    }
 }
 @media(min-width:1000px){
     .separatorManagement {
         margin: 2em 0;
     }
     
-  .ourServicesTitleDiv {
-    width: 18vw;
-  }
+    .ourServicesTitleDiv {
+        width: 18vw;
+    }
     .servicesItemTitle, .servicesText {
         font-size: var(--fontSize-12px-services);
     }
@@ -242,6 +241,7 @@ li a {
     .servicesList {
         display: block;
         width: 35%;
+        margin-bottom: 30px;
     }
     
     .whatWeDoTextContainer, .managementTextContainer {
@@ -251,7 +251,6 @@ li a {
         line-height: 1.3;
     }
     .serviceListItems {
-        
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         line-height: 2.3;
         font-weight: 200;
@@ -267,5 +266,28 @@ li a {
     }
     .whatWeDoTextContainer li {
         padding: 12px 0;
+    }    
+    .separatorManagement {
+        margin: 4em 0;
+    }
+    .instructionHero {
+        background-position: center 60%;
+    }
+    .marinesurveyHero {
+        background-position: center;
+    }
+    .faqsTitle {
+        font-size: clamp(26px, 1.8vw, 35px);
+        color: #073460;
+    }
+    .servicesItemTitle, .servicesText {
+        font-size: var(--fontSize-16px);
+    }
+    .serviceOpenContainer {
+        padding: 18px 0;
+    }
+    .serviceItemName {
+        margin: 18px 0;
+
     }
 }
