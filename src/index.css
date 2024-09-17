@@ -207,4 +207,7 @@ h2 {
     --fontSize-12px: 15px;
     --fontSize-10px: 12px;
   }
+  .heroImages {
+    min-height: 42vh;
+  }
 }
