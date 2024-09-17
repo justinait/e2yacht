@@ -14,6 +14,9 @@
 .whatWeDoTextContainer {
     text-transform: capitalize;
     font-weight: 400;
+    color: #000B1B;
+    padding-bottom: 5px;
+    font-size: var(--fontSize-12px-services);
 }
 
 .whatWeDoTextContainer ul, .managementTextContainer ul, .managementTextContainer ol {

@@ -111,7 +111,7 @@ function Services() {
                 <h5 className='titlesHome servicesTitles'>Our Services</h5>
             </div>
 
-            <div className='whatWeDoTextContainer managementTextContainer'>
+            <div className={findId.url == 'whatwedo'? 'whatWeDoTextContainer' : 'managementTextContainer'}  >
                 <p dangerouslySetInnerHTML={{ __html: firstText }}></p>
                 
                 {
