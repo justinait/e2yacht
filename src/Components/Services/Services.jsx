@@ -112,11 +112,13 @@ function Services() {
             </div>
 
             <div className='whatWeDoTextContainer managementTextContainer'>
-                <p>{firstText}</p>
+                <p dangerouslySetInnerHTML={{ __html: firstText }}></p>
                 
                 {
                     service.subtitle && (
-                        <p className='`${name}=`managementh5'> {service.subtitle} </p>
+                        <p className={findId.url === 'instruction' ? 'managementh5' : ''}>
+                            {service.subtitle}
+                        </p>
                     )
                 }
 
@@ -128,7 +130,7 @@ function Services() {
                     }
                 </ul>
 
-                <p>{secondText}</p>
+                <p dangerouslySetInnerHTML={{ __html: secondText }}></p>
                 
                 {service.ul2 &&
                 <ul>
@@ -141,7 +143,8 @@ function Services() {
                 }
                 
                 {service.thirdText &&
-                    <p>{service.thirdText}</p>
+                    <p dangerouslySetInnerHTML={{ __html: service.thirdText }}></p>
+
                 }
 
                 {/* marine survey */}
