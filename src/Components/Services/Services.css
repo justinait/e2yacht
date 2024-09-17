@@ -237,7 +237,7 @@ li a {
         align-items: center;
         justify-content: space-between;
         width: 10vw;
-        margin-top: 15px;
+        margin-top: 2.5em;
     }
     .servicesList {
         display: block;
@@ -245,7 +245,10 @@ li a {
     }
     
     .whatWeDoTextContainer, .managementTextContainer {
-        width: 75%;
+        width: 78%;
+        margin: 3.5em 0;
+        font-size: clamp(15px, 1.2vw, 17px);
+        line-height: 1.3;
     }
     .serviceListItems {
         
@@ -261,5 +264,8 @@ li a {
     }
     .activeNavbar{
         color: black;
+    }
+    .whatWeDoTextContainer li {
+        padding: 12px 0;
     }
 }
