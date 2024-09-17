@@ -24,18 +24,17 @@ function WhatWeDo() {
             and boat owners, agents and brokers:
           </p>
           <ul>
-            <li>Professional and careful motor and sailing <Link to='/deliveries'>yacht delivery</Link> insurable year round world wide</li>
+            <li>Professional and careful motor and sailing <a style={{cursor: 'pointer', color: '#165BBB' }} href='/deliveries'>yacht delivery</a> insurable year round world wide</li>
             <li>Maintenance while you are away from your yacht, weekly washing to project management and system upgrades</li>
-            <li>Complete <Link to='/captainandcrew'>captain and crewing services</Link>, and specialties including, fishing guides, diver masters, surf instruction, etc.</li>
-            <li>Complete <Link to='/management'>yacht and project management.</Link></li>
-            <li>Hands-on, <Link to='/instruction'>personal training and instruction.</Link> </li>
+            <li>Complete <a style={{cursor: 'pointer', color: '#165BBB' }} href='/captainandcrew'>captain and crewing services</a>, and specialties including, fishing guides, diver masters, surf instruction, etc.</li>
+            <li>Complete <a style={{cursor: 'pointer', color: '#165BBB' }} href='/management'>yacht and project management.</a></li>
+            <li>Hands-on, <a style={{cursor: 'pointer', color: '#165BBB' }} href='/instruction'>personal training and instruction.</a> </li>
           </ul>
-          {/* 
-          <ul>
-            {data.map((item, index) => (
-              <li key={index} dangerouslySetInnerHTML={{ __html: item.content }} />
-            ))}
-          </ul> */}
+          {/* For ASA certification information please visit our Partners at:              
+          <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' 
+          href='https://www.captainkupps.com/' rel="noopener noreferrer"> CaptainKupps.com</a> 
+          */}
+          link 
         </div>
       </div>
     </div>
