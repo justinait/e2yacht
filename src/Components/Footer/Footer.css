@@ -181,5 +181,16 @@
     .homeSectionFooter {
         width: 18% !important;
     }
+    .homeSectionFooter {
+        order: 1; /* Primero */
+      }
+    
+      .indice section:nth-child(2) {
+        order: 3; /* Tercero */
+      }
+    
+      .contactSectionFooter {
+        order: 2; /* Segundo */
+      }
     
 }
