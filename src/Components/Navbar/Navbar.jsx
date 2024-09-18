@@ -12,7 +12,7 @@ function Navbar() {
 
   const { selectedService, setSelectedService } = useContext(ServiceContext);
   const sections = [
-    { name: 'Home', id: '', className: '' },
+    { name: 'Home', id: '', className: 'homeNavbar' },
     { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
@@ -20,13 +20,14 @@ function Navbar() {
   ]
 
   const services = [
-    { name: 'What We Do', id: 'whatwedo', className: '' },
+    { name: 'What We Do', id: 'whatwedo', className: 'notForDesktop homeNavbar' },
     { name: 'Yacht Management', id: 'management', className: ''},
     { name: 'Yacht Deliveries', id: 'deliveries', className: ''},
     { name: 'Private Instructions', id: 'instruction', className: ''},
     { name: 'Marine Survey', id: 'marinesurvey', className: ''},
     { name: 'Captain And Crew Services', id: 'captainandcrew', className: '' },
-    { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''}
+    { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''},
+    { name: 'View all services', id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover' },
   ]
 
   const windowWidth = window.innerWidth;
@@ -106,12 +107,9 @@ function Navbar() {
               {...(e.id !== 'services' && { to: `/${e.id}` })} 
               onClick={e.id !== 'services' ? () => handleClose(e.id) : handleDropdown} 
             >
-              <div className={selectedCategory === e.id ? 'dropdownItems activeNavbar' : 'dropdownItems'}>
+              <div className={`${selectedCategory === e.id ? 'dropdownItems activeNavbar' : 'dropdownItems'}  ${e.className}`}>
                 {e.name}
-                {e.image && 
-                  (!dropdown ? <img src={e.image} alt="Arrow" className='arrowNavbar' /> : <img src={e.image2} alt="Arrow"  className='arrowNavbar'/>)
-                  
-                }
+                {e.image && (!dropdown ? <img src={e.image} alt="Arrow" className='arrowNavbar' /> : <img src={e.image2} alt="Arrow"  className='arrowNavbar'/>)                }
               </div>
               {(e.id === 'services' && dropdown) &&
                 <div className='servicesNavbar'>
@@ -120,9 +118,14 @@ function Navbar() {
                       key={index}
                       to={`/${service.id}`}
                       onClick={() => handleServiceClick(service.id)}
-                      className={selectedService === service.id ? 'dropdownItems serviceDropdownItems activeNavbar' : 'dropdownItems serviceDropdownItems'}
+                      
                     >
-                      {service.name}
+                      <div className={`dropdownItems serviceDropdownItems ${selectedService === service.id ? 'activeNavbar' : ''} ${service.className}`}>
+                        {service.name}
+                        {
+                          service.image && <img src={service.image} alt="->" />
+                        }
+                      </div>
                     </Link>
                   ))}
                 </div>

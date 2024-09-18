@@ -48,6 +48,9 @@
     padding: 8px 0 18px;
     border-top: 1px solid #000B1B;
 }
+.viewAllServicesButtonNavbar {
+    display: none;
+}
 @media(min-width: 600px) {
     .navbar {
         height: 70px;
@@ -136,6 +139,44 @@
         line-height: 2.3;
         font-weight: 200;
         font-size: var(--fontSize-14px);
+    }
+    .servicesNavbar {    
+        border-top: none;
+        position: absolute;
+        background: white;
+        border: 1px solid #8B8B8B;
+        border-radius: 6px;
+        padding: 10px;
+        z-index: 1;
+    }
+    .servicesNavbar::before {
+        content: '';
+        position: absolute;
+        top: -10px; /* Ajusta para mover verticalmente la flecha */
+        left: 20px; /* Ajusta para mover horizontalmente la flecha */
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #8B8B8B; /* Color del borde de la flecha */
+        z-index: -1; /* Asegúrate de que la flecha esté detrás del div */
+    }
+    
+    .servicesNavbar::after {
+        content: '';
+        position: absolute;
+        top: -8px; /* Alinea la flecha interna con la externa */
+        left: 21px; /* Alinea correctamente con el borde de la flecha */
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-bottom: 9px solid white; /* Color del interior de la flecha */
+    }
+    .homeNavbar {
+        display: none;
+    }
+    .viewAllServicesButtonNavbar {
+        display: flex;
+        margin: 8px 20px 0;
+        border-radius: 5px;
+        padding: 2px 20px;
     }
 }
 @media(min-width:1800px){
