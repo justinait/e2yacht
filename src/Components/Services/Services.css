@@ -261,6 +261,10 @@ li a {
         align-items: center;
         justify-content: space-between;
     }
+    
+    .serviceListItems:hover {
+        color: var(--color-lightBlue);
+    }
     .activeNavbar{
         color: black;
     }

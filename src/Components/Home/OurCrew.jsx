@@ -18,12 +18,12 @@ function OurCrew() {
           through the Erie Canal, to the Great lakes and St. Lawrence Seaway, the South Pacific , Europe, and the Mediterranean. 
           Our captains are available from 100T to unlimited, sailing and motor yachts as well as power boats.
         </p>
-        <Link to='/crew' className='button linkButton onlyForDesktop'>SEE MORE</Link>
+        <Link to='/crew' className='button linkButton onlyForDesktop contactButtonHover'>SEE MORE</Link>
       </div>
 
       <img src={photo} alt="" className='ourCrewImageHome'/>
       
-      <Link to='/crew' className='button linkButton notForDesktop'>SEE MORE</Link>
+      <Link to='/crew' className='button linkButton notForDesktop contactButtonHover'>SEE MORE</Link>
     </div>
   )
 }
