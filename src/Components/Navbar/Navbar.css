@@ -199,4 +199,11 @@
     .logoNavbar {
         width: 195px;
     }
+    .dropdownItems {
+        padding: 0px 35px;
+        font-size: 23px;
+    }
+    .contactDesktop {
+        margin: 0 0 0 40px !important;
+    }
 }
