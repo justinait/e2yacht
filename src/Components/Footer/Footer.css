@@ -89,9 +89,6 @@
     .footerTitle {
         margin-bottom: 0;
     }
-    .footerContainer {
-        height: 550px;
-    }
     .logoFooter {
         width: 32%;
         margin: 2em 0;
@@ -118,9 +115,6 @@
     .logoFooter {
         width: 28%;
     }
-    .footerContainer {
-        height: 650px;
-    }
     .socialMediaCircle img {
         width: 35px;
     }
@@ -137,4 +131,55 @@
     .contactSectionFooter {
         width: 30% !important;
     }
+}
+
+@media(min-width:1200px){
+    .footerContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 300px;
+    }
+    .indice {
+        position: absolute;
+        transform: translate(100%, 150px);
+        width: 40vw;
+    }
+    .footerTitle {
+        line-height: 1.2;
+    }
+    .logoFooter {
+        width: 27%;
+        margin: 3.5em 0;
+    }
+    .contactFooter {
+        align-items: flex-start;
+        flex-direction: row-reverse;        
+        width: 24vw;
+    }
+    .contactFooter .button {
+        margin-top: 0px;
+    }
+    .socialMediaCircle img {
+        width: 25px;
+    }
+    .socialMediaCircle {
+        width: 38px;
+        height: 38px;
+        margin: 5px;
+    }
+    .contactFooter .learnMore {
+        margin-left: 2em;
+        margin-right: 0;
+    }
+    .contactSectionFooter {
+        width: 39% !important;
+    }
+    .linksHomeFooterIndice {
+        line-height: 2;
+    }    
+    .homeSectionFooter {
+        width: 18% !important;
+    }
+    
 }
