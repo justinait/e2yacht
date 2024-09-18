@@ -100,8 +100,9 @@
         width: 30px;
     }
     .socialMediaCircle {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
     }
     .homeSectionFooter {
         width: 25% !important;

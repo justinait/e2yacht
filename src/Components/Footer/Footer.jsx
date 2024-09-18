@@ -41,7 +41,7 @@ function Footer() {
             <section className='contactSectionFooter'>
                 <h6>Contact</h6>
                 <a href="mailto:info@e2yachtservices.com" className='locationFooter underline marginbottom' target='_blank'>info@e2yachtservices.com</a>
-                {/* <br /> */}
+                
                 <p className='locationFooter'>Office: +52 322 297 4065</p>
                 <a href='https://api.whatsapp.com/send/?phone=523221347397&text&type=phone_number&app_absent=0' target='_blank' className='locationFooter underline'>WhatsApp: +52 322-134-7397</a>
                 <p className='locationFooter'>USA: #1-714-412-6180</p>
