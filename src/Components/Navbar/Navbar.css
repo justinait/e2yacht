@@ -51,6 +51,9 @@
 .viewAllServicesButtonNavbar {
     display: none;
 }
+.contactDesktop {
+    display: none;
+}
 @media(min-width: 600px) {
     .navbar {
         height: 70px;
@@ -121,6 +124,7 @@
     }
     .dropdownItemsContainer {
         flex-direction: row;
+        align-items: center;    
     }
     .navbarContainer {
         display: flex;
@@ -132,13 +136,14 @@
     }
     .dropdownItems {
         padding: 0 20px;
-        font-size: 17px;
+        font-size: 19px;
         font-weight: 300;
     }
     .serviceDropdownItems {
         line-height: 2.3;
         font-weight: 200;
         font-size: var(--fontSize-14px);
+        padding: 0;
     }
     .servicesNavbar {    
         border-top: none;
@@ -148,6 +153,8 @@
         border-radius: 6px;
         padding: 10px;
         z-index: 1;
+        transform: translate(5%, 20px);
+        width: 18vw;
     }
     .servicesNavbar::before {
         content: '';
@@ -174,9 +181,18 @@
     }
     .viewAllServicesButtonNavbar {
         display: flex;
-        margin: 8px 20px 0;
+        margin-top: 8px ;
         border-radius: 5px;
         padding: 2px 20px;
+    }
+    .contactMobile {
+        display: none;
+    }
+    .contactDesktop {
+        display: block;
+        line-height: 1;
+        /* margin-top: 0 !important; */
+        margin: 0 0 0 20px !important;
     }
 }
 @media(min-width:1800px){

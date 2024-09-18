@@ -16,7 +16,8 @@ function Navbar() {
     { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
-    { name: 'Contact', id: 'contact', className: ''}
+    { name: 'Contact', id: 'contact', className: 'contactMobile'},
+    { name: 'Contact us', id: 'contact', className: 'contactDesktop button contactButtonHover'}
   ]
 
   const services = [
