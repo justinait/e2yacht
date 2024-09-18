@@ -9,7 +9,6 @@ import { ServiceContext } from '../context/ServiceContext'
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('')
-  // const [selectedService, setSelectedService] = useState('')
 
   const { selectedService, setSelectedService } = useContext(ServiceContext);
   const sections = [
