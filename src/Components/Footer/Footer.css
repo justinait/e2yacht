@@ -183,14 +183,23 @@
     }
     .homeSectionFooter {
         order: 1; /* Primero */
-      }
-    
-      .indice section:nth-child(2) {
+    }
+
+    .indice section:nth-child(2) {
         order: 3; /* Tercero */
-      }
+    }
     
-      .contactSectionFooter {
+    .contactSectionFooter {
         order: 2; /* Segundo */
-      }
+    }
     
+}
+@media(min-width:1800px){
+    .logoFooter {
+        width: 30%;
+    }
+    .indice {
+        transform: translate(117%, 150px);
+        width: 37vw;
+    }
 }
