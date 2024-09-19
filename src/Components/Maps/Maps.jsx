@@ -10,14 +10,8 @@ function Maps() {
         googleMapsApiKey: "AIzaSyATA9w96X3FKj_idxFdo9nvd4SxaxDb43Y",
     })
     const mapRef = useRef(null);
-    const [selectedMarker, setSelectedMarker] = useState(null);
-    
-    const markerPosition = {
-        lat: 20.690769012472977,
-        lng: -105.29504164638364,
-    };
-
     const mapContainerRef = useRef(null);
+
     useEffect(() => {
         if (isLoaded && mapContainerRef.current) {
             const position = { lat: 20.690769012472977, lng: -105.29504164638364 };
@@ -41,16 +35,15 @@ function Maps() {
         label: 'Blvd Nuevo Vallarta PTE, 65 Local 15 Nuevo Vallarta, Nayarit. Mexico, 63732',
     };
 
-    // const handleMarkerClick = (marker) => {
-    //     setSelectedMarker(marker);
-    // };
   return (
 
     <div className='mapBoxContainer'>
         {isLoaded && 
             <GoogleMap 
                 zoom={12}
-                center={{ lat: 20.7000, lng: -105.2938 }}
+                // center={{ lat: 20.7000, lng: -105.2938 }}
+                center={{ lat: 20.700420707428, lng: -105.2881085869273 }}
+                // 20.700420707428, -105.2881085869273
                 mapContainerClassName='mapContainer'
                 ref={mapRef}
                 height={200}
