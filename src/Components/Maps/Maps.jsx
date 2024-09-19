@@ -56,10 +56,7 @@ function Maps() {
                 height={200}
                 width={200}
             >
-                <Marker
-                    position={markerA}
-                    // onClick={() => handleMarkerClick(markerA)}
-                />
+                <Marker                    position={markerA}                />
                 <InfoWindow
                     position={markerA}
                     options={{
@@ -68,14 +65,11 @@ function Maps() {
                     }}
                 >
                     <div style={{ padding: '10px' }} className='infoWindow'>
-                        <h3>{markerA.label}</h3>
+                        <p>{markerA.label}</p>
                     </div>
                 </InfoWindow>
                 {/* Marker B */}
-                <Marker
-                    position={markerB}
-                    // onClick={() => handleMarkerClick(markerB)}
-                />
+                <Marker                    position={markerB}                />
 
                 <InfoWindow
                     position={markerB}
@@ -86,20 +80,10 @@ function Maps() {
                     }}
                 >
                     <div style={{ padding: '10px' }} className='infoWindow'>
-                        <h3>{markerB.label}</h3>
+                        <p>{markerB.label}</p>
                     </div>
                 </InfoWindow>
-                {/* InfoWindow para mostrar el texto cuando se selecciona un marcador */}
-                {/* {selectedMarker && (
-                    <InfoWindow
-                    position={selectedMarker}
-                    onCloseClick={() => setSelectedMarker(null)}
-                    >
-                    <div style={{ padding: '10px' }}>
-                        <h3>{selectedMarker.label}</h3>
-                    </div>
-                    </InfoWindow>
-                )} */}
+                
             </GoogleMap>
         }
     </div>
