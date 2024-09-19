@@ -3,14 +3,18 @@
     width: 100%;
     border-radius: 25px;
 }
-.infoWindow, .gm-style .gm-style-iw-c {
+.infoWindow, 
+.gm-style .gm-style-iw-c {
     background-color: var(--color-blue) !important;
     font-size: 10.5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 120px;
-    padding: 0px;
+    padding: 5px !important;
     border-radius: 5px;
+}
+.infoWindow p {
     margin: 0;
+
 }
 .infoWindow::after, .gm-style .gm-style-iw-c::after {
     content: '';
