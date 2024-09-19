@@ -7,6 +7,8 @@
 }
 .referencesHomeContainer {
     margin: 40px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .referenceCardName {
@@ -27,10 +29,36 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    /* padding: 40px;  */
 }
 
 .referencesContainerScroll::-webkit-scrollbar {
     display: none;
+}
+.referencesHomeContainer::before,
+.referencesHomeContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px; /* Adjust the width of the gradient as needed */
+    z-index: 1;
+    pointer-events: none; /* Allows clicking through the gradient */
+}
+
+.referencesHomeContainer::before {
+    left: 10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.referencesHomeContainer::after {
+    right: 10px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+.referencesHomeContainer .titlesHome, .referencesHomeContainer .subtitlesHome {
+
+    position: relative;
+    z-index: 2;
 }
 .firstReview {
     margin-left: 20vw;
