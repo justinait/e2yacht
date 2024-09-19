@@ -4,13 +4,23 @@
     border-radius: 25px;
 }
 .infoWindow {
-    background-color: var(--color-blue);
+    background-color: var(--color-blue) !important;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 140px;
-    
+    padding: 10px;
+    border-radius: 5px;
 }
-
+.infoWindow::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color-blue);
+  }
 @media(min-width:1200px){
     .mapContainer{
         height: 400px;

@@ -62,9 +62,12 @@ function Maps() {
                 />
                 <InfoWindow
                     position={markerA}
-                    className='infoWindow'
+                    options={{
+                        pixelOffset: new window.google.maps.Size(-70, 0),
+                        maxWidth: 200,
+                    }}
                 >
-                    <div style={{ padding: '10px' }} >
+                    <div style={{ padding: '10px' }} className='infoWindow'>
                         <h3>{markerA.label}</h3>
                     </div>
                 </InfoWindow>
@@ -76,9 +79,13 @@ function Maps() {
 
                 <InfoWindow
                     position={markerB}
-                    className='infoWindow'
+                    
+                    options={{
+                        pixelOffset: new window.google.maps.Size(-70, 0),
+                        maxWidth: 200,
+                    }}
                 >
-                    <div style={{ padding: '10px' }}>
+                    <div style={{ padding: '10px' }} className='infoWindow'>
                         <h3>{markerB.label}</h3>
                     </div>
                 </InfoWindow>
