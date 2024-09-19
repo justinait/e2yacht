@@ -8,8 +8,8 @@
     background-color: var(--color-blue) !important;
     font-size: 10.5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 120px;
-    padding: 5px !important;
+    width: 135px;
+    padding: 3px !important;
     border-radius: 5px;
 }
 .infoWindow p {
