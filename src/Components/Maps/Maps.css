@@ -24,6 +24,9 @@
 .gm-style-iw-chr {
     display: none;
 }
+.gm-style-iw-c {
+    overflow: unset;
+}
 @media(min-width:1200px){
     .mapContainer{
         height: 400px;
