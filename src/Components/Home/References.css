@@ -47,16 +47,16 @@
 }
 
 .referencesHomeContainer::before {
-    left: 10px;
+    left: 4.5%;
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .referencesHomeContainer::after {
-    right: 10px;
+    right: 4.5%;
     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
-.referencesHomeContainer .titlesHome, .referencesHomeContainer .subtitlesHome {
-
+.referencesHomeContainer .titlesHome, 
+.referencesHomeContainer .subtitlesHome {
     position: relative;
     z-index: 2;
 }
@@ -81,11 +81,38 @@
         line-height: unset;
         font-size: var(--fontSize-12px);
     }
+
+    .referencesHomeContainer::before,
+    .referencesHomeContainer::after {
+        width: 100px; /* Increase gradient width for larger screens */
+    }
+    
+    .referencesHomeContainer::before {
+        left: 5.5%;
+    }
+
+    .referencesHomeContainer::after {
+        right: 5.5%;
+    }
 }
 @media(min-width:1000px){
     .referenceCard {
         max-width: unset;
         padding: 40px;
+    }
+    
+
+    .referencesHomeContainer::before,
+    .referencesHomeContainer::after {
+        width: 110px; /* Increase gradient width for larger screens */
+    }
+    
+    .referencesHomeContainer::before {
+        left: 7.5%;
+    }
+
+    .referencesHomeContainer::after {
+        right: 7.5%;
     }
 }
 
@@ -105,6 +132,19 @@
     .referenceCardText {
         font-size: var(--fontSize-16px);
         color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .referencesHomeContainer::before,
+    .referencesHomeContainer::after {
+        width: 110px; /* Increase gradient width for larger screens */
+    }
+    
+    .referencesHomeContainer::before {
+        left: 9.5%;
+    }
+
+    .referencesHomeContainer::after {
+        right: 9.5%;
     }
 }
 @media(min-width:1400px){
