@@ -31,14 +31,19 @@
     display: none;
 }
 .gm-style-iw-c {
-    border-color: var(--color-blue);
     overflow: unset;
 }
+/* barra de scroll? */
 .gm-style .gm-style-iw-d {
     overflow: hidden;
 }
+/* piquito::After */
 .gm-style .gm-style-iw-tc::after {
     background-color: var(--color-blue);
+}
+/* mapa/satelite */
+.gm-style-mtc-bbw { 
+    display: none;
 }
 @media(min-width:1200px){
     .mapContainer{
