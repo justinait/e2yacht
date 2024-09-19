@@ -3,7 +3,7 @@
     width: 100%;
     border-radius: 25px;
 }
-.infoWindow {
+.infoWindow, .gm-style .gm-style-iw-c {
     background-color: var(--color-blue) !important;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
