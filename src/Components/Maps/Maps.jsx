@@ -41,11 +41,9 @@ function Maps() {
         {isLoaded && 
             <GoogleMap 
                 zoom={13}
-                center={{ lat: 20.691307566186044, lng: -105.2879798408923 }}
+                center={{ lat: 20.709505586011947, lng: -105.29269821754673 }}
                 // center={{ lat: 20.700420707428, lng: -105.2881085869273 }}
                 // center={{ lat: 20.690769012472977, lng: -105.29504164638364 }}
-
-                // 20.691307566186044, -105.2879798408923
                 mapContainerClassName='mapContainer'
                 ref={mapRef}
                 height={200}
@@ -59,7 +57,7 @@ function Maps() {
                         maxWidth: 200,
                     }}
                 >
-                    <div style={{ padding: '10px' }} className='infoWindow'>
+                    <div className='infoWindow'>
                         <p>{markerA.label}</p>
                     </div>
                 </InfoWindow>
@@ -74,7 +72,7 @@ function Maps() {
                         maxWidth: 200,
                     }}
                 >
-                    <div style={{ padding: '10px' }} className='infoWindow'>
+                    <div className='infoWindow'>
                         <p>{markerB.label}</p>
                     </div>
                 </InfoWindow>
