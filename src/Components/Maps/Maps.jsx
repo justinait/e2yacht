@@ -41,8 +41,11 @@ function Maps() {
         {isLoaded && 
             <GoogleMap 
                 zoom={13}
-                center={{ lat: 20.690769012472977, lng: -105.29504164638364 }}
+                center={{ lat: 20.691307566186044, lng: -105.2879798408923 }}
                 // center={{ lat: 20.700420707428, lng: -105.2881085869273 }}
+                // center={{ lat: 20.690769012472977, lng: -105.29504164638364 }}
+
+                // 20.691307566186044, -105.2879798408923
                 mapContainerClassName='mapContainer'
                 ref={mapRef}
                 height={200}
