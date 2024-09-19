@@ -34,6 +34,12 @@
     border-color: var(--color-blue);
     overflow: unset;
 }
+.gm-style .gm-style-iw-d {
+    overflow: hidden;
+}
+.gm-style .gm-style-iw-tc::after {
+    background-color: var(--color-blue);
+}
 @media(min-width:1200px){
     .mapContainer{
         height: 400px;
