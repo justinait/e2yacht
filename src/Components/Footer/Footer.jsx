@@ -18,7 +18,7 @@ function Footer() {
         <div className='contactFooter'>
             <Link to='/contact' className='button learnMore'>Contact Us</Link>
             <div className='socialMedia'>
-                <Link to='https://www.instagram.com/e2yachtservices/' className='socialMediaCircle'>
+                <Link to='https://www.linkedin.com/in/capteliz/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' className='socialMediaCircle'>
                     <img src={linkedin} alt="in" />
                 </Link>
                 <Link to='https://www.instagram.com/e2yachtservices/' target='_blank' className='socialMediaCircle'>

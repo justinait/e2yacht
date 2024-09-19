@@ -22,11 +22,15 @@
     font-size: 12px;
 }
 .referencesContainerScroll {
-    
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.referencesContainerScroll::-webkit-scrollbar {
+    display: none;
 }
 .firstReview {
     margin-left: 20vw;
