@@ -5,7 +5,6 @@ import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-map
 
 function Maps() {
 
-
     const { isLoaded } = useJsApiLoader({
         id: 'dc395694d3c4c44',
         googleMapsApiKey: "AIzaSyATA9w96X3FKj_idxFdo9nvd4SxaxDb43Y",
@@ -42,15 +41,15 @@ function Maps() {
         label: 'Blvd Nuevo Vallarta PTE, 65 Local 15 Nuevo Vallarta, Nayarit. Mexico, 63732',
     };
 
-    const handleMarkerClick = (marker) => {
-        setSelectedMarker(marker);
-    };
+    // const handleMarkerClick = (marker) => {
+    //     setSelectedMarker(marker);
+    // };
   return (
 
     <div className='mapBoxContainer'>
         {isLoaded && 
             <GoogleMap 
-                zoom={12}
+                zoom={14}
                 center={{ lat: 20.7000, lng: -105.2938 }}
                 mapContainerClassName='mapContainer'
                 ref={mapRef}
@@ -59,17 +58,32 @@ function Maps() {
             >
                 <Marker
                     position={markerA}
-                    onClick={() => handleMarkerClick(markerA)}
+                    // onClick={() => handleMarkerClick(markerA)}
                 />
-
+                <InfoWindow
+                    position={markerA}
+                    className='infoWindow'
+                >
+                    <div style={{ padding: '10px' }} >
+                        <h3>{markerA.label}</h3>
+                    </div>
+                </InfoWindow>
                 {/* Marker B */}
                 <Marker
                     position={markerB}
-                    onClick={() => handleMarkerClick(markerB)}
+                    // onClick={() => handleMarkerClick(markerB)}
                 />
 
+                <InfoWindow
+                    position={markerB}
+                    className='infoWindow'
+                >
+                    <div style={{ padding: '10px' }}>
+                        <h3>{markerB.label}</h3>
+                    </div>
+                </InfoWindow>
                 {/* InfoWindow para mostrar el texto cuando se selecciona un marcador */}
-                {selectedMarker && (
+                {/* {selectedMarker && (
                     <InfoWindow
                     position={selectedMarker}
                     onCloseClick={() => setSelectedMarker(null)}
@@ -78,7 +92,7 @@ function Maps() {
                         <h3>{selectedMarker.label}</h3>
                     </div>
                     </InfoWindow>
-                )}
+                )} */}
             </GoogleMap>
         }
     </div>

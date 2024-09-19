@@ -3,6 +3,13 @@
     width: 100%;
     border-radius: 25px;
 }
+.infoWindow {
+    background-color: var(--color-blue);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 140px;
+    
+}
 
 @media(min-width:1200px){
     .mapContainer{
