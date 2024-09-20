@@ -11,7 +11,7 @@
     width: 135px;
     padding: 3px !important;
     border-radius: 5px;
-    /* ? */
+
     overflow: visible !important;
 }
 .infoWindow p {
@@ -21,7 +21,7 @@
 .infoWindow::after, .gm-style .gm-style-iw-c::after {
     content: '';
     position: absolute;
-    right: -16px;
+    left: 100%;
     top: 50%;
     transform: translateY(-50%);
     border-width: 8px;
@@ -41,13 +41,14 @@
 }
 /* piquito::After */
 .gm-style .gm-style-iw-tc::after {
-    /* background-color: var(--color-blue); */
-    display: none;
+    background-color: var(--color-blue);
 }
 
-.gm-style-iw-t::after {
+/* este es el piquito para lateral, y ahbria q ponerle dn al de arriba (tc) */
+/* .gm-style-iw-t::after {
     background: var(--color-blue);
-}
+} */
+
 /* mapa/satelite */
 .gm-style-mtc-bbw { 
     display: none;

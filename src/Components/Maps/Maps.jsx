@@ -66,7 +66,7 @@ function Maps() {
                     position={markerB}
                     
                     options={{
-                        pixelOffset: new window.google.maps.Size(70, 0),
+                        pixelOffset: new window.google.maps.Size(-70, 0),
                         maxWidth: 200,
                     }}
                 >
