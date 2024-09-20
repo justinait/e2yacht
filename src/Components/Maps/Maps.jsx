@@ -40,8 +40,8 @@ function Maps() {
     <div className='mapBoxContainer'>
         {isLoaded && 
             <GoogleMap 
-                zoom={14}
-                center={{ lat: 21, lng: -105.29269821754673 }}
+                zoom={13}
+                center={{ lat: 25, lng: -105.29269821754673 }}
                 mapContainerClassName='mapContainer'
                 ref={mapRef}
                 height={200}
