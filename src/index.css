@@ -22,7 +22,7 @@ body {
 
   --fontSize-30px: clamp(25px, 7vw, 40px);
   --fontSize-20px: clamp(18.5px, 5vw, 22px);
-  --fontSize-18px: clamp(16px, 4.3vw, 19px);
+  --fontSize-18px: clamp(16px, 4.2vw, 19px);
   --fontSize-16px: clamp(14.5px, 4vw, 17px);
   --fontSize-14px: clamp(12.5px, 3.8vw, 15px);
   --fontSize-12px-services: clamp(10.35px, 2.5vw, 12.5px);
