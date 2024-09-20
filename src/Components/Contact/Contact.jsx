@@ -4,6 +4,9 @@ import location from '/icons/location.png'
 import phone from '/icons/telefono.png'
 import mail from '/icons/Correo.png'
 import Maps from '../Maps/Maps'
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import PlaceIcon from '@mui/icons-material/Place';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -19,6 +22,7 @@ function Contact() {
 
     window.open(whatsappUrl, '_blank');
   };
+
   return (
     <div>
       <div className='contactHero heroImages'>
@@ -30,14 +34,16 @@ function Contact() {
       <div className='cardsContactContainer'>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            <img src={location} alt="location" className='contactIconLocation'/>
+            {/* <img src={location} alt="location" className='contactIconLocation'/> */}
+            <PlaceIcon/>
           </div>
           <h5>ADDRESS</h5>
           <p className='cardContactText'>Blvd Nuevo Vallarta PTE, 65 Local 15 Nuevo Vallarta, Nayarit, Mexico, 63732</p>
         </div>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            <img src={phone} alt="location" className='contactIcon'/>
+            {/* <img src={phone} alt="location" className='contactIcon'/> */}
+            < CallIcon />
           </div>
           <h5>PHONE</h5>
           <p className='cardContactText'>Office: +52 322 297 4065
@@ -47,7 +53,8 @@ function Contact() {
         </div>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            <img src={mail} alt="location" className='contactIcon'/>
+            {/* <img src={mail} alt="location" className='contactIcon'/> */}
+            < EmailIcon color='blue' />
           </div>
           <h5>EMAIL</h5>
           <p className='cardContactText'>info@e2yachtservices.com</p>
@@ -66,7 +73,6 @@ function Contact() {
               value={name} 
               onChange={(e) => setName(e.target.value)} 
               required 
-              // placeholder='Name*' 
               className='inputContact'
             />
           </div>

@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@fontsource-variable/libre-franklin": "^5.0.20",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material": "^6.1.1",
     "@react-google-maps/api": "^2.19.3",
     "firebase": "^10.13.1",
     "react": "^18.3.1",
