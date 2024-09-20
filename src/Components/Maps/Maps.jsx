@@ -41,7 +41,7 @@ function Maps() {
         {isLoaded && 
             <GoogleMap 
                 zoom={14}
-                center={{ lat: 20.709505586011947, lng: -105.29269821754673 }}
+                center={{ lat: 21, lng: -105.29269821754673 }}
                 mapContainerClassName='mapContainer'
                 ref={mapRef}
                 height={200}
@@ -51,7 +51,7 @@ function Maps() {
                 <InfoWindow
                     position={markerA}
                     options={{
-                        pixelOffset: new window.google.maps.Size(-70, 0),
+                        pixelOffset: new window.google.maps.Size(-90, 30),
                         maxWidth: 200,
                     }}
                 >
