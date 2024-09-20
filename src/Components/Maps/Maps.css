@@ -27,7 +27,6 @@
     border-width: 8px;
     border-style: solid;
     border-color: transparent transparent transparent var(--color-blue);
-    border-color: var(--color-blue);
 }
 .gm-style-iw-chr {
     display: none;
