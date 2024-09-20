@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 import menu from '/icons/servicesMenu.png'
 import db from '../../../firebaseConfig';
 import { Link, useParams } from 'react-router-dom';
@@ -14,27 +14,24 @@ function Services() {
     const { setSelectedService, selectedService } = useContext(ServiceContext);
     const { serviceId } = useParams();
 
-    
-    const idsDb = [
-        { id:'4FhrJKKewjFt9nqAHBbo', url: 'whatwedo' },
-        { id:'8LTZWLq9gcpA4wN9j709', url: 'instruction' },
-        { id:'MTCdSa4CoLGEDifffliX', url: 'deliveries' },
-        { id:'fSm9K9jTJrhQMIm9EQi9', url: 'captainandcrew' },
-        { id:'gKZZCIdSLCvrLvluErtn', url: 'marinesurvey' },
-        { id:'lBfaNohObxnyr8mDu7uF', url: 'management' },
-        { id:'NaXg0p4djLdC7BXcRj6Q', url: 'maritimerecovery' }
-    ]
-    
-    const findId = idsDb.find(e => e.url === serviceId);
+    const idsDb = useMemo(() => ({
+        'whatwedo': '4FhrJKKewjFt9nqAHBbo',
+        'instruction': '8LTZWLq9gcpA4wN9j709',
+        'deliveries': 'MTCdSa4CoLGEDifffliX',
+        'captainandcrew': 'fSm9K9jTJrhQMIm9EQi9',
+        'marinesurvey': 'gKZZCIdSLCvrLvluErtn',
+        'management': 'lBfaNohObxnyr8mDu7uF',
+        'maritimerecovery': 'NaXg0p4djLdC7BXcRj6Q'
+    }), []);
 
     const services = [
-        { name: 'What We Do', id: 'whatwedo', className: '' },
-        { name: 'Yacht Management', id: 'management', className: ''},
-        { name: 'Yacht Deliveries', id: 'deliveries', className: ''},
-        { name: 'Private Instructions', id: 'instruction', className: ''},
-        { name: 'Marine Survey', id: 'marinesurvey', className: ''},
-        { name: 'Captain And Crew Services', id: 'captainandcrew', className: '' },
-        { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''}
+        { name: 'What We Do', id: 'whatwedo' },
+        { name: 'Yacht Management', id: 'management'},
+        { name: 'Yacht Deliveries', id: 'deliveries'},
+        { name: 'Private Instructions', id: 'instruction'},
+        { name: 'Marine Survey', id: 'marinesurvey'},
+        { name: 'Captain And Crew Services', id: 'captainandcrew' },
+        { name: 'Maritime Asset Recovery', id: 'maritimerecovery'}
     ]
 
     const openPDF = () => {
@@ -80,19 +77,24 @@ function Services() {
     }
 
     const getService = async () => {
-        if (findId) {
-            const docRef = doc(db, 'services', findId.id);
-            const docSnapshot = await getDoc(docRef);
-        
-            let serviceData = docSnapshot.data();
-            serviceData.url = docSnapshot.id;
-            
-            console.log(findId.url);
-            return serviceData;
-          } else {
-            console.error('findId no encontrado');
-            return null;
-          }
+        const serviceFirebaseId = idsDb[serviceId];
+        if (serviceFirebaseId) {
+            try {
+                const docRef = doc(db, 'services', serviceFirebaseId);
+                const docSnapshot = await getDoc(docRef);
+
+                if (docSnapshot.exists()) {
+                    const serviceData = docSnapshot.data();
+                    setService({ ...serviceData, url: docSnapshot.id });
+                } else {
+                    console.error('Documento no encontrado');
+                }
+            } catch (error) {
+                console.error('Error al obtener el servicio:', error);
+            }
+        } else {
+            console.error('ID no encontrado en idsDb');
+        }
           
     }
     useEffect(() => {
@@ -102,20 +104,15 @@ function Services() {
     useEffect(() => {
         
         getService()
-        .then(res => {
-        if (res) {
-            setService(res);
-        }
-        });
             
     }, [serviceId])
-    const { name, firstText, secondText, ul, extras } = service;
 
+    const { name, firstText, secondText, ul, extras } = service;
 
     return (
     <div className='otherSectionsContainers'>
 
-        <div  className={`heroImages ${findId.url}Hero`}>
+        <div  className={`heroImages ${serviceId}Hero`}>
           <br />
           <h3>{name}</h3>
         </div>
@@ -142,12 +139,12 @@ function Services() {
                 ))}
             </div>
 
-            <div className={findId.url == 'whatwedo'? 'whatWeDoTextContainer' : 'managementTextContainer'}  >
+            <div className={serviceId == 'whatwedo'? 'whatWeDoTextContainer' : 'managementTextContainer'}  >
                 <p dangerouslySetInnerHTML={{ __html: firstText }}></p>
                 
                 {
                     service.subtitle && (
-                        <p className={findId.url === 'instruction' ? 'managementh5' : ''}>
+                        <p className={serviceId === 'instruction' ? 'managementh5' : ''}>
                             {service.subtitle}
                         </p>
                     )
@@ -180,7 +177,7 @@ function Services() {
 
                 {/* marine survey */}
                 {
-                    findId.url == 'marinesurvey' &&
+                    serviceId == 'marinesurvey' &&
                     <>
                         <div>
                             <p className='managementh5 faqsTitle'>Frequently Asked Questions:</p>
@@ -223,7 +220,7 @@ function Services() {
 
                 {/* management */}
                 {
-                    findId.url == 'management' &&
+                    serviceId == 'management' &&
                     <>
                         <div className='separatorManagement'></div>
                         <p className='managementh5 managementh5Bigger'>Yachts under our care</p>
