@@ -37,10 +37,12 @@ function Maps() {
     };
     const getZoomLevel = () => {
         const screenWidth = window.innerWidth;
-        if (screenWidth < 1200   ) {
+        if (screenWidth < 1000   ) {
           return 12;
-        } else { // Por ejemplo, desktop
-          return 13;
+        } else if (screenWidth < 1200){
+            return 13
+        } else {
+          return 14;
         }
       };
     
