@@ -84,6 +84,35 @@
 .marginbottom {
     margin-bottom: 1em;
 }
+/* .linkedin:hover, .instagram:hover {
+    display: none;
+}
+.hoverLinkedin, .hoverInstagram {
+    display: none;
+} */
+
+.socialMediaCircle img {
+    position: absolute;
+    transition: opacity 0.3s ease;
+  }
+  
+  .linkedin, .instagram {
+    opacity: 1;
+  }
+  
+  .hoverLinkedin, .hoverInstagram {
+    opacity: 0;
+  }
+  
+  .socialMediaCircle:hover .linkedin, 
+  .socialMediaCircle:hover .instagram {
+    opacity: 0;
+  }
+  
+  .socialMediaCircle:hover .hoverLinkedin, 
+  .socialMediaCircle:hover .hoverInstagram {
+    opacity: 1;
+  }
 
 @media(min-width:600px) {
     .footerTitle {

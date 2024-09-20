@@ -19,10 +19,12 @@ function Footer() {
             <Link to='/contact' className='button learnMore'>Contact Us</Link>
             <div className='socialMedia'>
                 <Link to='https://www.linkedin.com/in/capteliz/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' className='socialMediaCircle'>
-                    <img src={linkedin} alt="in" />
+                    <img src={linkedin} alt="linkedin" className='linkedin'  />
+                    <img src={linkedinHover} alt="linkedin" className='hoverLinkedin' />
                 </Link>
                 <Link to='https://www.instagram.com/e2yachtservices/' target='_blank' className='socialMediaCircle'>
-                    <img src={instagram} alt="ig" />
+                    <img src={instagram} alt="instagram" className='instagram'  />
+                    <img src={instagramHover} alt="instagram" className='hoverInstagram'  />
                 </Link>
             </div>
         </div>

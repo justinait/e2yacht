@@ -112,16 +112,9 @@ li a {
 .seeMore {
     margin-right: unset !important;
     font-weight: 600;
+    font-size: 15px;
     background: var(--color-lightBlue);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    height: 16.7px;
-    /* line-height: 3.5px; */
     
     display: flex;
     align-items: center;
@@ -130,7 +123,6 @@ li a {
     border-radius: 50%;
     border: none;
     aspect-ratio: 1 / 1;
-    font-size: 15px;
     text-align: center;
     padding: 3px 1.5px 0px;
     width: 15px;
