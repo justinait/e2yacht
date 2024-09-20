@@ -5,6 +5,7 @@ import menu from '/icons/burgerMenu.png'
 import CloseIcon from '/icons/closeMenu.png'
 import { Link } from 'react-router-dom';
 import { ServiceContext } from '../context/ServiceContext'
+import LanguageIcon from '@mui/icons-material/Language';
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);

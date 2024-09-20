@@ -11,6 +11,7 @@ function Maps() {
     })
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
+    const [zoom, setZoom] = useState(12);
 
     useEffect(() => {
         if (isLoaded && mapContainerRef.current) {
@@ -34,13 +35,36 @@ function Maps() {
         lng: -105.29269821754673,
         label: 'Blvd Nuevo Vallarta PTE, 65 Local 15 Nuevo Vallarta, Nayarit. Mexico, 63732',
     };
-
+    const getZoomLevel = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 1200   ) {
+          return 12;
+        } else { // Por ejemplo, desktop
+          return 13;
+        }
+      };
+    
+      useEffect(() => {
+        setZoom(getZoomLevel());
+    
+        // Listener para cambiar el zoom cuando se redimensiona la ventana
+        const handleResize = () => {
+          setZoom(getZoomLevel());
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+    
   return (
 
     <div className='mapBoxContainer'>
         {isLoaded && 
             <GoogleMap 
-                zoom={12}
+                zoom={zoom}
                 center={{ lat: 21, lng: -105.29269821754673 }}
                 mapContainerClassName='mapContainer'
                 ref={mapRef}

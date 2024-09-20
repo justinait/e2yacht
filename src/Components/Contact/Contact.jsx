@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import location from '/icons/location.png'
-import phone from '/icons/telefono.png'
-import mail from '/icons/Correo.png'
 import Maps from '../Maps/Maps'
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
