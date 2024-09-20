@@ -33,9 +33,9 @@
 .gm-style-iw-c {
     overflow: unset;
 }
-/* barra de scroll? */
+/* barra de scroll */
 .gm-style .gm-style-iw-d {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 /* piquito::After */
 .gm-style .gm-style-iw-tc::after {
