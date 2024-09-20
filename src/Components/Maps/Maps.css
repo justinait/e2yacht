@@ -11,6 +11,8 @@
     width: 135px;
     padding: 3px !important;
     border-radius: 5px;
+    /* ? */
+    overflow: visible !important;
 }
 .infoWindow p {
     margin: 0;
@@ -19,7 +21,7 @@
 .infoWindow::after, .gm-style .gm-style-iw-c::after {
     content: '';
     position: absolute;
-    left: 100%;
+    right: -16px;
     top: 50%;
     transform: translateY(-50%);
     border-width: 8px;
