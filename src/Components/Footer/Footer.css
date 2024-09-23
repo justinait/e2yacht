@@ -71,6 +71,9 @@
     line-height: 2.5;
     font-weight: 300;
 }
+.linksHomeFooterIndice:hover{
+    color: var(--color-darkGrey);
+}
 .locationFooter {
     margin: 0;
     font-size: var(--fontSize-12px);
