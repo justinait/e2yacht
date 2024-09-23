@@ -270,6 +270,9 @@ li a {
         justify-content: space-between;
     }
     
+    .boatsWeManage {
+        width: 60%;
+    }
     .serviceListItems:hover {
         color: var(--color-lightBlue);
     }

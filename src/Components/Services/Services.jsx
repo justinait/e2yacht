@@ -210,7 +210,7 @@ function Services() {
                         <div>
                             <p> <strong>Other documents:</strong></p>
                             <ul>
-                            <li onClick={openPDF} style={{cursor: 'pointer'}}>
+                            <li onClick={openPDF} style={{cursor: 'pointer', textDecoration: 'underline', color:'#165BBB'}}>
                                 Certificate from SAMS
                             </li>
                             </ul>
