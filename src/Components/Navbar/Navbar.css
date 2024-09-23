@@ -33,10 +33,10 @@
     color: var(--color-lightBlue);
 }
 .serviceDropdownItems {
-    line-height: 2.3;
+    line-height: 2.8;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: var(--fontSize-12px);
+    font-size: var(--fontSize-12px-services);
 }
 .activeNavbar{
     color: black;
