@@ -15,13 +15,13 @@
     color: var(--color-blue);
     font-weight: 600;
     line-height: 18.3px;
-    font-size: 13.75px;
+    font-size: 14px;
 }
 .referenceCardText {
     color: rgba(0, 0, 0, 0.7);
     font-style: italic;
     line-height: 16px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .referencesContainerScroll {
     display: flex;

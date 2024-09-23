@@ -41,15 +41,14 @@
 .crewName {
     color: black;
     font-weight: 600;
-    font-size: var(--fontSize-12px);
+    font-size: var(--fontSize-14px);
     line-height: 1.2;
     margin: auto;
     font-family: "utile-display", sans-serif;
 }
 .crewText{
     color: var(--color-darkGrey);
-    font-size: clamp(7px, 2vw, 8px);
-    line-height: 2;
+    font-size: var(--fontSize-12px);
     margin: auto;
 }
 .crewInfoCard {
