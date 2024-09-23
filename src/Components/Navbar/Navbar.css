@@ -54,6 +54,14 @@
 .contactDesktop {
     display: none;
 }
+
+.burgerMenuIcon {
+    width: 20px;
+}
+.arrowNavbar {
+    height: 20px;
+    width: 14px;
+}
 @media(min-width: 600px) {
     .navbar {
         height: 70px;

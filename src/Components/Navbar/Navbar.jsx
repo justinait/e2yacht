@@ -94,7 +94,7 @@ function Navbar() {
       {
         !desktop && (
           openMenu ?
-            <img src={CloseIcon} onClick={handleClose} className='closeMenuIcon' alt="Close Menu" /> :
+            <img src={CloseIcon} onClick={handleClose} className='burgerMenuIcon' alt="Close Menu X" /> :
             <img src={menu} onClick={handleOpen} className='burgerMenuIcon' alt="Open Menu" />
         )
       }
