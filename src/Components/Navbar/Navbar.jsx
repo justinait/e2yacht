@@ -18,7 +18,7 @@ function Navbar() {
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
     { name: 'Contact', id: 'contact', className: 'contactMobile'},
-    { name: 'Contact us', id: 'contact', className: 'contactDesktop button contactButtonHover'}
+    { name: 'Contact us', id: 'contact', className: 'contactDesktop button contactButtonHover notActive'}
   ]
 
   const services = [
@@ -29,7 +29,7 @@ function Navbar() {
     { name: 'Marine Survey', id: 'marinesurvey', className: ''},
     { name: 'Captain And Crew Services', id: 'captainandcrew', className: '' },
     { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''},
-    { name: 'View all services', id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover' },
+    { name: 'View all services', id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
   ]
 
   const windowWidth = window.innerWidth;

@@ -202,6 +202,9 @@
         /* margin-top: 0 !important; */
         margin: 0 0 0 20px !important;
     }
+    .notActive {
+        color: white !important;
+    }
 }
 @media(min-width:1800px){
     .logoNavbar {
