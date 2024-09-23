@@ -4,6 +4,8 @@
     margin: 10px;
     border-radius: 15.27px;
     flex: 0 0 50vw;
+    height: fit-content;
+    padding: 20px;
 }
 .referencesHomeContainer {
     margin: 40px 0;
@@ -16,6 +18,7 @@
     font-weight: 600;
     line-height: 18.3px;
     font-size: 14px;
+    margin: 0;
 }
 .referenceCardText {
     color: rgba(0, 0, 0, 0.7);
