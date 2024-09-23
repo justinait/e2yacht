@@ -202,18 +202,27 @@
         height: 38px;
         margin: 5px;
     }
+    .indice h6 {
+        font-size: var(--fontSize-18px);
+    }
     .contactFooter .learnMore {
         margin-left: 2em;
         margin-right: 0;
     }
     .contactSectionFooter {
-        width: 39% !important;
+        width: 45% !important;
+        width: fit-content !important;
+    }
+    .locationFooter {
+        font-size: var(--fontSize-10px);
     }
     .linksHomeFooterIndice {
         line-height: 2;
+        font-size: var(--fontSize-10px);
     }    
     .homeSectionFooter {
         width: 18% !important;
+        width: fit-content !important;
     }
     .homeSectionFooter {
         order: 1; /* Primero */
