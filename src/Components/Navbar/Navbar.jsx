@@ -31,7 +31,6 @@ function Navbar() {
     { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''},
     { name: 'View all services', id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
   ]
-
   const windowWidth = window.innerWidth;
   const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
   const [dropdown, setDropdown] = useState(false)
@@ -85,6 +84,21 @@ function Navbar() {
     handleClose(id)
     setSelectedService(id)
   }
+
+  
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdown && desktop && !event.target.closest('.dropdownHeader')) {
+        setDropdown(false);
+      }
+    };
+  
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [dropdown, desktop]);
+  
   return (
     <div className='navbarContainer'>
     <div className='navbar'>
