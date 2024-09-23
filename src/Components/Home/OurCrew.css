@@ -1,5 +1,5 @@
 .ourCrewHomeContainer {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .ourCrewImageHome {
     width: 100%;
@@ -16,7 +16,7 @@
     .ourCrewHomeText{
         display: block;
         color: black;
-        font-size: clamp(14.5px, 1.23vw, 16px)
+        font-size: clamp(16.5px, 1.35vw, 18px);
     }
     .ourCrewImageHome {
         width: 50%;
@@ -29,7 +29,7 @@
         justify-content: space-between;
     }
     .ourCrewFirstDiv {
-        width: 46%;
+        width: 45%;
     }
     .ourCrewFirstDiv .titlesHome {
         margin-top: 0;

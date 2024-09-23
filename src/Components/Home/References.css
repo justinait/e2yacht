@@ -3,7 +3,7 @@
     padding: 10px;
     margin: 10px;
     border-radius: 15.27px;
-    flex: 0 0 50vw;
+    flex: 0 0 47vw;
     height: fit-content;
     padding: 20px;
 }
@@ -64,7 +64,7 @@
     z-index: 2;
 }
 .firstReview {
-    margin-left: 20vw;
+    margin-left: 18vw;
 }
 @media(min-width:600px) {
     .referenceCard {

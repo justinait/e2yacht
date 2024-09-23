@@ -185,6 +185,8 @@
         align-items: flex-start;
         flex-direction: row-reverse;        
         width: 24vw;
+        position: absolute;
+        right: 10%;
     }
     .contactFooter .button {
         margin-top: 0px;

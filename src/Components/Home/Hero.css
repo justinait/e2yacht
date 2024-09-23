@@ -127,13 +127,16 @@ a {
     }
     .heroSubtitle {
         margin: 2rem 0;
+        font-size: 24px;
     }
     h1 {
         font-size: clamp(40px, 3.75vw, 50px);
+        font-size: clamp(40px, 4.75vw, 60px);
         letter-spacing: 0.025rem;
     }
     .heroDescription {
         font-weight: 200;
+        font-size: 20px;
     }
 
     .separator {
