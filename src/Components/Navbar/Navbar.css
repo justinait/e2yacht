@@ -178,8 +178,8 @@
     .servicesNavbar::after {
         content: '';
         position: absolute;
-        top: -8px; /* Alinea la flecha interna con la externa */
-        left: 21px; /* Alinea correctamente con el borde de la flecha */
+        top: -9px;
+        left: 20.5px;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
         border-bottom: 9px solid white; /* Color del interior de la flecha */
