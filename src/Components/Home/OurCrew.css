@@ -3,6 +3,7 @@
 }
 .ourCrewImageHome {
     width: 100%;
+    border-radius: 25px;
 }
 .linkButton {
     display: block;
