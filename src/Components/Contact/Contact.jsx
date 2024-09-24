@@ -31,30 +31,29 @@ function Contact() {
       <div className='cardsContactContainer'>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            {/* <img src={location} alt="location" className='contactIconLocation'/> */}
-            <PlaceIcon/>
+            <PlaceIcon  className='contactIconMui' />
           </div>
           <h5>ADDRESS</h5>
-          <p className='cardContactText'>Blvd Nuevo Vallarta PTE, 65 Local 15 Nuevo Vallarta, Nayarit, Mexico, 63732</p>
+          <a href='https://maps.app.goo.gl/DphqnYiVoGED6PnV9' target='_blank' className='cardContactText'>Blvd Nuevo Vallarta PTE, 65 Local 15 Nuevo Vallarta, Nayarit, Mexico, 63732</a>
         </div>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            {/* <img src={phone} alt="location" className='contactIcon'/> */}
-            < CallIcon />
+            < CallIcon  className='contactIconMui'/>
           </div>
           <h5>PHONE</h5>
-          <p className='cardContactText'>Office: +52 322 297 4065
-            WhatsApp: +52 322-134-7397
+          <p className='cardContactText'>
+            Office: +52 322 297 4065 <br />
+            WhatsApp: +52 322-134-7397 <br />
             Phone USA: #1-714-412-6180
           </p>
         </div>
         <div className='cardContactDiv'>
           <div className='contactImageCircle'>
-            {/* <img src={mail} alt="location" className='contactIcon'/> */}
-            < EmailIcon color='blue' />
+            < EmailIcon className='contactIconMui' color='blue' />
           </div>
           <h5>EMAIL</h5>
-          <p className='cardContactText'>info@e2yachtservices.com</p>
+          {/* <p className='cardContactText'>info@e2yachtservices.com</p> */}
+          <a href="mailto:info@e2yachtservices.com" className='cardContactText'>info@e2yachtservices.com</a>
         </div>
       </div>
       
