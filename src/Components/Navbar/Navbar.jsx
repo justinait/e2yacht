@@ -8,15 +8,17 @@ import { ServiceContext } from '../context/ServiceContext'
 import LanguageIcon from '@mui/icons-material/Language';
 
 function Navbar() {
+
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('')
-
   const { selectedService, setSelectedService } = useContext(ServiceContext);
+
   const sections = [
     { name: 'Home', id: '', className: 'homeNavbar' },
     { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
+    { name: '', id: '', classId: 'convey'},
     { name: 'Contact', id: 'contact', className: 'contactMobile'},
     { name: 'Contact us', id: 'contact', className: 'contactDesktop button contactButtonHover notActive'}
   ]
@@ -84,7 +86,6 @@ function Navbar() {
     handleClose(id)
     setSelectedService(id)
   }
-
   
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -103,8 +104,18 @@ function Navbar() {
     <div className='navbarContainer'>
     <div className='navbar'>
       <Link to='/'>
-        <img src={logo} alt="E 2 Yacht Services" className='logoNavbar' onClick={handleClose} />
+        <img src={logo} alt="E2 Yacht Services" className='logoNavbar' onClick={handleClose} />
       </Link>
+      {/* <div>
+        <p id='convey'></p>
+      </div> */}
+      {/* {
+        !desktop ? (
+          <div className=''>
+            <p id='convey'></p>
+          </div>
+        ) : ('')
+      } */}
       {
         !desktop && (
           openMenu ?
@@ -127,6 +138,13 @@ function Navbar() {
                 {e.name}
                 {e.image && (!dropdown ? <img src={e.image} alt="Arrow" className='arrowNavbar' /> : <img src={e.image2} alt="Arrow"  className='arrowNavbar'/>)                }
               </div>
+              {/* {
+                desktop ? (
+                  <div className=''>
+                    <p id='convey'></p>
+                  </div>
+                ) : ('')
+              } */}
               {(e.id === 'services' && dropdown) &&
                 <div className='servicesNavbar'>
                   {services.map((service, index) => (
@@ -134,7 +152,6 @@ function Navbar() {
                       key={index}
                       to={`/${service.id}`}
                       onClick={() => handleServiceClick(service.id)}
-                      
                     >
                       <div className={`dropdownItems serviceDropdownItems ${selectedService === service.id ? 'activeNavbar' : ''} ${service.className}`}>
                         {service.name}
