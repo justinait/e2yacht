@@ -103,19 +103,15 @@ function Navbar() {
   return (
     <div className='navbarContainer'>
     <div className='navbar'>
+      {/* logo */}
       <Link to='/'>
         <img src={logo} alt="E2 Yacht Services" className='logoNavbar' onClick={handleClose} />
       </Link>
-      <div>
-        <p id='convey'></p>
-      </div>
-      {/* {
-        !desktop ? (
-          <div className=''>
-            <p id='convey'></p>
-          </div>
-        ) : ('')
-      } */}
+      
+      {/* idioma */}
+      <div id='convey'>      </div>
+      
+      {/* burgermenu/X */}
       {
         !desktop && (
           openMenu ?
@@ -128,6 +124,7 @@ function Navbar() {
     {(openMenu || desktop) &&
       <div className='dropdownHeader'>
         <div className='dropdownItemsContainer'>
+          {/* sections  */}
           {sections.map((e, i) => (
             <Link
               key={i}
@@ -138,13 +135,8 @@ function Navbar() {
                 {e.name}
                 {e.image && (!dropdown ? <img src={e.image} alt="Arrow" className='arrowNavbar' /> : <img src={e.image2} alt="Arrow"  className='arrowNavbar'/>)                }
               </div>
-              {/* {
-                desktop ? (
-                  <div className=''>
-                    <p id='convey'></p>
-                  </div>
-                ) : ('')
-              } */}
+
+              {/* services */}
               {(e.id === 'services' && dropdown) &&
                 <div className='servicesNavbar'>
                   {services.map((service, index) => (
