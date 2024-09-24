@@ -82,9 +82,9 @@ h2 {
 .onlyForDesktop {
   display: none;
 }
-.conveythis-widget-languages + div {
+/* .conveythis-widget-languages + div {
   display: none;
-}
+} */
 
 @media(min-width: 600px){
   .heroImages {
