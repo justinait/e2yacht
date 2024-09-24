@@ -14,11 +14,11 @@ function Navbar() {
   const { selectedService, setSelectedService } = useContext(ServiceContext);
 
   const sections = [
-    { name: '', id: '', classId: 'convey'},
     { name: 'Home', id: '', className: 'homeNavbar' },
     { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
     { name: 'What we do', id: 'whatwedo', className: ''},
+    { name: '', id: '', classId: 'convey'},
     { name: 'Contact', id: 'contact', className: 'contactMobile'},
     { name: 'Contact us', id: 'contact', className: 'contactDesktop button contactButtonHover notActive'}
   ]
@@ -117,6 +117,19 @@ function Navbar() {
         )
       }
     </div>
+    {
+      desktop ? (
+        <div className='sections'>
+          {/* Aquí estará el p en desktop */}
+          <p id='convey'>Contenido en desktop</p>
+        </div>
+      ) : (
+        <div>
+          {/* Aquí estará el p en mobile */}
+          <p id='convey'>Contenido en mobile</p>
+        </div>
+      )
+    }
 
     {(openMenu || desktop) &&
       <div className='dropdownHeader'>
