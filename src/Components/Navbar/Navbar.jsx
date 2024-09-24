@@ -106,9 +106,9 @@ function Navbar() {
       <Link to='/'>
         <img src={logo} alt="E2 Yacht Services" className='logoNavbar' onClick={handleClose} />
       </Link>
-      {/* <div>
+      <div>
         <p id='convey'></p>
-      </div> */}
+      </div>
       {/* {
         !desktop ? (
           <div className=''>
