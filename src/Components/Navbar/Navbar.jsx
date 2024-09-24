@@ -105,6 +105,9 @@ function Navbar() {
       <Link to='/'>
         <img src={logo} alt="E 2 Yacht Services" className='logoNavbar' onClick={handleClose} />
       </Link>
+      <div>
+        <p id='convey'></p>
+      </div>
       {
         !desktop && (
           openMenu ?
