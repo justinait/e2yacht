@@ -109,13 +109,13 @@ function Navbar() {
       {/* <div>
         <p id='convey'></p>
       </div> */}
-      {
+      {/* {
         !desktop ? (
           <div className=''>
             <p id='convey'></p>
           </div>
         ) : ('')
-      }
+      } */}
       {
         !desktop && (
           openMenu ?
@@ -124,17 +124,6 @@ function Navbar() {
         )
       }
     </div>
-    {/* {
-      desktop ? (
-        <div className='sections'>
-          <p id='convey'>Contenido en desktop</p>
-        </div>
-      ) : (
-        <div>
-          <p id='convey'>Contenido en mobile</p>
-        </div>
-      )
-    } */}
 
     {(openMenu || desktop) &&
       <div className='dropdownHeader'>
@@ -149,13 +138,13 @@ function Navbar() {
                 {e.name}
                 {e.image && (!dropdown ? <img src={e.image} alt="Arrow" className='arrowNavbar' /> : <img src={e.image2} alt="Arrow"  className='arrowNavbar'/>)                }
               </div>
-              {
+              {/* {
                 desktop ? (
                   <div className=''>
                     <p id='convey'></p>
                   </div>
                 ) : ('')
-              }
+              } */}
               {(e.id === 'services' && dropdown) &&
                 <div className='servicesNavbar'>
                   {services.map((service, index) => (
