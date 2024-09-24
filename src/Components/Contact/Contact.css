@@ -9,8 +9,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px 11px;
+    align-items: center;
 }
 .contactIcon {
     width: 20px;
@@ -42,7 +43,7 @@
 }
 .cardContactDiv{
     margin: 9px 0;
-    width: 43vw;
+    width: 60vw;
     height: 39vw;
     display: flex;
     flex-direction: column;
