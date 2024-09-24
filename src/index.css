@@ -86,6 +86,19 @@ h2 {
   display: none;
 } */
 
+#convey {
+  margin: auto;
+  margin-left: 10px;
+  width: 85px;
+}
+.conveythis-language-arrow {
+  display: none;
+}
+.conveythis-widget-main {
+  width: 80px;
+}
+
+
 @media(min-width: 600px){
   .heroImages {
     padding: 7.2% 7.2% 0;
