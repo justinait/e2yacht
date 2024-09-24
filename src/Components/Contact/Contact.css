@@ -279,3 +279,25 @@
         width: 45% !important;
     }
 }
+@media(min-width:1400px){
+    
+    .cardContactText {
+        width: 89%;
+    }
+}
+@media (min-width: 1800px) {
+    .contactImageCircle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contactIconMui {
+        font-size: 2.5em !important;
+    }
+    .cardContactDiv h5, .cardContactText {
+        font-size: 19px;
+    }
+    .contactFormBigContainer {
+        width: 50%;
+    }
+}
