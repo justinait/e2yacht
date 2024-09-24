@@ -8,11 +8,13 @@ import { ServiceContext } from '../context/ServiceContext'
 import LanguageIcon from '@mui/icons-material/Language';
 
 function Navbar() {
+
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('')
-
   const { selectedService, setSelectedService } = useContext(ServiceContext);
+
   const sections = [
+    { name: '', id: '', classId: 'convey'},
     { name: 'Home', id: '', className: 'homeNavbar' },
     { name: 'Services', id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: 'Our Crew', id: 'crew', className: ''},
@@ -84,7 +86,6 @@ function Navbar() {
     handleClose(id)
     setSelectedService(id)
   }
-
   
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -103,11 +104,11 @@ function Navbar() {
     <div className='navbarContainer'>
     <div className='navbar'>
       <Link to='/'>
-        <img src={logo} alt="E 2 Yacht Services" className='logoNavbar' onClick={handleClose} />
+        <img src={logo} alt="E2 Yacht Services" className='logoNavbar' onClick={handleClose} />
       </Link>
-      <div>
+      {/* <div>
         <p id='convey'></p>
-      </div>
+      </div> */}
       {
         !desktop && (
           openMenu ?
