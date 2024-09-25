@@ -4,7 +4,30 @@
       "services": "Servicios",
       "crew": "Nuestro equipo",
       "whatWeDo": "Lo que hacemos",
+      "viewAllServices": "Ver Todos los Servicios",
       "contact": "Contacto",
-      "contactUs": "Contáctanos"
+      "contactUs": "Contáctanos",
+      "yachtManagement": "Gestión de Yates",
+      "yachtDeliveries": "Delivery de Yates",
+      "privateInstructions": "Instrucciones Privadas",
+      "marineSurvey": "Inspección Marítima",
+      "captainAndCrewServices": "Servicios de Capitán y Equipo",
+      "maritimeAssetRecovery": "Recuperación de activos Marítimos"
+    },
+    "hero": {
+        "title": "Servicios profesionales de yates",
+        "subtitle": {
+        "part1": "Tu recurso se encuentra en Puerto Vallarta y el Pacífico Mexicano",
+        "part2": "incluyendo Baja California y el Mar de Cortés."
+        },
+        "operatedBy": {
+        "part1": "Operado por",
+        "captain1": "la Capitana Elizabeth Shanahan",
+        "part2": "y",
+        "captain2": "la Capitana Eugenie Russel"
+        },
+        "learnMore": "APRENDA MÁS",
+        "contactUs": "CONTACTO"
     }
-}  
+  }
+  

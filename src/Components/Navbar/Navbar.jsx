@@ -27,14 +27,15 @@ function Navbar() {
   
   const services = [
     { name: t('navbar.whatWeDo'), id: 'whatwedo', className: 'notForDesktop homeNavbar' },
-    { name: 'Yacht Management', id: 'management', className: ''},
-    { name: 'Yacht Deliveries', id: 'deliveries', className: ''},
-    { name: 'Private Instructions', id: 'instruction', className: ''},
-    { name: 'Marine Survey', id: 'marinesurvey', className: ''},
-    { name: 'Captain And Crew Services', id: 'captainandcrew', className: '' },
-    { name: 'Maritime Asset Recovery', id: 'maritimerecovery', className: ''},
-    { name: t('navbar.viewAllServices'), id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
+    { name: t('navbar.yachtManagement'), id: 'management', className: '' },
+    { name: t('navbar.yachtDeliveries'), id: 'deliveries', className: '' },
+    { name: t('navbar.privateInstructions'), id: 'instruction', className: '' },
+    { name: t('navbar.marineSurvey'), id: 'marinesurvey', className: '' },
+    { name: t('navbar.captainAndCrewServices'), id: 'captainandcrew', className: '' },
+    { name: t('navbar.maritimeAssetRecovery'), id: 'maritimerecovery', className: '' },
+    { name: t('navbar.viewAllServices'), id: 'viewallservices', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
   ];
+  
 
   const handleLanguageChange = () => {
     const nextLanguage = i18n.language === 'en' ? 'es' : 'en';

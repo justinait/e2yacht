@@ -4,7 +4,31 @@
       "services": "Services",
       "crew": "Our Crew",
       "whatWeDo": "What we do",
+      "viewAllServices": "View All Services",
       "contact": "Contact",
-      "contactUs": "Contact us"
+      "contactUs": "Contact us",
+      "yachtManagement": "Yacht Management",
+      "yachtDeliveries": "Yacht Deliveries",
+      "privateInstructions": "Private Instructions",
+      "marineSurvey": "Marine Survey",
+      "captainAndCrewServices": "Captain And Crew Services",
+      "maritimeAssetRecovery": "Maritime Asset Recovery"
+    },
+    "hero": {
+        "title": "Professional Yacht Services",
+        "subtitle": {
+        "part1": "Your resource based in Puerto Vallarta and Pacific Mexico",
+        "part2": "including Baja California and the Sea of Cortez."
+        },
+        "operatedBy": {
+        "part1": "Operated by",
+        "captain1": "Captain Elizabeth Shanahan",
+        "part2": "and",
+        "captain2": "Captain Eugenie Russel"
+        },
+        "learnMore": "Learn More",
+        "contactUs": "Contact us"
     }
-}  
+
+  }
+  

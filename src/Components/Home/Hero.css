@@ -36,15 +36,15 @@ h1 {
     margin: 2em 0 0;
 }
 .button{
-    font-size: var(--fontSize-16px);
+    font-size: clamp(14.5px, 3.9vw, 17px);
     font-weight: var(--fontWeight-bold);
     text-transform: uppercase;
-    width: 27.5vw;
+    width: 30.5vw;
     background: var(--color-lightBlue);
     background: linear-gradient(to right, var(--color-lightBlue), var(--color-lightBlue)); /* Gradiente en estado normal, aunque es un color sólido */
     
     color: white;
-    padding: 15px 18px;
+    padding: 15px 13px;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 0;
