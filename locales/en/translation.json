@@ -65,18 +65,28 @@
       "seeMore": "SEE MORE"
     },
     "references": {
-        "referencesHeader": "References",
-        "referencesSubtitle": "Create new experiences by working with us",
-        "references": {        
-            "text1": "“Elizabeth, I wanted to thank you and let you know that I recommend you as a delivery captain. You completed my delivery from the Bahamas to Michigan in a timely fashion. There were times that you ran the boat all night in order to get it back to Michigan and meet my scheduled trip. I appreciate your dedication and commitment to making things happen.”",
-            "text2": "“Elizabeth Shanahan is a great delivery captain; I have recommended her several times and received good reports about her and her operation. I have known her for 5 plus years and consider her operation an accent to our marina.”",
-            "text3": "“Thank you again for all of your help and assistance with recent repairs, maintenance and project management. We appreciate E2’s professional level of service and the ability to communicate easily with your team. The full range of services you provide is particularly helpful when boat owners must manage their boats from afar.”",
-            "text4": "“Elizabeth, we want to thank you for the years of taking care of and running our yacht. You managed our yacht with professionalism, from having her clean and provisioned as we requested to managing the hard work in our absence. Your attention to detail in the ongoing maintenance a yacht requires was greatly appreciated. Your skills as captain and in handling the yacht in all sorts of seas and weather are impressive.”",
-            "text5": "“Sometimes in life we're lucky enough to meet the perfect person to do the perfect job. Eugenie's extensive sailing knowledge and experience is shared with gentleness and grace. She respects and understands both her craft and students. She's honest, humorous, tri-lingual (!), strong in body, mind and spirit and a delight to be with whether sailing or on land. Thanks Eugenie!”",
-            "text6": "“Eugenie is knowledgeable, enthusiastic, personable and she is a great teacher. It is rare to find all these qualities in one person! We look forward to more lessons with Eugenie during the 2011-2012 season. Whenever friends ask us for a recommendation for a sailing instructor - from the most basic to advanced levels – we always send them to Eugenie!”",
-            "text7": "“Dear Elizabeth and Eugenie, Your combined professionalism and skills truly put a lot of my anxiety to rest and carried us through. Thanks so much. Our sailboat’s namesake, the Eagle, is a good metaphor for camaraderie and for good times: I hope to exploit this to the max in the coming years. You both are welcome to sail her anytime the opportunity permits. Love you both.”"
-            }
-    }
+      "referencesHeader": "References",
+      "referencesSubtitle": "Create new experiences by working with us",
+      "references": {        
+        "text1": "“Elizabeth, I wanted to thank you and let you know that I recommend you as a delivery captain. You completed my delivery from the Bahamas to Michigan in a timely fashion. There were times that you ran the boat all night in order to get it back to Michigan and meet my scheduled trip. I appreciate your dedication and commitment to making things happen.”",
+        "text2": "“Elizabeth Shanahan is a great delivery captain; I have recommended her several times and received good reports about her and her operation. I have known her for 5 plus years and consider her operation an accent to our marina.”",
+        "text3": "“Thank you again for all of your help and assistance with recent repairs, maintenance and project management. We appreciate E2’s professional level of service and the ability to communicate easily with your team. The full range of services you provide is particularly helpful when boat owners must manage their boats from afar.”",
+        "text4": "“Elizabeth, we want to thank you for the years of taking care of and running our yacht. You managed our yacht with professionalism, from having her clean and provisioned as we requested to managing the hard work in our absence. Your attention to detail in the ongoing maintenance a yacht requires was greatly appreciated. Your skills as captain and in handling the yacht in all sorts of seas and weather are impressive.”",
+        "text5": "“Sometimes in life we're lucky enough to meet the perfect person to do the perfect job. Eugenie's extensive sailing knowledge and experience is shared with gentleness and grace. She respects and understands both her craft and students. She's honest, humorous, tri-lingual (!), strong in body, mind and spirit and a delight to be with whether sailing or on land. Thanks Eugenie!”",
+        "text6": "“Eugenie is knowledgeable, enthusiastic, personable and she is a great teacher. It is rare to find all these qualities in one person! We look forward to more lessons with Eugenie during the 2011-2012 season. Whenever friends ask us for a recommendation for a sailing instructor - from the most basic to advanced levels – we always send them to Eugenie!”",
+        "text7": "“Dear Elizabeth and Eugenie, Your combined professionalism and skills truly put a lot of my anxiety to rest and carried us through. Thanks so much. Our sailboat’s namesake, the Eagle, is a good metaphor for camaraderie and for good times: I hope to exploit this to the max in the coming years. You both are welcome to sail her anytime the opportunity permits. Love you both.”"
+      }
+    },
+    "ourCrew": {
+      "header": "Our Crew",
+      "benefits": "The benefits of a full-time crew without the expense: yacht management, delivery, and staffing.",
+      "description1": "Under the direction of United States Coast Guard Licensed Masters Elizabeth Shanahan and Eugenie Russell, our experienced team of marine professionals offer dedicated and personalized service, no matter the size or type of assignment. We have carefully and successfully captained sailing and motor yachts up and down the West Coast, including Mexico and Alaska.",
+      "description2": "We also serve the East Coast, South America through the Caribbean, the Eastern Seaboard, through the Erie Canal, to the Great lakes and St. Lawrence Seaway, the South Pacific, Europe, and the Mediterranean. Our captains are available from 100T to unlimited, sailing and motor yachts as well as power boats.",
+      "captainText": "Captain, 1600 T USCG Master, SA",
+      "joseText": "On the dock",
+      "odiText": "Office Manager",
+      "miguelText": "On the dock"
+  }
 
   }
   

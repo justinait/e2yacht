@@ -75,7 +75,17 @@
             "text6": "“Eugenie es conocedora, entusiasta, amable y es una excelente profesora. ¡Es raro encontrar todas estas cualidades en una sola persona! Esperamos con interés más lecciones con Eugenie durante la temporada 2011-2012. Siempre que amigos nos piden una recomendación para un instructor de navegación, ya sea para niveles básicos o avanzados, ¡siempre los enviamos a Eugenie!”",
             "text7": "“Queridas Elizabeth y Eugenie, Su profesionalismo y habilidades combinadas realmente me ayudaron a calmar mi ansiedad y nos guiaron a través de todo. Muchas gracias. El nombre de nuestro velero, el Águila, es una buena metáfora para la camaradería y los buenos momentos: espero aprovechar al máximo esto en los próximos años. Ambas son bienvenidas a navegar en él siempre que la oportunidad lo permita. Las quiero a las dos.”"
         }
-    
+    },
+    "ourCrew": {
+        "header": "Nuestro equipo",
+        "benefits": "Los beneficios de tener un equipo a tiempo completo sin el costo: gestión de yates, delivery y personal.",
+        "description1": "Bajo la dirección de los Maestros Licenciados por la Guardia Costera de los Estados Unidos, Elizabeth Shanahan y Eugenie Russell, nuestro equipo experimentado de profesionales marinos ofrece un servicio dedicado y personalizado, sin importar el tamaño o tipo de tarea. Hemos capitaneado cuidadosamente y con éxito yates de vela y motor a lo largo de la costa oeste, incluyendo México y Alaska.",
+        "description2": "También servimos en la costa este, América del Sur a través del Caribe, la costa este de los Estados Unidos, el canal Erie, los Grandes Lagos y la vía marítima de San Lorenzo, el Pacífico Sur, Europa y el Mediterráneo. Nuestros capitanes están disponibles desde 100T hasta sin límite, tanto para yates de vela y motor, como para barcos a motor.",
+        "elizabethText": "Capitana, 1600 T USCG Master, SA",
+        "eugenieText": "Capitana, 1600 T USCG Master, SA",
+        "joseText": "En el muelle",
+        "odiText": "Gerente de Oficina",
+        "miguelText": "En el muelle"
     }
   }
   
