@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { ServiceContext } from '../context/ServiceContext'
 import LanguageIcon from '@mui/icons-material/Language';
 import { useTranslation } from 'react-i18next';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function Navbar() {
 
@@ -20,12 +21,10 @@ function Navbar() {
     { name: t('navbar.services'), id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: t('navbar.crew'), id: 'crew', className: '' },
     { name: t('navbar.whatWeDo'), id: 'whatwedo', className: '' },
-    { name: '', id: '', classId: 'convey' },
     { name: t('navbar.contact'), id: 'contact', className: 'contactMobile' },
     { name: t('navbar.contactUs'), id: 'contact', className: 'contactDesktop button contactButtonHover notActive' }
   ];
   
-
   const services = [
     { name: t('navbar.whatWeDo'), id: 'whatwedo', className: 'notForDesktop homeNavbar' },
     { name: 'Yacht Management', id: 'management', className: ''},
@@ -107,9 +106,15 @@ function Navbar() {
       document.removeEventListener('click', handleClickOutside);
     };
   }, [dropdown, desktop]);
-  useEffect(() => {
-    console.log('Current Language:', i18n.language); // Imprimir el idioma actual
-  }, [i18n.language]);
+
+  const idioma = (
+    <div className='languageContainerNavbar'>
+      <LanguageIcon fontSize='small' onClick={handleLanguageChange} />
+      <p>{i18n.language === 'en' ? 'English' : 'Español'}</p>
+      <KeyboardArrowDownIcon/>
+    </div>
+  )
+
   return (
     <div className='navbarContainer'>
     <div className='navbar'>
@@ -117,33 +122,28 @@ function Navbar() {
       <Link to='/'>
         <img src={logo} alt="E2 Yacht Services" className='logoNavbar' onClick={handleClose} />
       </Link>
-      
-      {/* idioma */}
-      <div>
-        <p>{i18n.language === 'en' ? 'English' : 'Español'}</p>
-        <LanguageIcon color='black' onClick={handleLanguageChange} />
+
+      <div className='burgerAndLanguageContainer'>
+        {/* idioma */}
+        { !desktop && idioma }
+        
+        {/* burgermenu/X */}
+        {
+          !desktop && (
+            openMenu ?
+              <img src={CloseIcon} onClick={handleClose} className='burgerMenuIcon' alt="Close Menu X" /> :
+              <img src={menu} onClick={handleOpen} className='burgerMenuIcon' alt="Open Menu" />
+          )
+        }
       </div>
       
-      {/* burgermenu/X */}
-      {
-        !desktop && (
-          openMenu ?
-            <img src={CloseIcon} onClick={handleClose} className='burgerMenuIcon' alt="Close Menu X" /> :
-            <img src={menu} onClick={handleOpen} className='burgerMenuIcon' alt="Open Menu" />
-        )
-      }
-      {console.log(t('navbar.home'))}  // Para verificar si está trayendo la traducción
-
     </div>
 
     {(openMenu || desktop) &&
       <div className='dropdownHeader'>
         <div className='dropdownItemsContainer'>
           {/* sections  */}
-          <p>{t('navbar.home')}</p>
-          {/* <p className='ourFocus'>{t('home.ourFocus')}</p> */}
-          <p>Current Language: {i18n.language}</p> {/* Mostrar el idioma actual */}
-          
+
           {sections.map((e, i) => (
             <Link
               key={i}

@@ -9,6 +9,20 @@
     padding: 0 5.5%;
     height: 58px;
 }
+.burgerAndLanguageContainer {
+    display: flex;
+    align-items: center;
+}
+.languageContainerNavbar {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    align-items: center;
+}
+.languageContainerNavbar p {
+    font-size: 12px;
+}
 .dropdownHeader {
     font-size: 16px;
     font-weight: var(--fontWeight-medium);
@@ -114,6 +128,9 @@
         height: 100px;
         padding: 0 8.3%;
     }
+    .languageContainerNavbar {
+        margin-right: 25px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -128,7 +145,7 @@
     }
     .navbar {
         height: 122px;
-        padding: 0 9.86%;
+        padding: 0 0 0 9.86%;
     }
     .dropdownItemsContainer {
         flex-direction: row;
