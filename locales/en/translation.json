@@ -28,6 +28,34 @@
         },
         "learnMore": "Learn More",
         "contactUs": "Contact us"
+    },
+    "services": {
+      "title": "Services",
+      "subtitle": "E² Yacht Services",
+      "yachtManagement": {
+        "name": "Yacht Management",
+        "text": "We maintain and manage yachts to the highest standards, allowing owners to enjoy worry-free time onboard, knowing every detail is in good hands."
+      },
+      "yachtDeliveries": {
+        "name": "Yacht Deliveries",
+        "text": "Delivering boats worldwide, we specialize in the West Coast of North America, from Alaska to Mexico and Central America."
+      },
+      "privateInstructions": {
+        "name": "Private Instructions",
+        "text": "With decades of experience, we’ve trained hundreds of seamen, sharing our passion for the open water. Our hands-on, personalized approach emphasizes safety above all else."
+      },
+      "marineSurvey": {
+        "name": "Marine Survey",
+        "text": "We will provide you with a detailed, internationally accepted report of the condition and fair market value of your vessel."
+      },
+      "captainAndCrewServices": {
+        "name": "Captain And Crew Services",
+        "text": "We provide temporary and on-call captain and crew services. All of our staff is licensed."
+      },
+      "marineAssetRecovery": {
+        "name": "Marine Asset Recovery",
+        "text": "E² Yacht Services can skip trace and recover boats and yachts of any size. We can operate on short notice and offer fast delivery."
+      }
     }
 
   }

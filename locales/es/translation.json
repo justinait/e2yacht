@@ -28,6 +28,34 @@
         },
         "learnMore": "APRENDA MÁS",
         "contactUs": "CONTACTO"
+    },
+    "services": {
+      "title": "Servicios",
+      "subtitle": "Servicios de E² Yacht",
+      "yachtManagement": {
+        "name": "Gestión de Yates",
+        "text": "Mantenemos y gestionamos yates a los más altos estándares, permitiendo a los propietarios disfrutar de un tiempo sin preocupaciones a bordo, sabiendo que cada detalle está en buenas manos."
+      },
+      "yachtDeliveries": {
+        "name": "Delivery de Yates",
+        "text": "Entregamos embarcaciones en todo el mundo, especializándonos en la costa oeste de América del Norte, desde Alaska hasta México y América Central."
+      },
+      "privateInstructions": {
+        "name": "Instrucciones Privadas",
+        "text": "Con décadas de experiencia, hemos entrenado a cientos de marineros, compartiendo nuestra pasión por el agua abierta. Nuestro enfoque práctico y personalizado enfatiza la seguridad sobre todo."
+      },
+      "marineSurvey": {
+        "name": "Inspección Marítima",
+        "text": "Le proporcionaremos un informe detallado y aceptado internacionalmente sobre el estado y el valor de mercado justo de su embarcación."
+      },
+      "captainAndCrewServices": {
+        "name": "Servicios de Capitán y Equipo",
+        "text": "Proporcionamos servicios temporales y de capitán y equipo a demanda. Todo nuestro personal está licenciado."
+      },
+      "marineAssetRecovery": {
+        "name": "Recuperación de Activos Marítimos",
+        "text": "E² Yacht Services puede rastrear y recuperar embarcaciones y yates de cualquier tamaño. Podemos operar con poco aviso y ofrecer una entrega rápida."
+      }
     }
   }
   
