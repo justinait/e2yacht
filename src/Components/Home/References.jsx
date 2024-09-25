@@ -12,7 +12,7 @@ function References() {
     { name: 'Dick and Lee Burd, MV Lion Heart, Defever 49', text: t('references.references.text4'), className: ''},
     { name: 'Phileta and Dorothy', text: t('references.references.text5'), className: ''},
     { name: 'Cheryl and Thom Landgreen, SV Bolero, Puerto Vallarta', text: t('references.references.text6'), className: ''},
-    { name: 'Gary and Marybeth, SV Eagle, Formosa 51', text: t('references.references.text7'), className: ''}
+    { name: 'Gary and Marybeth, SV Eagle, Formosa 51', text: t('references.references.text7'), className: 'lastReview'}
   ]
 
   const containerRef = useRef(null);

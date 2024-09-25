@@ -66,6 +66,9 @@
 .firstReview {
     margin-left: 18vw;
 }
+.lastReview {
+    margin-right: 8vw;
+}
 @media(min-width:600px) {
     .referenceCard {
         flex: 0 0 33vw;
