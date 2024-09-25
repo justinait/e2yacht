@@ -56,6 +56,13 @@
         "name": "Marine Asset Recovery",
         "text": "E² Yacht Services can skip trace and recover boats and yachts of any size. We can operate on short notice and offer fast delivery."
       }
+    },
+    "home": {
+      "servicesHeader": "Services",
+      "ourCrewHeader": "Our Crew",
+      "servingBanderas": "Serving Banderas Bay 2007",
+      "ourCrewText": "Under the direction of United States Coast Guard Licensed Masters Elizabeth Shanahan and Eugenie Russell, our experienced team of marine professionals offer dedicated and personalized service, no matter the size or type of assignment. We have carefully and successfully captained sailing and motor yachts up and down the West Coast, including Mexico and Alaska. We also serve the East Coast, South America through the Caribbean, the Eastern Seaboard, through the Erie Canal, to the Great lakes and St. Lawrence Seaway, the South Pacific, Europe, and the Mediterranean. Our captains are available from 100T to unlimited, sailing and motor yachts as well as power boats.",
+      "seeMore": "SEE MORE"
     }
 
   }

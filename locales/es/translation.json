@@ -56,6 +56,12 @@
         "name": "Recuperación de Activos Marítimos",
         "text": "E² Yacht Services puede rastrear y recuperar embarcaciones y yates de cualquier tamaño. Podemos operar con poco aviso y ofrecer una entrega rápida."
       }
+    },
+    "home": {
+      "ourCrewHeader": "Nuestro Equipo",
+      "servingBanderas": "Sirviendo Bahía de Banderas desde 2007",
+      "ourCrewText": "Bajo la dirección de los Maestros Licenciados por la Guardia Costera de los Estados Unidos, Elizabeth Shanahan y Eugenie Russell, nuestro experimentado equipo de profesionales marinos ofrece un servicio dedicado y personalizado, sin importar el tamaño o tipo de asignación. Hemos capitaneado cuidadosa y exitosamente yates de vela y motor a lo largo de la Costa Oeste, incluyendo México y Alaska. También servimos en la Costa Este, América del Sur a través del Caribe, la Costa Este, pasando por el Canal Erie, hasta los Grandes Lagos y la Vía Marítima del San Lorenzo, el Pacífico Sur, Europa y el Mediterráneo. Nuestros capitanes están disponibles desde 100 T hasta ilimitados, en yates de vela y motor, así como en lanchas a motor.",
+      "seeMore": "VER MÁS"
     }
   }
   

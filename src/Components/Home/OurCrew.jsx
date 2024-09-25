@@ -2,28 +2,26 @@ import React from 'react'
 import './OurCrew.css'
 import photo from '/images/servingBanderasHome.jpg'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
 function OurCrew() {
+  const { t } = useTranslation();
+  
   return (
     <div className='homeContainers ourCrewHomeContainer'>
       <div className='ourCrewFirstDiv'>
 
-        <h5 className='titlesHome'>Our Crew</h5>
-        <h2 className='subtitlesHome'>Serving Banderas Bay 2007</h2>
+        <h5 className='titlesHome'>{t('home.ourCrewHeader')}</h5>
+        <h2 className='subtitlesHome'>{t('home.servingBanderas')}</h2>
 
-        <p className='ourCrewHomeText'>Under the direction of United States Coast Guard Licensed Masters Elizabeth Shanahan and Eugenie Russell, 
-          our experienced team of marine professionals offer dedicated and personalized service, no matter the size or 
-          type of assignment. We have carefully and successfully captained sailing and motor yachts up and down the West Coast, 
-          including Mexico and Alaska. We also serve the East Coast, South America through the Caribbean, the Eastern Seaboard, 
-          through the Erie Canal, to the Great lakes and St. Lawrence Seaway, the South Pacific , Europe, and the Mediterranean. 
-          Our captains are available from 100T to unlimited, sailing and motor yachts as well as power boats.
-        </p>
-        <Link to='/crew' className='button linkButton onlyForDesktop contactButtonHover'>SEE MORE</Link>
+        <p className='ourCrewHomeText'>{t('home.ourCrewText')}</p>
+
+        <Link to='/crew' className='button linkButton onlyForDesktop contactButtonHover'>{t('home.seeMore')}</Link>
       </div>
 
       <img src={photo} alt="" className='ourCrewImageHome'/>
       
-      <Link to='/crew' className='button linkButton notForDesktop contactButtonHover'>SEE MORE</Link>
+      <Link to='/crew' className='button linkButton notForDesktop contactButtonHover'>{t('home.seeMore')}</Link>
     </div>
   )
 }
