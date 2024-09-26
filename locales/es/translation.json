@@ -81,11 +81,26 @@
         "benefits": "Los beneficios de tener un equipo a tiempo completo sin el costo: gestión de yates, delivery y personal.",
         "description1": "Bajo la dirección de los Maestros Licenciados por la Guardia Costera de los Estados Unidos, Elizabeth Shanahan y Eugenie Russell, nuestro equipo experimentado de profesionales marinos ofrece un servicio dedicado y personalizado, sin importar el tamaño o tipo de tarea. Hemos capitaneado cuidadosamente y con éxito yates de vela y motor a lo largo de la costa oeste, incluyendo México y Alaska.",
         "description2": "También servimos en la costa este, América del Sur a través del Caribe, la costa este de los Estados Unidos, el canal Erie, los Grandes Lagos y la vía marítima de San Lorenzo, el Pacífico Sur, Europa y el Mediterráneo. Nuestros capitanes están disponibles desde 100T hasta sin límite, tanto para yates de vela y motor, como para barcos a motor.",
-        "elizabethText": "Capitana, 1600 T USCG Master, SA",
-        "eugenieText": "Capitana, 1600 T USCG Master, SA",
+        "captainText": "Capitana, 1600 T USCG Master, SA",
         "joseText": "En el muelle",
         "odiText": "Gerente de Oficina",
         "miguelText": "En el muelle"
+    },
+    "contact": {
+      "header": "Visite, llame o mande mail",
+      "subtitle": "Y nos pondremos en contacto contigo",
+      "address": "ADDRESS",
+      "phone": "TELÉFONO",
+      "office": "Oficina",
+      "phoneUsa": "Teléfono EEUU",
+      "subtitle2": "Nos encantaría saber de ti",
+      "nameForm": "Nombre*",
+      "emailForm": "Mail*",
+      "subjectForm": "Asunto*",
+      "messageForm": "Tu mensaje*",
+      "sendForm": "Enviar Mensaje",
+      "whereTitle": "DONDE NOS ENCONTRAMOS",
+      "whereVisitUs": "Visitanos"
     }
   }
   

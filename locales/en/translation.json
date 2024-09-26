@@ -86,7 +86,23 @@
       "joseText": "On the dock",
       "odiText": "Office Manager",
       "miguelText": "On the dock"
-  }
+    },
+    "contact": {
+      "header": "Visit, call or send email",
+      "subtitle": "And we will get back to you",
+      "address": "ADDRESS",
+      "phone": "PHONE",
+      "office": "Office",
+      "phoneUsa": "Phone USA",
+      "subtitle2": "We’d love to hear from you",
+      "nameForm": "Name*",
+      "emailForm": "Email*",
+      "subjectForm": "Subject*",
+      "messageForm": "Your message*",
+      "sendForm": "Send Message",
+      "whereTitle": "WHERE WE ARE",
+      "whereVisitUs": "Visit us"
+    }
 
   }
   
