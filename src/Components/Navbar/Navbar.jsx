@@ -15,12 +15,27 @@ function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('')
   const { selectedService, setSelectedService } = useContext(ServiceContext);
+  const windowWidth = window.innerWidth;
+  const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
+  const [dropdown, setDropdown] = useState(false)
 
+  const handleLanguageChange = () => {
+    const nextLanguage = i18n.language === 'en' ? 'es' : 'en';
+    i18n.changeLanguage(nextLanguage);
+  };
+  const idioma = (
+    <div className='languageContainerNavbar'>
+      <LanguageIcon fontSize='small' onClick={handleLanguageChange} />
+      <p>{i18n.language === 'en' ? 'English' : 'Español'}</p>
+      <KeyboardArrowDownIcon/>
+    </div>
+  )
   const sections = [
     { name: t('navbar.home'), id: '', className: 'homeNavbar' },
     { name: t('navbar.services'), id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: t('navbar.crew'), id: 'crew', className: '' },
     { name: t('navbar.whatWeDo'), id: 'whatwedo', className: '' },
+    ...(desktop ? [{ name: idioma, id: 'language', className: 'languageSection', content: idioma }] : []), // Aquí se añade el idioma si es desktop
     { name: t('navbar.contact'), id: 'contact', className: 'contactMobile' },
     { name: t('navbar.contactUs'), id: 'contact', className: 'contactDesktop button contactButtonHover notActive' }
   ];
@@ -37,13 +52,6 @@ function Navbar() {
   ];
   
 
-  const handleLanguageChange = () => {
-    const nextLanguage = i18n.language === 'en' ? 'es' : 'en';
-    i18n.changeLanguage(nextLanguage);
-  };
-  const windowWidth = window.innerWidth;
-  const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
-  const [dropdown, setDropdown] = useState(false)
 
   const handleDropdown = ()=> {
     setDropdown(!dropdown)
@@ -108,13 +116,6 @@ function Navbar() {
     };
   }, [dropdown, desktop]);
 
-  const idioma = (
-    <div className='languageContainerNavbar'>
-      <LanguageIcon fontSize='small' onClick={handleLanguageChange} />
-      <p>{i18n.language === 'en' ? 'English' : 'Español'}</p>
-      <KeyboardArrowDownIcon/>
-    </div>
-  )
 
   return (
     <div className='navbarContainer'>
