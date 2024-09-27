@@ -35,7 +35,8 @@
     "subtitle": "E² Yacht Services",
     "yachtManagement": {
       "name": "Yacht Management",
-      "text": "We maintain and manage yachts to the highest standards, allowing owners to enjoy worry-free time onboard, knowing every detail is in good hands."
+      "text": "We maintain and manage yachts to the highest standards, allowing owners to enjoy worry-free time onboard, knowing every detail is in good hands.",
+      "underCare": "Yachts under our care"
     },
     "yachtDeliveries": {
       "name": "Yacht Deliveries",
@@ -70,6 +71,7 @@
       "otherDocs": "Other documents:",
       "certificate": "Certificate from SAMS"      
     }
+
 
   },
   "home": {

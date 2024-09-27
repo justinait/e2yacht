@@ -35,7 +35,8 @@
       "subtitle": "Servicios de E² Yacht",
       "yachtManagement": {
         "name": "Gestión de Yates",
-        "text": "Mantenemos y gestionamos yates a los más altos estándares, permitiendo a los propietarios disfrutar de un tiempo sin preocupaciones a bordo, sabiendo que cada detalle está en buenas manos."
+        "text": "Mantenemos y gestionamos yates a los más altos estándares, permitiendo a los propietarios disfrutar de un tiempo sin preocupaciones a bordo, sabiendo que cada detalle está en buenas manos.",
+        "underCare": "Yates bajo nuestro cuidado"
       },
       "yachtDeliveries": {
         "name": "Delivery de Yates",
