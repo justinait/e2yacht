@@ -62,8 +62,8 @@ function References() {
   return (
     <div className='homeContainers referencesHomeContainer'>
         
-      <h5 className='titlesHome'>References</h5>
-      <h2 className='subtitlesHome'>Create new experiences by working with us</h2>
+      <h5 className='titlesHome'>{t('references.referencesHeader')}</h5>
+      <h2 className='subtitlesHome'>{t('references.referencesSubtitle')}</h2>
       <div ref={containerRef} className='referencesContainerScroll'>
         {
           references.map((e, i)=> {
