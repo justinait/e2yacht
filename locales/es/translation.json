@@ -67,9 +67,35 @@
           "name2": "Veleros"
         }
       },
-      "yachtDeliveries": {
+      "deliveries": {
         "name": "Delivery de Yates",
-        "text": "Entregamos embarcaciones en todo el mundo, especializándonos en la costa oeste de América del Norte, desde Alaska hasta México y América Central."
+        "text": "Entregamos embarcaciones en todo el mundo, especializándonos en la costa oeste de América del Norte, desde Alaska hasta México y América Central.",
+        "firstText": "Podemos entregar su barco en todo el mundo con un amplio conocimiento de la costa oeste de América del Norte; Canadá, Estados Unidos (de Alaska a México y América Central). Estamos dedicados a entregas seguras y puntuales. \n\n Nuestros capitanes son Maestros completamente licenciados con amplia experiencia en yates de motor y vela, tránsitos de canales, vías intercostales y vías navegables en alta mar. Estamos asegurados para realizar entregas durante las temporadas de huracanes y ciclones. \n\n Trabajamos tanto para particulares como para instituciones financieras y compañías de seguros, como Key Bank, Wells Fargo, WhatCom Credit Union y Sea Worthy Insurance, solo por mencionar algunas.",
+        "secondText": "También puede elegir permanecer a bordo de su barco mientras lo entregamos, para aprender más sobre su embarcación y mejorar sus habilidades de navegación. Todas nuestras entregas incluyen una inspección previa al viaje, informes de gastos, autorización de puertos y aduanas, y un informe de rendimiento por escrito al final. Una lista adicional de entregas completadas está disponible bajo solicitud. A continuación, un ejemplo:",
+        "thirdText": "La lista anterior es solo una muestra de la diversidad de barcos que hemos entregado. Hay demasiados para enumerar a lo largo de la costa oeste de América del Norte, desde Whittier, Alaska, hasta el canal de Panamá, incluyendo cruces del Pacífico y el Atlántico. Nuestro equipo de entrega es profesional en todo sentido.",
+        "ul": [
+          "Planificación y gestión previa al viaje, incluyendo tripulación, equipamiento, mantenimiento, programación y contabilidad.",
+          "Capacitación a bordo para el propietario, donde aprenderá sobre los sistemas a bordo mientras entregamos o reubicamos su barco.",
+          "Reubicaciones, incluidas las reubicaciones por tormentas, bancos y seguros.",
+          "Realización de travesías.",
+          "Pruebas de mar e inspecciones previas a la compra.",
+          "Podemos proporcionar orientación mientras el barco se encuentra en cualquier ubicación."
+        ],
+        "ul2": [
+          "Hatteras 72 MY, Bahamas to Lake Michigan via Eerie canal and Welland Canal",
+          "Horizon 70' Huatulco to Puerto Vallarta and Puerto Vallarta to Los Angeles",
+          "Johnson 65' Columbia to Puerto Vallarta thru the Panama Canal",
+          "Viking 65' All over Mexico",
+          "Passport 45, Ixtapa to Puerto Vallarta then Papette, Tahiti",
+          "Riviera 48, San Diego to Puerto Vallarta",
+          "Symbol 80, Puerto Vallarta to Manzanillo, and load on Yacht Path",
+          "Offshore 55 Puerto Vallarta to Whittier Alaska",
+          "Formosa 51, Puerto Vallarta to Los Angeles",
+          "Jeanneau 49 DS, Ixtapa to Los Angeles",
+          "Defever 49, Puerto Vallarta to Los Angeles",
+          "Beneateau 38 Costa Rica to Long Beach, CA",
+          "Two weeks private instruction in the Greek Islands aboard the owner's vessel"
+        ]
       },
       "privateInstructions": {
         "name": "Instrucciones Privadas",
