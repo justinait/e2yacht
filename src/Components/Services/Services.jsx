@@ -5,8 +5,10 @@ import { Link, useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import './Services.css'
 import { ServiceContext } from '../context/ServiceContext';
+import { useTranslation } from 'react-i18next';
 
 function Services() {
+    const { t } = useTranslation(); 
 
     const [open, setOpen] = useState(false);
     const [service, setService] = useState([]);
@@ -25,14 +27,14 @@ function Services() {
     }), []);
 
     const services = [
-        { name: 'What We Do', id: 'whatwedo' },
-        { name: 'Yacht Management', id: 'management'},
-        { name: 'Yacht Deliveries', id: 'deliveries'},
-        { name: 'Private Instructions', id: 'instruction'},
-        { name: 'Marine Survey', id: 'marinesurvey'},
-        { name: 'Captain And Crew Services', id: 'captainandcrew' },
-        { name: 'Maritime Asset Recovery', id: 'maritimerecovery'}
-    ]
+        { name: t('navbar.whatWeDo'), id: 'whatwedo'},
+        { name: t('navbar.yachtManagement'), id: 'management'},
+        { name: t('navbar.yachtDeliveries'), id: 'deliveries'},
+        { name: t('navbar.privateInstructions'), id: 'instruction'},
+        { name: t('navbar.marineSurvey'), id: 'marinesurvey'},
+        { name: t('navbar.captainAndCrewServices'), id: 'captainandcrew'},
+        { name: t('navbar.maritimeAssetRecovery'), id: 'maritimerecovery'}
+    ];
 
     const openPDF = () => {
         const pdfPath = '/SAMS.pdf';
@@ -46,24 +48,20 @@ function Services() {
 
     const faqs = [
         { 
-            question: 'How long does a survey take?', 
-            text: 'I recommend that you be there to open any locks and give me permission to board and inspect. The survey can run anywhere from 2 to 10 hours depending on the size of the vessel and 2 to 8 hours in the office to thoroughly prepare the survey report. Larger yachts and commercial vessels may take me 2-3 days to conduct a thorough physical survey.', 
-            className: ''
+            question: t('services.faqs.q1'), 
+            text: t('services.faqs.t1'), 
         },
         { 
-            question: 'Can I be present at the time of the survey?', 
-            text: 'I welcome all clients to be present, and I have no problem explaining as I conduct the survey.', 
-            className: '' 
+            question: t('services.faqs.q2'), 
+            text: t('services.faqs.t2'), 
         },
         { 
-            question: 'How does one prepare the boat for a marine survey?', 
-            text: 'The boat must be plugged into shore power, all batteries hooked up, charged and installed. All manuals, maintenance log, receipts, registration, USCG Documentation Papers, and a copy of the previous survey must be onboard. If a sailboat, masts and spars must be moved to ground level. Additionally, Please provide the Buyer / Owner/ Brokers\'s Name, Mailing and E-mail address, Phone Number as well as the Make and Model of Vessel, HIN (Hull Identification Number), specific location of vessel and mast if un-stepped, and notes pertaining to access of the vessel. <br/><br/> IMPORTANT: Prior to any survey please ensure the vessel is clean and clear of any personal effects, gear, oil / water in bilge, furniture or other items which might block access or vision. The vessel will be surveyed as found, and only to the extent of what can be seen, what is accessible and what is limited.', 
-            className: '' 
+            question: t('services.faqs.q3'), 
+            text: t('services.faqs.t3'), 
         },
         { 
-            question: 'Fiberglass hulls can blister, why are they still better than wood, steel or aluminum?', 
-            text: 'The basic facts of life, physics, and chemistry are that Steel, Aluminum and Wood all require constant maintenance, which, if neglected would have far more severe effects on structural integrity over a shorter time period. A fiberglass boat will likely withstand prolonged neglect without the hull being weakened. Ingress of moisture (which can lead to blistering) occurs over years and in the end, might not even result in the formation of a blister (or chemical change in properties of the GRP matrix).', 
-            className: 'bigServicesText biggerLetter' 
+            question: t('services.faqs.q4'), 
+            text: t('services.faqs.t4'), 
         }
     ];
 
@@ -121,7 +119,7 @@ function Services() {
 
             <div className='ourServicesTitleDiv'>
                 <img src={menu} alt="" className='menuServices' />
-                <h5 className='titlesHome servicesTitles'>Our Services</h5>
+                <h5 className='titlesHome servicesTitles'>{t('services.ourTitle')}</h5>
             </div>
             <div className='servicesList'>
                 <div className='ourServicesTitleDivDesktop'>
@@ -180,7 +178,7 @@ function Services() {
                     serviceId == 'marinesurvey' &&
                     <>
                         <div>
-                            <p className='managementh5 faqsTitle'>Frequently Asked Questions:</p>
+                            <p className='managementh5 faqsTitle'>{t('services.faqs.faqTitle')}</p>
                             <div className='servicesItemsContainer'>
                             {
                                 faqs.map((e, i)=> {
@@ -208,10 +206,10 @@ function Services() {
                             </div>
                         </div>
                         <div>
-                            <p> <strong>Other documents:</strong></p>
+                            <p> <strong>{t('services.faqs.otherDocs')}</strong></p>
                             <ul>
                             <li onClick={openPDF} style={{cursor: 'pointer', textDecoration: 'underline', color:'#165BBB'}}>
-                                Certificate from SAMS
+                                {t('services.faqs.certificate')}
                             </li>
                             </ul>
                         </div>

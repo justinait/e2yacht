@@ -31,6 +31,7 @@
     },
     "services": {
       "title": "Servicios",
+      "ourTitle": "Servicios",
       "subtitle": "Servicios de E² Yacht",
       "yachtManagement": {
         "name": "Gestión de Yates",
@@ -55,6 +56,19 @@
       "marineAssetRecovery": {
         "name": "Recuperación de Activos Marítimos",
         "text": "E² Yacht Services puede rastrear y recuperar embarcaciones y yates de cualquier tamaño. Podemos operar con poco aviso y ofrecer una entrega rápida."
+      },
+      "faqs": {        
+        "q1": "¿Cuánto tiempo lleva una inspección?",
+        "t1": "Recomiendo que estés presente para abrir cualquier cerradura y darme permiso para abordar e inspeccionar. La inspección puede durar entre 2 y 10 horas, dependiendo del tamaño de la embarcación, y de 2 a 8 horas en la oficina para preparar el informe de inspección de manera exhaustiva. Yates más grandes y embarcaciones comerciales pueden requerir de 2 a 3 días para realizar una inspección física completa.",
+        "q2": "¿Puedo estar presente durante la inspección?",
+        "t2": "Invito a todos los clientes a estar presentes, y no tengo ningún problema en explicar mientras realizo la inspección.",
+        "q3": "¿Cómo se debe preparar un barco para una inspección marina?",
+        "t3": "El barco debe estar conectado a la energía de la costa, con todas las baterías conectadas, cargadas e instaladas. Todos los manuales, el registro de mantenimiento, recibos, papeles de registro, documentos de la Guardia Costera de EE.UU. y una copia de la inspección anterior deben estar a bordo. Si se trata de un velero, los mástiles y palos deben ser bajados al nivel del suelo. Además, por favor proporcione el nombre, dirección postal, dirección de correo electrónico y número de teléfono del comprador/propietario/agente, así como la marca y modelo de la embarcación, el HIN (Número de Identificación del Casco), la ubicación específica de la embarcación y el mástil si está desmontado, y notas relacionadas con el acceso a la embarcación. \n \nIMPORTANTE: Antes de cualquier inspección, asegúrese de que la embarcación esté limpia y libre de efectos personales, equipo, aceite/agua en la sentina, muebles u otros elementos que puedan bloquear el acceso o la visibilidad. La embarcación será inspeccionada tal como se encuentre, y solo hasta el punto en que lo permita la accesibilidad y visibilidad.",
+        "q4": "A pesar de que los cascos de fibra de vidrio pueden desarrollar ampollas, ¿por qué siguen siendo mejores que los barcos de madera, acero o aluminio?",
+        "t4": "Los hechos básicos de la vida, la física y la química son que el acero, el aluminio y la madera requieren un mantenimiento constante, el cual, si se descuida, tendría efectos mucho más graves en la integridad estructural en un período de tiempo más corto. Un barco de fibra de vidrio probablemente resistirá el descuido prolongado sin que el casco se debilite. La entrada de humedad (que puede llevar a la formación de ampollas) ocurre a lo largo de los años y, al final, es posible que ni siquiera resulte en la formación de una ampolla (o un cambio químico en las propiedades de la matriz GRP).",
+        "faqTitle": "Preguntas Frecuentes:",
+        "otherDocs": "Otros Documentos:",
+        "certificate": "Certificado de SAMS"     
       }
     },
     "home": {
