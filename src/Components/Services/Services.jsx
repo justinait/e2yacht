@@ -53,6 +53,26 @@ function Services() {
         { question: t('services.faqs.q4'), text: t('services.faqs.t4'),         }
     ];
 
+    const ol = [
+        "Horizon 70'",
+        "Princess 65’",
+        "Johnson 65’",
+        "Fleming 55’",
+        "Offshore 52’",
+        "Carver 40’",
+        "Mikelson 43’",
+        "Sea Ray 32’"
+    ]
+    const ol2 = [
+        "Peterson 44’",
+        "Island Packet 40’",
+        "JLiberty 41’",
+        "Jeanneau 47'",
+        "Hunter 44’",
+        "Westsail 43’",
+        "Island Packet 38'"
+    ]
+
     const handleOpen = (e) => {
         setOpen(true);
         setServiceOpen(e.question);
@@ -62,33 +82,9 @@ function Services() {
         setServiceOpen('')
     }
 
-    // const getService = async () => {
-    //     const serviceFirebaseId = idsDb[serviceId];
-    //     if (serviceFirebaseId) {
-    //         try {
-    //             const docRef = doc(db, 'services', serviceFirebaseId);
-    //             const docSnapshot = await getDoc(docRef);
-
-    //             if (docSnapshot.exists()) {
-    //                 const serviceData = docSnapshot.data();
-    //                 setService({ ...serviceData, url: docSnapshot.id });
-    //             } else {
-    //                 console.error('Documento no encontrado');
-    //             }
-    //         } catch (error) {
-    //             console.error('Error al obtener el servicio:', error);
-    //         }
-    //     } else {
-    //         console.error('ID no encontrado en idsDb');
-    //     }
-    // }
     useEffect(() => {
         setSelectedService(serviceId);
     }, [serviceId, setSelectedService]);
-    
-    // useEffect(() => {
-    //     getService()
-    // }, [serviceId])
 
     const service = t(`services.${serviceId}`, { returnObjects: true });
     const { name, firstText, secondText, ul, extras } = service;
@@ -207,13 +203,13 @@ function Services() {
                     serviceId == 'management' &&
                     <>
                         <div className='separatorManagement'></div>
-                        <p className='managementh5 managementh5Bigger'>{t('services.yachtManagement.underCare')}</p>
+                        <p className='managementh5 managementh5Bigger'>{t('services.management.underCare')}</p>
                         <div className='boatsWeManage'>
                             <div>
                                 <p className='managementh6'>{extras?.name}</p>
                                 <ol className='olManagement'>
                                     {
-                                    extras?.ol?.map(e => (
+                                    ol?.map(e => (
                                         <li>{e}</li>
                                     ))
                                     }
@@ -224,7 +220,7 @@ function Services() {
                                 <p className='managementh6'>{extras?.name2}</p>
                                 <ol className='olManagement'>
                                     {
-                                    extras?.ol2?.map(e => (
+                                    ol2?.map(e => (
                                         <li>{e}</li>
                                     ))
                                     }

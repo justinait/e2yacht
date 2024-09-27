@@ -61,7 +61,12 @@
         "Part time or on call staffing and crew",
         "Private instruction on your boat or yacht",
         "Financial administration"
-      ]
+      ],
+      "extras": {
+        "name": "Power Boats",
+        "name2": "Sailboats"
+      }
+      
       
     },
     "deliveries": {

@@ -33,10 +33,39 @@
       "title": "Servicios",
       "ourTitle": "Servicios",
       "subtitle": "Servicios de E² Yacht",
-      "yachtManagement": {
+      "whatwedo": {
+        "firstText": "E2 Yacht Services ofrece la más alta calidad de servicios profesionales para yates de motor y vela en toda América del Norte, México, América Central y del Sur, el Caribe y más allá. Ofrecemos lo siguiente para propietarios de yates y barcos, agentes y corredores:",
+        "name": "Qué hacemos",
+        "ul": [
+          "<a style={{cursor: 'pointer', color: '#165BBB' }} href='/deliveries'>Entrega profesional y cuidadosa de yates de motor y vela</a> , asegurada durante todo el año y en todo el mundo.",
+          "Mantenimiento mientras estás lejos de tu yate, que incluye lavado semanal, gestión de proyectos y actualizaciones de sistemas.",
+          "<a style={{cursor: 'pointer', color: '#165BBB' }} href='/captainandcrew'>Servicios completos de capitán y tripulación</a>, con especialidades que incluyen guías de pesca, maestros de buceo, instructores de surf, entre otros.",
+          "<a style={{cursor: 'pointer', color: '#165BBB' }} href='/management'>Gestión completa de yates y proyectos</a>",
+          "<a style={{cursor: 'pointer', color: '#165BBB' }} href='/instruction'>Capacitación e instrucción práctica y personalizada.</a> "    
+        ]
+      },
+      "management": {
         "name": "Gestión de Yates",
         "text": "Mantenemos y gestionamos yates a los más altos estándares, permitiendo a los propietarios disfrutar de un tiempo sin preocupaciones a bordo, sabiendo que cada detalle está en buenas manos.",
-        "underCare": "Yates bajo nuestro cuidado"
+        "underCare": "Yates bajo nuestro cuidado",
+        "firstText": "Nos aseguramos de que el yate se mantenga y administre con los más altos estándares posibles. Los propietarios pueden disfrutar de su tiempo a bordo, sabiendo que cada detalle está siendo cuidado. Súbete a bordo y disfruta de tu yate.",
+        "secondText": "Gestión de proyectos, supervisión de reparaciones y mejoras, realizadas ya sea internamente o en colaboración con Opequimar y los Astilleros La Cruz en Puerto Vallarta, México.",
+        "subtitle": "Servicios ofrecidos por E² Yacht Services",
+        "ul": [
+          "Lavado semanal, interior y exterior",
+          "Limpieza del casco",
+          "Cuidado del barco mientras el propietario está ausente",
+          "Gestión de proyectos",
+          "Abastecimiento previo al viaje",
+          "Trámites mexicanos (TIP), registro y salida domésticos e internacionales",
+          "Personal y tripulación a tiempo parcial o bajo demanda",
+          "Instrucción privada en tu barco o yate",
+          "Administración financiera"
+        ],
+        "extras": {
+          "name": "Lanchas a motor",
+          "name2": "Veleros"
+        }
       },
       "yachtDeliveries": {
         "name": "Delivery de Yates",
