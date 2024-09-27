@@ -97,9 +97,24 @@
           "Two weeks private instruction in the Greek Islands aboard the owner's vessel"
         ]
       },
-      "privateInstructions": {
+      "instruction": {
         "name": "Instrucciones Privadas",
-        "text": "Con décadas de experiencia, hemos entrenado a cientos de marineros, compartiendo nuestra pasión por el agua abierta. Nuestro enfoque práctico y personalizado enfatiza la seguridad sobre todo."
+        "text": "Con décadas de experiencia, hemos entrenado a cientos de marineros, compartiendo nuestra pasión por el agua abierta. Nuestro enfoque práctico y personalizado enfatiza la seguridad sobre todo.",
+        "firstText": "Hemos capacitado con éxito a cientos de marineros durante las últimas décadas y nos encanta compartir nuestra pasión por el mar abierto con nuestros clientes. Nuestra formación es práctica y personalizada, con el mayor compromiso con la seguridad.",
+        "secondText": "También ofrecemos cruceros de formación, incluso en tu propio barco mientras lo entregamos.",
+        "subtitle": "Podemos enseñarte a:",
+        "ul": [
+          "Planificar tu viaje",
+          "Dominar la navegación",
+          "Conocer el funcionamiento mecánico de tu barco",
+          "Leer y comprender diferentes tipos de condiciones climáticas y del agua",
+          "Mantenerte a ti y a todos a bordo seguros en todo momento",
+          "Manejo de cabos, aparejos y remolque",
+          "Anclar y amarrar tu barco",
+          "Perfeccionar maniobras en espacios reducidos, atraque y manejo de la embarcación a baja velocidad",
+          "Enseñarte a navegar y operar tu embarcación en todas las condiciones meteorológicas y del mar",
+          "Para obtener información sobre la certificación ASA, visita a nuestros socios en: <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' href='https://www.captainkupps.com/' rel='noopener noreferrer'> CaptainKupps.com</a>"
+        ]
       },
       "marineSurvey": {
         "name": "Inspección Marítima",
