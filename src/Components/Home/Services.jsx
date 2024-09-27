@@ -17,21 +17,21 @@ function Services() {
 
   return (
     <div className='homeContainers servicesHomeContainer'>
-        <h5 className='titlesHome'>{t('services.title')}</h5>
-        <h2 className='subtitlesHome'>E² Yacht Services</h2>
-        <div className='servicesCardContainer'>
-            {
-                services.map((e, i)=> {
-                    return(
-                        <Link to={e.id} className='servicesCardHome' key={i}>
-                            <img src={e.image} alt={e.name} />
-                            <p className='homeServiceName'>{e.name}</p>
-                            <p className='homeServiceText'>{e.text}</p>
-                        </Link>
-                    )
-                })
-            }
-        </div>
+      <h5 className='titlesHome'>{t('services.title')}</h5>
+      <h2 className='subtitlesHome'>E² Yacht Services</h2>
+      <div className='servicesCardContainer'>
+        {
+          services.map((e, i)=> {
+            return(
+              <Link to={e.id} className='servicesCardHome' key={i}>
+                <img src={e.image} alt={e.name} />
+                <p className='homeServiceName'>{e.name}</p>
+                <p className='homeServiceText'>{e.text}</p>
+              </Link>
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
