@@ -47,7 +47,22 @@
     "yachtManagement": {
       "name": "Yacht Management",
       "text": "We maintain and manage yachts to the highest standards, allowing owners to enjoy worry-free time onboard, knowing every detail is in good hands.",
-      "underCare": "Yachts under our care"
+      "underCare": "Yachts under our care",
+      "firstText": "We ensure that the yacht is being maintained, and administered to the highest possible standards. Owners are then free to enjoy their time on board, safe in the knowledge that every last detail is being taken care of. Get on board and enjoy your yacht.",
+      "secondText": "Project management, supervision of repairs and upgrades, done either in house or in conjunction with Opequimar and La Cruz Shipyards in Puerto Vallarta Mexico. <br/> <br/> E2 Yacht Services is committed to safety and quality management. The professionals at E2 YACHT SERVICES include veteran captains and engineers. All of our personnel hold either USCG credentials or Mexican ‘libreta de mar ‘ to ‘Patrón de Yate'.",
+      "subtitle": "Services offered by E² Yacht Services",
+      "ul": [
+        "Weekly washing, interior and exterior",
+        "Bottom cleaning",
+        "Boat sitting while the owner is away",
+        "Project Management",
+        "Pre trip provisioning",
+        "Mexican Paperwork (TIP), domestic and international check in and check out",
+        "Part time or on call staffing and crew",
+        "Private instruction on your boat or yacht",
+        "Financial administration"
+      ]
+      
     },
     "yachtDeliveries": {
       "name": "Yacht Deliveries",
