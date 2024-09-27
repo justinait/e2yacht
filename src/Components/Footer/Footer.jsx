@@ -6,17 +6,19 @@ import linkedin from '/icons/linkedin.png'
 import instagram from '/icons/instagram.png'
 import instagramHover from '/icons/instagramHover.png'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 function Footer() {
+    const { t } = useTranslation();
   return (
     <div className='footerContainer homeContainers'>
         <div>
-            <h3 className='footerTitle'>The benefits of a full time crew without the <br className='tablet1000'/> expense yacht management, delivery and staffing.</h3>
+            <h3 className='footerTitle'>{t('footer.header')}<br className='tablet1000'/> {t('footer.header2')}</h3>
             <img src={logo} alt="E2 yacht services" className='logoFooter' />
         </div>        
         
         <div className='contactFooter'>
-            <Link to='/contact' className='button learnMore'>Contact Us</Link>
+            <Link to='/contact' className='button learnMore'>{t('navbar.contactUs')}</Link>
             <div className='socialMedia'>
                 <Link to='https://www.linkedin.com/in/capteliz/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' className='socialMediaCircle'>
                     <img src={linkedin} alt="linkedin" className='linkedin'  />
@@ -31,17 +33,17 @@ function Footer() {
 
         <div className='indice'>
             <section className='homeSectionFooter'>
-                <h6>Home</h6>
-                <Link className='linksHomeFooterIndice' to='crew'>Our Crew </Link>
-                <Link className='linksHomeFooterIndice' to='contact'>Contact Us </Link>
-                <Link className='linksHomeFooterIndice' to='whatwedo'>Services </Link>
+                <h6>{t('navbar.home')}</h6>
+                <Link className='linksHomeFooterIndice' to='crew'>{t('navbar.crew')}</Link>
+                <Link className='linksHomeFooterIndice' to='contact'>{t('navbar.contactUs')} </Link>
+                <Link className='linksHomeFooterIndice' to='whatwedo'>{t('navbar.services')} </Link>
             </section>
             <section>
-                <h6>Location</h6>
+                <h6>{t('contact.address')}</h6>
                 <p className='locationFooter'>Located in Beautiful Paradise Village Marina, Nuevo Vallarta, Nayarit, 63732, Mexico</p>
             </section>
             <section className='contactSectionFooter'>
-                <h6>Contact</h6>
+                <h6>{t('navbar.contact')}</h6>
                 <a href="mailto:info@e2yachtservices.com" className='locationFooter underline marginbottom'>info@e2yachtservices.com</a>
                 
                 <p className='locationFooter'>Office: +52 322 297 4065</p>
