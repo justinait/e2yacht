@@ -33,6 +33,17 @@
     "title": "Services",
     "ourTitle": "Our Services",
     "subtitle": "E² Yacht Services",
+    "whatWeDo": {
+      "firstText": "E2 Yacht Services provides the highest quality of professional motor and sailing yacht services throughout North America, Mexico, Central and South America, the Caribbean, and beyond. We offer the following for yacht and boat owners, agents and brokers:",
+      "name": "What we do",
+      "ul": [
+        "Professional and careful motor and sailing <a style={{cursor: 'pointer', color: '#165BBB' }} href='/deliveries'>yacht delivery</a> insurable year round world wide",
+        "Maintenance while you are away from your yacht, weekly washing to project management and system upgrades",
+        "Complete <a style={{cursor: 'pointer', color: '#165BBB' }} href='/captainandcrew'>captain and crewing services</a>, and specialties including, fishing guides, diver masters, surf instruction, etc.",
+        "Complete <a style={{cursor: 'pointer', color: '#165BBB' }} href='/management'>yacht and project management.</a>",
+        "Hands-on, <a style={{cursor: 'pointer', color: '#165BBB' }} href='/instruction'>personal training and instruction.</a> "    
+      ]
+    },
     "yachtManagement": {
       "name": "Yacht Management",
       "text": "We maintain and manage yachts to the highest standards, allowing owners to enjoy worry-free time onboard, knowing every detail is in good hands.",
@@ -40,11 +51,52 @@
     },
     "yachtDeliveries": {
       "name": "Yacht Deliveries",
-      "text": "Delivering boats worldwide, we specialize in the West Coast of North America, from Alaska to Mexico and Central America."
+      "text": "Delivering boats worldwide, we specialize in the West Coast of North America, from Alaska to Mexico and Central America.",
+      "firstText": "We can deliver your boat throughout world with extensive knowledge of the West Coast of North America; Canada, United States (Alaska to Mexico and Central America ). We are dedicated to safe and timely deliveries. <br/> <br/> Our captains are fully licensed Masters with extensive experience on motor and sailing yachts, canal transits, inter-coastal, and offshore waterways. We are insurable for deliveries during the hurricane and cyclone seasons. <br/> <br/> We work for private parties as well as financial institutions and insurance companies such as Key Bank, Wells Fargo, WhatCom Credit Union and Sea Worthy Insurance just to name a few.",
+      "secondText": "You can also choose to stay aboard your boat while we deliver to learn more about your boat and improve your seamanship skills. All of our deliveries include a pre-voyage inspection, expense reporting, port and customs clearance, and a written performance report at the end. Additional list of delivery's completed available upon request. Below is a sample",
+      "thirdText": "The list above is just a sample of the diversity of boats we have delivered. There are too many to list up and down the west coast of North America from Whittier, Alaska through the Panama Canal, including Pacific and Atlantic crossing. Our Delivery team are professionals through and through.",
+      "ul": [
+        "Pre-voyage planning and management, including crew, outfitting, maintenance, scheduling, and accounting",
+        "Owner on-board training, where you learn. On board systems while we deliver or relocate your boat",
+        "Re-locations, including storm, bank and insurance re-location's",
+        "Passage making",
+        "Sea trials and pre-purchase inspections",
+        "We can provide guidance while the boat is in any location"
+      ],
+      "ul2": [
+        "Hatteras 72 MY, Bahamas to Lake Michigan via Eerie canal and Welland Canal",
+        "Horizon 70' Huatulco to Puerto Vallarta and Puerto Vallarta to Los Angeles",
+        "Johnson 65' Columbia to Puerto Vallarta thru the Panama Canal",
+        "Viking 65' All over Mexico",
+        "Passport 45, Ixtapa to Puerto Vallarta then Papette, Tahiti",
+        "Riviera 48, San Diego to Puerto Vallarta",
+        "Symbol 80, Puerto Vallarta to Manzanillo, and load on Yacht Path",
+        "Offshore 55 Puerto Vallarta to Whittier Alaska",
+        "Formosa 51, Puerto Vallarta to Los Angeles",
+        "Jeanneau 49 DS, Ixtapa to Los Angeles",
+        "Defever 49, Puerto Vallarta to Los Angeles",
+        "Beneateau 38 Costa Rica to Long Beach, CA",
+        "Two weeks private instruction in the Greek Islands aboard the owner's vessel"
+      ]
     },
     "privateInstructions": {
       "name": "Private Instructions",
-      "text": "With decades of experience, we’ve trained hundreds of seamen, sharing our passion for the open water. Our hands-on, personalized approach emphasizes safety above all else."
+      "text": "With decades of experience, we’ve trained hundreds of seamen, sharing our passion for the open water. Our hands-on, personalized approach emphasizes safety above all else.",
+      "firstText": "We have successfully trained hundreds of seamen over the past decades and love sharing our passion for the open water with our customers. Our training is hands on and personal, with the highest commitment to safety.",
+      "secondText": "We also offer training cruises, including on your own boat while we deliver it.",
+      "subtitle": "We can teach you to:",
+      "ul": [
+        "Plan your voyage",
+        "Master navigation",
+        "Learn the mechanical workings of your boat",
+        "Read and understand different kinds of weather and water conditions",
+        "Keep yourself and everyone on your boat safe at all times",
+        "Marlinespike, line handling and towing",
+        "Anchor and moor your boat",
+        "Perfect close quarters maneuvering, docking, slow speed boat handling",
+        "Teach you to sail and operate your vessel in all weather and sea conditions",
+        "For ASA certification information please visit our Partners at: <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' href='https://www.captainkupps.com/' rel='noopener noreferrer'> CaptainKupps.com</a>"
+      ]
     },
     "marineSurvey": {
       "name": "Marine Survey",
