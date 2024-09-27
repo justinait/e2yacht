@@ -101,7 +101,9 @@
       "messageForm": "Your message*",
       "sendForm": "Send Message",
       "whereTitle": "WHERE WE ARE",
-      "whereVisitUs": "Visit us"
+      "whereVisitUs": "Visit us",
+      "youCanFindUs1": "You can find our offices in Mexico, ",
+      "youCanFindUs2": "but we also work around the world."
     }
 
   }

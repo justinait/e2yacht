@@ -15,19 +15,19 @@
       "maritimeAssetRecovery": "Recuperación de activos Marítimos"
     },
     "hero": {
-        "title": "Servicios profesionales de yates",
-        "subtitle": {
-        "part1": "Tu recurso se encuentra en Puerto Vallarta y el Pacífico Mexicano",
-        "part2": "incluyendo Baja California y el Mar de Cortés."
-        },
-        "operatedBy": {
-        "part1": "Operado por",
-        "captain1": "la Capitana Elizabeth Shanahan",
-        "part2": "y",
-        "captain2": "la Capitana Eugenie Russel"
-        },
-        "learnMore": "APRENDA MÁS",
-        "contactUs": "CONTACTO"
+      "title": "Servicios profesionales de yates",
+      "subtitle": {
+      "part1": "Tu recurso se encuentra en Puerto Vallarta y el Pacífico Mexicano",
+      "part2": "incluyendo Baja California y el Mar de Cortés."
+      },
+      "operatedBy": {
+      "part1": "Operado por",
+      "captain1": "la Capitana Elizabeth Shanahan",
+      "part2": "y",
+      "captain2": "la Capitana Eugenie Russel"
+      },
+      "learnMore": "APRENDA MÁS",
+      "contactUs": "CONTACTO"
     },
     "services": {
       "title": "Servicios",
@@ -64,32 +64,32 @@
       "seeMore": "VER MÁS"
     },
     "references": {
-        "referencesHeader": "Referencias",
-        "referencesSubtitle": "Crea nuevas experiencias trabajando con nosotros.",
-        "references":  {
-            "text1": "“Elizabeth, quería agradecerte y hacerte saber que te recomiendo como capitana de entregas. Completaste la entrega de mi embarcación desde las Bahamas hasta Michigan de manera oportuna. Hubo momentos en los que navegaste toda la noche para llevar el barco de regreso a Michigan y cumplir con mi viaje programado. Aprecio tu dedicación y compromiso para hacer que las cosas sucedan.”",
-            "text2": "“Elizabeth Shanahan es una excelente capitana de entregas; la he recomendado varias veces y he recibido buenos comentarios sobre ella y su operación. La conozco desde hace más de 5 años y considero que su operación es un valor añadido para nuestra marina.”",
-            "text3": "“Gracias de nuevo por toda tu ayuda y asistencia con las recientes reparaciones, mantenimiento y gestión de proyectos. Apreciamos el nivel profesional de servicio de E2 y la facilidad de comunicación con tu equipo. La gama completa de servicios que ofreces es particularmente útil cuando los propietarios de barcos deben gestionar sus embarcaciones desde lejos.”",
-            "text4": "“Elizabeth, queremos agradecerte por los años de cuidado y gestión de nuestro yate. Lo manejaste con profesionalismo, desde mantenerlo limpio y abastecido según nuestras solicitudes hasta gestionar el arduo trabajo en nuestra ausencia. Apreciamos mucho tu atención al detalle en el mantenimiento continuo que requiere un yate. Tus habilidades como capitana y en el manejo del yate en todo tipo de mares y condiciones climáticas son impresionantes.”",
-            "text5": "“A veces en la vida tenemos la suerte de conocer a la persona perfecta para hacer el trabajo perfecto. El extenso conocimiento y experiencia en navegación de Eugenie se comparte con amabilidad y elegancia. Ella respeta y entiende tanto su oficio como a sus estudiantes. Es honesta, tiene sentido del humor, es políglota (!), fuerte en cuerpo, mente y espíritu, y es un placer estar con ella tanto navegando como en tierra. ¡Gracias, Eugenie!”",
-            "text6": "“Eugenie es conocedora, entusiasta, amable y es una excelente profesora. ¡Es raro encontrar todas estas cualidades en una sola persona! Esperamos con interés más lecciones con Eugenie durante la temporada 2011-2012. Siempre que amigos nos piden una recomendación para un instructor de navegación, ya sea para niveles básicos o avanzados, ¡siempre los enviamos a Eugenie!”",
-            "text7": "“Queridas Elizabeth y Eugenie, Su profesionalismo y habilidades combinadas realmente me ayudaron a calmar mi ansiedad y nos guiaron a través de todo. Muchas gracias. El nombre de nuestro velero, el Águila, es una buena metáfora para la camaradería y los buenos momentos: espero aprovechar al máximo esto en los próximos años. Ambas son bienvenidas a navegar en él siempre que la oportunidad lo permita. Las quiero a las dos.”"
-        }
+      "referencesHeader": "Referencias",
+      "referencesSubtitle": "Crea nuevas experiencias trabajando con nosotros.",
+      "references":  {
+        "text1": "“Elizabeth, quería agradecerte y hacerte saber que te recomiendo como capitana de entregas. Completaste la entrega de mi embarcación desde las Bahamas hasta Michigan de manera oportuna. Hubo momentos en los que navegaste toda la noche para llevar el barco de regreso a Michigan y cumplir con mi viaje programado. Aprecio tu dedicación y compromiso para hacer que las cosas sucedan.”",
+        "text2": "“Elizabeth Shanahan es una excelente capitana de entregas; la he recomendado varias veces y he recibido buenos comentarios sobre ella y su operación. La conozco desde hace más de 5 años y considero que su operación es un valor añadido para nuestra marina.”",
+        "text3": "“Gracias de nuevo por toda tu ayuda y asistencia con las recientes reparaciones, mantenimiento y gestión de proyectos. Apreciamos el nivel profesional de servicio de E2 y la facilidad de comunicación con tu equipo. La gama completa de servicios que ofreces es particularmente útil cuando los propietarios de barcos deben gestionar sus embarcaciones desde lejos.”",
+        "text4": "“Elizabeth, queremos agradecerte por los años de cuidado y gestión de nuestro yate. Lo manejaste con profesionalismo, desde mantenerlo limpio y abastecido según nuestras solicitudes hasta gestionar el arduo trabajo en nuestra ausencia. Apreciamos mucho tu atención al detalle en el mantenimiento continuo que requiere un yate. Tus habilidades como capitana y en el manejo del yate en todo tipo de mares y condiciones climáticas son impresionantes.”",
+        "text5": "“A veces en la vida tenemos la suerte de conocer a la persona perfecta para hacer el trabajo perfecto. El extenso conocimiento y experiencia en navegación de Eugenie se comparte con amabilidad y elegancia. Ella respeta y entiende tanto su oficio como a sus estudiantes. Es honesta, tiene sentido del humor, es políglota (!), fuerte en cuerpo, mente y espíritu, y es un placer estar con ella tanto navegando como en tierra. ¡Gracias, Eugenie!”",
+        "text6": "“Eugenie es conocedora, entusiasta, amable y es una excelente profesora. ¡Es raro encontrar todas estas cualidades en una sola persona! Esperamos con interés más lecciones con Eugenie durante la temporada 2011-2012. Siempre que amigos nos piden una recomendación para un instructor de navegación, ya sea para niveles básicos o avanzados, ¡siempre los enviamos a Eugenie!”",
+        "text7": "“Queridas Elizabeth y Eugenie, Su profesionalismo y habilidades combinadas realmente me ayudaron a calmar mi ansiedad y nos guiaron a través de todo. Muchas gracias. El nombre de nuestro velero, el Águila, es una buena metáfora para la camaradería y los buenos momentos: espero aprovechar al máximo esto en los próximos años. Ambas son bienvenidas a navegar en él siempre que la oportunidad lo permita. Las quiero a las dos.”"
+      }
     },
     "ourCrew": {
-        "header": "Nuestro equipo",
-        "benefits": "Los beneficios de tener un equipo a tiempo completo sin el costo: gestión de yates, delivery y personal.",
-        "description1": "Bajo la dirección de los Maestros Licenciados por la Guardia Costera de los Estados Unidos, Elizabeth Shanahan y Eugenie Russell, nuestro equipo experimentado de profesionales marinos ofrece un servicio dedicado y personalizado, sin importar el tamaño o tipo de tarea. Hemos capitaneado cuidadosamente y con éxito yates de vela y motor a lo largo de la costa oeste, incluyendo México y Alaska.",
-        "description2": "También servimos en la costa este, América del Sur a través del Caribe, la costa este de los Estados Unidos, el canal Erie, los Grandes Lagos y la vía marítima de San Lorenzo, el Pacífico Sur, Europa y el Mediterráneo. Nuestros capitanes están disponibles desde 100T hasta sin límite, tanto para yates de vela y motor, como para barcos a motor.",
-        "captainText": "Capitana, 1600 T USCG Master, SA",
-        "joseText": "En el muelle",
-        "odiText": "Gerente de Oficina",
-        "miguelText": "En el muelle"
+      "header": "Nuestro equipo",
+      "benefits": "Los beneficios de tener un equipo a tiempo completo sin el costo: gestión de yates, delivery y personal.",
+      "description1": "Bajo la dirección de los Maestros Licenciados por la Guardia Costera de los Estados Unidos, Elizabeth Shanahan y Eugenie Russell, nuestro equipo experimentado de profesionales marinos ofrece un servicio dedicado y personalizado, sin importar el tamaño o tipo de tarea. Hemos capitaneado cuidadosamente y con éxito yates de vela y motor a lo largo de la costa oeste, incluyendo México y Alaska.",
+      "description2": "También servimos en la costa este, América del Sur a través del Caribe, la costa este de los Estados Unidos, el canal Erie, los Grandes Lagos y la vía marítima de San Lorenzo, el Pacífico Sur, Europa y el Mediterráneo. Nuestros capitanes están disponibles desde 100T hasta sin límite, tanto para yates de vela y motor, como para barcos a motor.",
+      "captainText": "Capitana, 1600 T USCG Master, SA",
+      "joseText": "En el muelle",
+      "odiText": "Gerente de Oficina",
+      "miguelText": "En el muelle"
     },
     "contact": {
       "header": "Visite, llame o mande mail",
       "subtitle": "Y nos pondremos en contacto contigo",
-      "address": "ADDRESS",
+      "address": "UBICACIÓN",
       "phone": "TELÉFONO",
       "office": "Oficina",
       "phoneUsa": "Teléfono EEUU",
@@ -100,7 +100,10 @@
       "messageForm": "Tu mensaje*",
       "sendForm": "Enviar Mensaje",
       "whereTitle": "DONDE NOS ENCONTRAMOS",
-      "whereVisitUs": "Visitanos"
+      "whereVisitUs": "Visitanos",
+      "youCanFindUs1": "Puedes encontrar nuestras oficinas en México, ",
+      "youCanFindUs2": "pero también trabajamos a nivel mundial."
+
     }
   }
   
