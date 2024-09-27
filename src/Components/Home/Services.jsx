@@ -7,12 +7,12 @@ function Services() {
   const { t } = useTranslation();
 
   const services = [
-    { name: t('services.yachtManagement.name'), id: '/management', image: '/images/whatWeDoHero.jpg', text: t('services.yachtManagement.text'), className: '' },
-    { name: t('services.yachtDeliveries.name'), id: '/deliveries', image: '/images/deliveriesHero.jpg', text: t('services.yachtDeliveries.text'), className: '' },
-    { name: t('services.privateInstructions.name'), id: '/instruction', image: '/images/instructionHero.jpg', text: t('services.privateInstructions.text'), className: '' },
-    { name: t('services.marineSurvey.name'), id: '/marinesurvey', image: '/images/marineSurveyHero.jpg', text: t('services.marineSurvey.text'), className: '' },
-    { name: t('services.captainAndCrewServices.name'), id: '/captainandcrew', image: '/images/captainAndCrewServices.jpg', text: t('services.captainAndCrewServices.text'), className: '' },
-    { name: t('services.marineAssetRecovery.name'), id: '/maritimerecovery', image: '/images/maritimeRecovery.jpg', text: t('services.marineAssetRecovery.text'), className: '' }
+    { name: t('services.management.name'), id: '/management', image: '/images/whatWeDoHero.jpg', text: t('services.management.text'), className: '' },
+    { name: t('services.deliveries.name'), id: '/deliveries', image: '/images/deliveriesHero.jpg', text: t('services.deliveries.text'), className: '' },
+    { name: t('services.instruction.name'), id: '/instruction', image: '/images/instructionHero.jpg', text: t('services.instruction.text'), className: '' },
+    { name: t('services.marinesurvey.name'), id: '/marinesurvey', image: '/images/marineSurveyHero.jpg', text: t('services.marinesurvey.text'), className: '' },
+    { name: t('services.captainandcrew.name'), id: '/captainandcrew', image: '/images/captainAndCrewServices.jpg', text: t('services.captainandcrew.text'), className: '' },
+    { name: t('services.maritimerecovery.name'), id: '/maritimerecovery', image: '/images/maritimeRecovery.jpg', text: t('services.maritimerecovery.text'), className: '' }
   ];
 
   return (

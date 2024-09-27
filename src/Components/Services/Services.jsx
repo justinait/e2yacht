@@ -11,20 +11,20 @@ function Services() {
     const { t } = useTranslation(); 
 
     const [open, setOpen] = useState(false);
-    const [service, setService] = useState([]);
+    // const [service, setService] = useState([]);
     const [serviceOpen, setServiceOpen] = useState('')
     const { setSelectedService, selectedService } = useContext(ServiceContext);
     const { serviceId } = useParams();
 
-    const idsDb = useMemo(() => ({
-        'whatwedo': '4FhrJKKewjFt9nqAHBbo',
-        'instruction': '8LTZWLq9gcpA4wN9j709',
-        'deliveries': 'MTCdSa4CoLGEDifffliX',
-        'captainandcrew': 'fSm9K9jTJrhQMIm9EQi9',
-        'marinesurvey': 'gKZZCIdSLCvrLvluErtn',
-        'management': 'lBfaNohObxnyr8mDu7uF',
-        'maritimerecovery': 'NaXg0p4djLdC7BXcRj6Q'
-    }), []);
+    // const idsDb = useMemo(() => ({
+    //     'whatwedo': '4FhrJKKewjFt9nqAHBbo',
+    //     'instruction': '8LTZWLq9gcpA4wN9j709',
+    //     'deliveries': 'MTCdSa4CoLGEDifffliX',
+    //     'captainandcrew': 'fSm9K9jTJrhQMIm9EQi9',
+    //     'marinesurvey': 'gKZZCIdSLCvrLvluErtn',
+    //     'management': 'lBfaNohObxnyr8mDu7uF',
+    //     'maritimerecovery': 'NaXg0p4djLdC7BXcRj6Q'
+    // }), []);
 
     const services = [
         { name: t('navbar.whatWeDo'), id: 'whatwedo'},
@@ -47,22 +47,10 @@ function Services() {
     };
 
     const faqs = [
-        { 
-            question: t('services.faqs.q1'), 
-            text: t('services.faqs.t1'), 
-        },
-        { 
-            question: t('services.faqs.q2'), 
-            text: t('services.faqs.t2'), 
-        },
-        { 
-            question: t('services.faqs.q3'), 
-            text: t('services.faqs.t3'), 
-        },
-        { 
-            question: t('services.faqs.q4'), 
-            text: t('services.faqs.t4'), 
-        }
+        { question: t('services.faqs.q1'), text: t('services.faqs.t1'),         },
+        { question: t('services.faqs.q2'), text: t('services.faqs.t2'),         },
+        { question: t('services.faqs.q3'), text: t('services.faqs.t3'),         },
+        { question: t('services.faqs.q4'), text: t('services.faqs.t4'),         }
     ];
 
     const handleOpen = (e) => {
@@ -74,37 +62,35 @@ function Services() {
         setServiceOpen('')
     }
 
-    const getService = async () => {
-        const serviceFirebaseId = idsDb[serviceId];
-        if (serviceFirebaseId) {
-            try {
-                const docRef = doc(db, 'services', serviceFirebaseId);
-                const docSnapshot = await getDoc(docRef);
+    // const getService = async () => {
+    //     const serviceFirebaseId = idsDb[serviceId];
+    //     if (serviceFirebaseId) {
+    //         try {
+    //             const docRef = doc(db, 'services', serviceFirebaseId);
+    //             const docSnapshot = await getDoc(docRef);
 
-                if (docSnapshot.exists()) {
-                    const serviceData = docSnapshot.data();
-                    setService({ ...serviceData, url: docSnapshot.id });
-                } else {
-                    console.error('Documento no encontrado');
-                }
-            } catch (error) {
-                console.error('Error al obtener el servicio:', error);
-            }
-        } else {
-            console.error('ID no encontrado en idsDb');
-        }
-          
-    }
+    //             if (docSnapshot.exists()) {
+    //                 const serviceData = docSnapshot.data();
+    //                 setService({ ...serviceData, url: docSnapshot.id });
+    //             } else {
+    //                 console.error('Documento no encontrado');
+    //             }
+    //         } catch (error) {
+    //             console.error('Error al obtener el servicio:', error);
+    //         }
+    //     } else {
+    //         console.error('ID no encontrado en idsDb');
+    //     }
+    // }
     useEffect(() => {
         setSelectedService(serviceId);
     }, [serviceId, setSelectedService]);
     
-    useEffect(() => {
-        
-        getService()
-            
-    }, [serviceId])
+    // useEffect(() => {
+    //     getService()
+    // }, [serviceId])
 
+    const service = t(`services.${serviceId}`, { returnObjects: true });
     const { name, firstText, secondText, ul, extras } = service;
 
     return (

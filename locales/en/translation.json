@@ -33,7 +33,7 @@
     "title": "Services",
     "ourTitle": "Our Services",
     "subtitle": "E² Yacht Services",
-    "whatWeDo": {
+    "whatwedo": {
       "firstText": "E2 Yacht Services provides the highest quality of professional motor and sailing yacht services throughout North America, Mexico, Central and South America, the Caribbean, and beyond. We offer the following for yacht and boat owners, agents and brokers:",
       "name": "What we do",
       "ul": [
@@ -44,7 +44,7 @@
         "Hands-on, <a style={{cursor: 'pointer', color: '#165BBB' }} href='/instruction'>personal training and instruction.</a> "    
       ]
     },
-    "yachtManagement": {
+    "management": {
       "name": "Yacht Management",
       "text": "We maintain and manage yachts to the highest standards, allowing owners to enjoy worry-free time onboard, knowing every detail is in good hands.",
       "underCare": "Yachts under our care",
@@ -64,7 +64,7 @@
       ]
       
     },
-    "yachtDeliveries": {
+    "deliveries": {
       "name": "Yacht Deliveries",
       "text": "Delivering boats worldwide, we specialize in the West Coast of North America, from Alaska to Mexico and Central America.",
       "firstText": "We can deliver your boat throughout world with extensive knowledge of the West Coast of North America; Canada, United States (Alaska to Mexico and Central America ). We are dedicated to safe and timely deliveries. <br/> <br/> Our captains are fully licensed Masters with extensive experience on motor and sailing yachts, canal transits, inter-coastal, and offshore waterways. We are insurable for deliveries during the hurricane and cyclone seasons. <br/> <br/> We work for private parties as well as financial institutions and insurance companies such as Key Bank, Wells Fargo, WhatCom Credit Union and Sea Worthy Insurance just to name a few.",
@@ -94,7 +94,7 @@
         "Two weeks private instruction in the Greek Islands aboard the owner's vessel"
       ]
     },
-    "privateInstructions": {
+    "instruction": {
       "name": "Private Instructions",
       "text": "With decades of experience, we’ve trained hundreds of seamen, sharing our passion for the open water. Our hands-on, personalized approach emphasizes safety above all else.",
       "firstText": "We have successfully trained hundreds of seamen over the past decades and love sharing our passion for the open water with our customers. Our training is hands on and personal, with the highest commitment to safety.",
@@ -113,7 +113,7 @@
         "For ASA certification information please visit our Partners at: <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' href='https://www.captainkupps.com/' rel='noopener noreferrer'> CaptainKupps.com</a>"
       ]
     },
-    "marineSurvey": {
+    "marinesurvey": {
       "name": "Marine Survey",
       "text": "We will provide you with a detailed, internationally accepted report of the condition and fair market value of your vessel.",
       "firstText": "A survey by E2 Yacht Services will provide you with a detailed, internationally accepted report of the condition and fair market value of your vessel. Elizabeth Shanahan is a member of the Navtech US Surveyors Association and is a worldwide accredited and certified Master Marine Surveyor. Her work meets the strictest professional, ethical and technical standards. Services include:",
@@ -129,7 +129,7 @@
         "Testing: ultrasonic, moisture, galvanic current, stray current, and other types of tests"
       ]
     },
-    "captainAndCrewServices": {
+    "captainandcrew": {
       "name": "Captain And Crew Services",
       "text": "We provide temporary and on-call captain and crew services. All of our staff is licensed.",
       "firstText": "We provide temporary and on call captain and crew services. All of our staff is licensed.",
@@ -141,7 +141,7 @@
         "Long-term and short-term availability all over the World"
       ]
     },
-    "marineAssetRecovery": {
+    "maritimerecovery": {
       "name": "Marine Asset Recovery",
       "text": "E² Yacht Services can skip trace and recover boats and yachts of any size. We can operate on short notice and offer fast delivery.",
       "firstText": "E2 Yacht Services can skip trace and recover boats and yachts of any size. We can operate on short notice and offer fast delivery. If you are with a lending institution or a seller of repossessed boats, contact us and we will provide seasoned professionals for your repossession team. <br/> <br/> We have represented and acquired assets in Mexico and Central America for Key Bank, Whatcom Credit Union and Zion Bank just to name a few."
