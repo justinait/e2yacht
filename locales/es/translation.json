@@ -116,17 +116,38 @@
           "Para obtener información sobre la certificación ASA, visita a nuestros socios en: <a style={{cursor: 'pointer', color: '#165BBB' }} target='_blank' href='https://www.captainkupps.com/' rel='noopener noreferrer'> CaptainKupps.com</a>"
         ]
       },
-      "marineSurvey": {
+      "marinesurvey": {
         "name": "Inspección Marítima",
-        "text": "Le proporcionaremos un informe detallado y aceptado internacionalmente sobre el estado y el valor de mercado justo de su embarcación."
+        "text": "Le proporcionaremos un informe detallado y aceptado internacionalmente sobre el estado y el valor de mercado justo de su embarcación.",
+        "firstText": "Una inspección realizada por E2 Yacht Services te proporcionará un informe detallado y aceptado internacionalmente sobre el estado y el valor de mercado justo de tu embarcación. Elizabeth Shanahan es miembro de la Asociación de Inspectores Navtech de EE.UU. y es una Inspectora Marina Maestra acreditada y certificada a nivel mundial. Su trabajo cumple con los estándares profesionales, éticos y técnicos más estrictos. Los servicios incluyen:",
+        "secondText": "Nuestras inspecciones son aceptadas por las principales instituciones de seguros y financieras, así como por la Guardia Costera de EE.UU. Nuestros informes cumplen con los estándares de la Guardia Costera de EE.UU., el American Boat and Yacht Council y la American Boating Association. Con nuestra inspección, conocerás el estado de tu embarcación, su valor de mercado justo, y tendrás la tranquilidad que necesitas para asegurar el futuro de tu barco.",
+        "ul": [
+          "Inspecciones previas a la compra, tasaciones, salvamento e inspecciones por daños",
+          "Inspecciones para seguros, financieras y bancarias, incluyendo tasaciones para herencias",
+          "Valuaciones",
+          "Yates de vela y motor",
+          "Embarcaciones comerciales",
+          "Todo tipo de cascos: madera, aluminio, fibra de vidrio, acero",
+          "Análisis de motores y aceite",
+          "Pruebas: ultrasónicas, de humedad, corriente galvánica, corriente parasitaria y otros tipos de pruebas"
+        ]
       },
-      "captainAndCrewServices": {
+      "captainandcrew": {
         "name": "Servicios de Capitán y Equipo",
-        "text": "Proporcionamos servicios temporales y de capitán y equipo a demanda. Todo nuestro personal está licenciado."
+        "text": "Proporcionamos servicios temporales y de capitán y equipo a demanda. Todo nuestro personal está licenciado.",
+        "firstText": "Ofrecemos servicios temporales y bajo demanda de capitán y tripulación. Todo nuestro personal está licenciado.",
+        "ul": [
+          "Servicios de capitán y tripulación para yates de motor, veleros y barcos a motor.",
+          "Servicios para propietarios de yates y barcos, incluyendo formación, gestión de yates y proyectos.",
+          "Capitanes de relevo, tripulación temporal y guías especializados, maestros de buceo, instrucción de surf, sea cual sea tu necesidad mientras estés en México.",
+          "Servicios de navegación, guía de cruceros e instrucción.",
+          "Disponibilidad a largo y corto plazo en todo el mundo."
+        ]
       },
       "marineAssetRecovery": {
         "name": "Recuperación de Activos Marítimos",
-        "text": "E² Yacht Services puede rastrear y recuperar embarcaciones y yates de cualquier tamaño. Podemos operar con poco aviso y ofrecer una entrega rápida."
+        "text": "E² Yacht Services puede rastrear y recuperar embarcaciones y yates de cualquier tamaño. Podemos operar con poco aviso y ofrecer una entrega rápida.",
+        "firstText": "E2 Yacht Services puede localizar y recuperar barcos y yates de cualquier tamaño. Podemos operar con poca antelación y ofrecer una entrega rápida. Si estás con una institución de crédito o eres un vendedor de barcos embargados, contáctanos y proporcionaremos profesionales experimentados para tu equipo de recuperación. \n \n Hemos representado y adquirido activos en México y América Central para Key Bank, Whatcom Credit Union y Zion Bank, por nombrar algunos."
       },
       "faqs": {        
         "q1": "¿Cuánto tiempo lleva una inspección?",
