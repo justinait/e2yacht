@@ -18,16 +18,31 @@ function Navbar() {
   const windowWidth = window.innerWidth;
   const [desktop, setDesktop] = (windowWidth < 1200) ? useState(false): useState(true)
   const [dropdown, setDropdown] = useState(false)
+  const [open, setOpen] = useState(false);
 
-  const handleLanguageChange = () => {
-    const nextLanguage = i18n.language === 'en' ? 'es' : 'en';
-    i18n.changeLanguage(nextLanguage);
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang);
+    setOpen(false);
+  };
+  const toggleDropdown = () => {
+    setOpen(!open); // Alterna entre abrir/cerrar el dropdown
   };
   const idioma = (
     <div className='languageContainerNavbar'>
-      <LanguageIcon fontSize='small' onClick={handleLanguageChange} />
-      <p>{i18n.language === 'en' ? 'English' : 'Español'}</p>
-      <KeyboardArrowDownIcon/>
+      <div className='dropdown' onClick={toggleDropdown}>
+        <LanguageIcon fontSize='small' />
+        <p>{i18n.language === 'en' ? 'English' : 'Spanish'}</p>
+        <KeyboardArrowDownIcon/>
+      </div>
+      {open && (
+        <ul className="dropdownMenuLanguage">
+         {i18n.language === 'en' ? (
+            <li onClick={() => handleLanguageChange('es')}>Spanish</li>
+          ) : (
+            <li onClick={() => handleLanguageChange('en')}>English</li>
+          )}
+        </ul>
+      )}
     </div>
   )
   const sections = [
