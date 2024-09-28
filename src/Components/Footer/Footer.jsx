@@ -13,7 +13,9 @@ function Footer() {
   return (
     <div className='footerContainer homeContainers'>
         <div>
-            <h3 className='footerTitle'>{t('footer.header')}<br className='tablet1000'/> {t('footer.header2')}</h3>
+            <h3 className='footerTitle'>{t('footer.header')}
+                {/* <br className='tablet1000'/>  */}
+                {t('footer.header2')}</h3>
             <img src={logo} alt="E2 yacht services" className='logoFooter' />
         </div>        
         
