@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './Contact.css'
 import Maps from '../Maps/Maps'
 import CallIcon from '@mui/icons-material/Call';
@@ -8,21 +8,70 @@ import { useTranslation } from 'react-i18next';
 
 function Contact() {
   const { t } = useTranslation();
+  const form = useRef();
+  const service_id = import.meta.env.VITE_API_SERVICEID;
+  const template_id = import.meta.env.VITE_API_TEMPLATEID;
+  const public_id = import.meta.env.VITE_API_PUBLICID;
+  
+  const [input, setInput] = useState({
+    name:{      value:'',      error:''    },
+    email:{      value:'',      error:''    },
+    subject:{      value:'',      error:''    },
+    message:{      value:'',      error:''    }
+  });
 
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const whatsappMessage = `Hola, mi nombre es ${name} y mi consulta es: ${message}`;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=+5213221303534&text=${encodeURIComponent(whatsappMessage)}`;
-
-    window.open(whatsappUrl, '_blank');
+  const handleInputChange = (e) =>{
+    setInput(prev=>({
+      ...prev,
+      [e.target.name]:{
+        value:e.target.value,
+        error:null
+      }
+    }));    
   };
 
+  const clearInputValue = () =>{
+    setInput({
+      name:{        value:'',        error:''      },
+      email:{        value:'',        error:''      },
+      subject:{        value:'',        error:''      },
+      message:{        value:'',        error:''      }
+    });    
+  };
+
+  const sendEmailForm = async (e) => {
+    e.preventDefault();
+    let stop = false;
+    Object.keys(input).forEach(key=>{
+      if (input[key].value.trim().length === 0) {
+        stop = true;
+        setInput(prev=>({
+          ...prev,
+          [key]:{
+            ...prev[key],
+            error:'*Este campo es obligatorio'
+          }
+        }));
+      }
+    });
+    if(stop) return;
+    
+    try {
+      const emailjs = await import('@emailjs/browser');
+      emailjs.init(public_id);
+      emailjs.sendForm(service_id, template_id, form.current, public_id)
+        .then((result) => {
+          console.log(result.text);
+          console.log('enviado');
+          
+          clearInputValue();
+        }, (error) => {
+          console.log(error);
+        });
+    } catch (error) {
+      console.error('Error al cargar la biblioteca emailjs-com:', error);
+    }
+  };
   return (
     <div>
       <div className='contactHero heroImages'>
@@ -62,49 +111,53 @@ function Contact() {
       <div className='contactFormBigContainer'>
         <h2 className='contactBigSubtitle'>{t('contact.subtitle2')}</h2>
 
-        <form onSubmit={handleSubmit} className='contactForm'>
+        <form onSubmit={sendEmailForm} ref={form} className='contactForm'>
           <div className='inputContainer'>
-            <label htmlFor="name" className={`floatingLabel ${name && 'floatingLabelActive'}`}>{t('contact.nameForm')}</label>
+            <label htmlFor="name" className={`floatingLabel ${input.name.value && 'floatingLabelActive'}`}>{t('contact.nameForm')}</label>
             <input 
               type="text" 
               id="name" 
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
+              value={input.name.value} 
+              onChange={handleInputChange} 
               required 
               className='inputContact'
+              name='name'
             />
           </div>
           <div className='inputContainer'>
-            <label htmlFor="email" className={`floatingLabel ${email && 'floatingLabelActive'}`}>{t('contact.emailForm')}</label>
+            <label htmlFor="email" className={`floatingLabel ${input.email.value && 'floatingLabelActive'}`}>{t('contact.emailForm')}</label>
             <input 
               type="text" 
               id="email" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
+              value={input.email.value} 
+              onChange={handleInputChange} 
               required 
               className='inputContact'
+              name='email'
             />
           </div>
           <div className='inputContainer'>
-            <label htmlFor="subject" className={`floatingLabel ${subject && 'floatingLabelActive'}`}>{t('contact.subjectForm')}</label>
+            <label htmlFor="subject" className={`floatingLabel ${input.subject.value && 'floatingLabelActive'}`}>{t('contact.subjectForm')}</label>
             <input 
               type="text" 
               id="subject" 
-              value={subject} 
-              onChange={(e) => setSubject(e.target.value)} 
+              value={input.subject.value} 
+              onChange={handleInputChange} 
               required 
               className='inputContact'
+              name='subject'
             />
           </div>
           <div className='inputContainer'>
-            <label htmlFor="message" className={`floatingLabel ${message && 'floatingLabelActive'}`}>{t('contact.messageForm')}</label>
+            <label htmlFor="message" className={`floatingLabel ${input.message.value && 'floatingLabelActive'}`}>{t('contact.messageForm')}</label>
             <input 
               id="message" 
-              value={message} 
-              onChange={(e) => setMessage(e.target.value)} 
+              value={input.message.value} 
+              onChange={handleInputChange} 
               required 
               // placeholder='Your message*' 
               className='inputContact'
+              name='message'
             />
           </div>
         <button className='button contactButtonHover formButton'>{t('contact.sendForm')}</button>
