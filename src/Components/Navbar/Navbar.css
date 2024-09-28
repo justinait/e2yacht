@@ -158,6 +158,7 @@
     }
     .dropdownHeader {
         height: unset;
+        padding: 10px 8.3% 10px 0;
     }
     .dropdownItems {
         padding: 0 20px;

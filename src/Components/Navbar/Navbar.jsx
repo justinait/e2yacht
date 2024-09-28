@@ -16,7 +16,7 @@ function Navbar() {
   const [selectedCategory, setSelectedCategory] = useState('')
   const { selectedService, setSelectedService } = useContext(ServiceContext);
   const windowWidth = window.innerWidth;
-  const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
+  const [desktop, setDesktop] = (windowWidth < 1200) ? useState(false): useState(true)
   const [dropdown, setDropdown] = useState(false)
 
   const handleLanguageChange = () => {
