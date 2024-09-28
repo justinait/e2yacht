@@ -21,6 +21,7 @@
     align-items: center;
 }
 .languageContainerNavbar p {
+    font-weight: 200;
     font-size: 12px;
 }
 .dropdownHeader {
@@ -115,6 +116,12 @@
     .serviceDropdownItems {
         font-size: 15px;
     }
+    .languageContainerNavbar {
+        margin-right: 25px;
+    }
+    .languageContainerNavbar p {
+        font-size: 14px;
+    }
 
 }
 @media (min-width: 1000px) {
@@ -128,12 +135,16 @@
         height: 100px;
         padding: 0 8.3%;
     }
-    .languageContainerNavbar {
-        margin-right: 25px;
-    }
 }
 
 @media (min-width: 1200px) {
+    
+    .languageContainerNavbar {
+        margin-right: 0;
+    }
+    .languageContainerNavbar p {
+        font-size: 19px;
+    }
     .logoNavbar {
         width: 187px;
     }
@@ -234,5 +245,8 @@
     }
     .contactDesktop {
         margin: 0 0 0 40px !important;
+    }
+    .languageContainerNavbar p {
+        font-size: 23px;
     }
 }
