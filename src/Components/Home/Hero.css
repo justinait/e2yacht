@@ -12,6 +12,9 @@ h1 {
     font-family: "utile-display", sans-serif;
     letter-spacing: 0.02rem;
 }
+.spanishH1 {
+    font-size: clamp(20px, 6vw, 40px)
+}
 .heroSubtitle {
     font-weight: var(--fontWeight-normal);
     font-size: 18px;
@@ -98,7 +101,7 @@ a {
     .separator {
         width: 10%;
     }
-    h1 {
+    h1, .spanishH1 {
       font-size: clamp(40px, 6.8vw, 52px);
     }
 }

@@ -11,21 +11,21 @@ function Hero() {
     });
   };
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   return (
     <div className='heroHome heroImages '>
-      <h1>{t('hero.title')}</h1>
-      {/* <h4 className='heroSubtitle'>Your resource based in Puerto Vallarta and Pacific Mexico <br className='onlyForDesktop'/> including Baja California and the Sea of Cortez</h4> */}
-      {/* <p className='heroDescription'>Operated by <strong>Captain Elizabeth Shanahan </strong> <br className='notForDesktop' />
-        and <strong>Captain Eugenie Russel </strong> 
-      </p> */}
-
+      
+      <h1 className={i18n.language === 'es' ? 'spanishH1' : ''}>
+        {t('hero.title')}
+      </h1>
+      
       <h4 className='heroSubtitle'>
         {t('hero.subtitle.part1')} <br className='onlyForDesktop' />
         {t('hero.subtitle.part2')}
       </h4>
       <div className='separator'></div>
+      
       <p className='heroDescription'>
         {t('hero.operatedBy.part1')} <strong>{t('hero.operatedBy.captain1')}</strong>
         <br className='notForDesktop' />
@@ -35,7 +35,6 @@ function Hero() {
       <div className='buttonsHero'>
         <p className='button learnMore' onClick={handleScroll}>{t('hero.learnMore')}</p>
         <Link to='/contact' className='button contactButtonHover'>{t('hero.contactUs')}</Link>
-      
       </div>
     </div>
   )

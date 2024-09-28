@@ -50,8 +50,6 @@ function Navbar() {
     { name: t('navbar.maritimeAssetRecovery'), id: 'maritimerecovery', className: '' },
     { name: t('navbar.viewAllServices'), id: 'viewallservices', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
   ];
-  
-
 
   const handleDropdown = ()=> {
     setDropdown(!dropdown)
