@@ -34,7 +34,7 @@ function Footer() {
         <div className='indice'>
             <section className='homeSectionFooter'>
                 <h6>{t('navbar.home')}</h6>
-                <Link className='linksHomeFooterIndice' to='crew'>{t('navbar.crew')}</Link>
+                <Link className='linksHomeFooterIndice' to='crew'>{t('footer.crew')}</Link>
                 <Link className='linksHomeFooterIndice' to='contact'>{t('navbar.contactUs')} </Link>
                 <Link className='linksHomeFooterIndice' to='whatwedo'>{t('navbar.services')} </Link>
             </section>
@@ -46,7 +46,7 @@ function Footer() {
                 <h6>{t('navbar.contact')}</h6>
                 <a href="mailto:info@e2yachtservices.com" className='locationFooter underline marginbottom'>info@e2yachtservices.com</a>
                 
-                <p className='locationFooter'>Office: +52 322 297 4065</p>
+                <p className='locationFooter'>{t('contact.office')}: +52 322 297 4065</p>
                 <a href='https://api.whatsapp.com/send/?phone=523221347397&text&type=phone_number&app_absent=0' target='_blank' className='locationFooter underline'>WhatsApp: +52 322-134-7397</a>
                 <p className='locationFooter'>USA: #1-714-412-6180</p>
             </section>
