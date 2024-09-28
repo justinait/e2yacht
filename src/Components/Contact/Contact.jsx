@@ -107,7 +107,7 @@ function Contact() {
               className='inputContact'
             />
           </div>
-        <button className='button formButton'>{t('contact.sendForm')}</button>
+        <button className='button contactButtonHover formButton'>{t('contact.sendForm')}</button>
         </form>
       </div>
 
