@@ -50,7 +50,7 @@ function Navbar() {
     { name: t('navbar.services'), id: 'services', className: '', image: '/icons/arrowNavbar.png', image2: '/icons/arrowdown.png' },
     { name: t('navbar.crew'), id: 'crew', className: '' },
     { name: t('navbar.whatWeDo'), id: 'whatwedo', className: '' },
-    ...(desktop ? [{ name: idioma, id: '', className: 'languageSection', content: idioma }] : []), // Aquí se añade el idioma si es desktop
+    ...(desktop ? [{ name: idioma, id: 'language', className: 'languageSection', content: idioma }] : []), // Aquí se añade el idioma si es desktop
     { name: t('navbar.contact'), id: 'contact', className: 'contactMobile' },
     { name: t('navbar.contactUs'), id: 'contact', className: 'contactDesktop button contactButtonHover notActive' }
   ];
@@ -162,8 +162,8 @@ function Navbar() {
           {sections.map((e, i) => (
             <Link
               key={i}
-              {...(e.id !== 'services' && { to: `/${e.id}` })} 
-              onClick={e.id !== 'services' ? () => handleClose(e.id) : handleDropdown} 
+              {...((e.id !== 'services' && e.id !== 'language') && { to: `/${e.id}` })} 
+              onClick={e.id !== 'services'  ? () => handleClose(e.id) : handleDropdown} 
             >
               <div className={`${selectedCategory === e.id ? 'dropdownItems activeNavbar' : 'dropdownItems'}  ${e.className}`}>
                 {e.name}
