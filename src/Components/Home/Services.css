@@ -80,7 +80,6 @@
         color: #000B1B;
         height: 83px;
         font-size: var(--fontSize-12px-services);
-        text-transform: capitalize;
         min-height: fit-content;
     }
 }

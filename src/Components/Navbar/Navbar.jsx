@@ -63,7 +63,7 @@ function Navbar() {
     { name: t('navbar.marineSurvey'), id: 'marinesurvey', className: '' },
     { name: t('navbar.captainAndCrewServices'), id: 'captainandcrew', className: '' },
     { name: t('navbar.maritimeAssetRecovery'), id: 'maritimerecovery', className: '' },
-    { name: t('navbar.viewAllServices'), id: 'viewallservices', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
+    { name: t('navbar.viewAllServices'), id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },
   ];
 
   const handleDropdown = ()=> {
