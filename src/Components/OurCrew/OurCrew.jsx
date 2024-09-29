@@ -7,7 +7,7 @@ function OurCrew() {
   
   const crew = [
     { name: 'Elizabeth Shanahan', text: t('ourCrew.captainText'), image: '/images/ourCrewElizabeth.jpg', className: 'leftCrew' },
-    { name: 'Eugenie Russel', text: t('ourCrew.captainText'), image: '/images/ourCrewEugene.jpg', className: 'rightCrew'},
+    { name: 'Eugenie Russel', text: t('ourCrew.captainEugenieText'), image: '/images/ourCrewEugene.jpg', className: 'rightCrew'},
     { name: 'José Alejandro Cano', text: t('ourCrew.joseText'), image: '/images/ourCrewCano.jpg', className: 'leftCrew'},
     { name: 'Odi Gutierrez', text: t('ourCrew.odiText'), image: '/images/OdiCrew.jpeg', className: 'rightCrew'},
     { name: 'Miguel Sánchez Rodríguez', text: t('ourCrew.miguelText'), image: '/images/ourCrewCano.jpg', className: ''},
