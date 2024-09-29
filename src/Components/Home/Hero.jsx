@@ -27,7 +27,7 @@ function Hero() {
       <div className='separator'></div>
       
       <p className='heroDescription'>
-        {t('hero.operatedBy.part1')} <strong>{t('hero.operatedBy.captain1')}</strong>
+        {t('hero.operatedBy.part1')} <strong>{t('hero.operatedBy.captain1')} </strong>
         <br className='notForDesktop' />
         {t('hero.operatedBy.part2')} <strong>{t('hero.operatedBy.captain2')}</strong>
       </p>
