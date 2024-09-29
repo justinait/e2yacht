@@ -57,10 +57,10 @@ function Navbar() {
   
   const services = [
     { name: t('navbar.whatWeDo'), id: 'whatwedo', className: 'notForDesktop homeNavbar' },
-    { name: t('navbar.yachtManagement'), id: 'management', className: '' },
+    { name: t('navbar.marineSurvey'), id: 'marinesurvey', className: '' },
     { name: t('navbar.yachtDeliveries'), id: 'deliveries', className: '' },
     { name: t('navbar.privateInstructions'), id: 'instruction', className: '' },
-    { name: t('navbar.marineSurvey'), id: 'marinesurvey', className: '' },
+    { name: t('navbar.yachtManagement'), id: 'management', className: '' },
     { name: t('navbar.captainAndCrewServices'), id: 'captainandcrew', className: '' },
     { name: t('navbar.maritimeAssetRecovery'), id: 'maritimerecovery', className: '' },
     { name: t('navbar.viewAllServices'), id: 'whatwedo', image: '/icons/arrowNext.png', className: 'viewAllServicesButtonNavbar contactButtonHover notActive' },

@@ -28,10 +28,10 @@ function Services() {
 
     const services = [
         { name: t('navbar.whatWeDo'), id: 'whatwedo'},
-        { name: t('navbar.yachtManagement'), id: 'management'},
+        { name: t('navbar.marineSurvey'), id: 'marinesurvey'},
         { name: t('navbar.yachtDeliveries'), id: 'deliveries'},
         { name: t('navbar.privateInstructions'), id: 'instruction'},
-        { name: t('navbar.marineSurvey'), id: 'marinesurvey'},
+        { name: t('navbar.yachtManagement'), id: 'management'},
         { name: t('navbar.captainAndCrewServices'), id: 'captainandcrew'},
         { name: t('navbar.maritimeAssetRecovery'), id: 'maritimerecovery'}
     ];
