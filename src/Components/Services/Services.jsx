@@ -40,23 +40,25 @@ function Services() {
         { question: t('services.faqs.q4'), text: t('services.faqs.t4'),         }
     ];
 
-    const ol = [
-        "Horizon 70'",
+    const powerboats = [
+        "San Lorenzo 96’",
         "Princess 65’",
         "Johnson 65’",
-        "Fleming 55’",
+        "Mikelson 60’ Nomad",
+        "Stevens 60’",        
         "Offshore 52’",
         "Carver 40’",
         "Mikelson 43’",
         "Sea Ray 32’"
     ]
-    const ol2 = [
+    const sailboats = [
         "Peterson 44’",
         "Island Packet 40’",
         "JLiberty 41’",
         "Jeanneau 47'",
         "Hunter 44’",
         "Westsail 43’",
+        "J40’",
         "Island Packet 38'"
     ]
 
@@ -196,7 +198,7 @@ function Services() {
                                 <p className='managementh6'>{extras?.name}</p>
                                 <ol className='olManagement'>
                                     {
-                                    ol?.map(e => (
+                                    powerboats?.map(e => (
                                         <li>{e}</li>
                                     ))
                                     }
@@ -207,7 +209,7 @@ function Services() {
                                 <p className='managementh6'>{extras?.name2}</p>
                                 <ol className='olManagement'>
                                     {
-                                    ol2?.map(e => (
+                                    sailboats?.map(e => (
                                         <li>{e}</li>
                                     ))
                                     }
