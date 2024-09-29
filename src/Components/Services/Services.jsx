@@ -1,8 +1,6 @@
-import React, { useContext, useEffect, useMemo, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import menu from '/icons/servicesMenu.png'
-import db from '../../../firebaseConfig';
 import { Link, useParams } from 'react-router-dom';
-import { doc, getDoc } from 'firebase/firestore';
 import './Services.css'
 import { ServiceContext } from '../context/ServiceContext';
 import { useTranslation } from 'react-i18next';
@@ -11,20 +9,9 @@ function Services() {
     const { t } = useTranslation(); 
 
     const [open, setOpen] = useState(false);
-    // const [service, setService] = useState([]);
     const [serviceOpen, setServiceOpen] = useState('')
     const { setSelectedService, selectedService } = useContext(ServiceContext);
     const { serviceId } = useParams();
-
-    // const idsDb = useMemo(() => ({
-    //     'whatwedo': '4FhrJKKewjFt9nqAHBbo',
-    //     'instruction': '8LTZWLq9gcpA4wN9j709',
-    //     'deliveries': 'MTCdSa4CoLGEDifffliX',
-    //     'captainandcrew': 'fSm9K9jTJrhQMIm9EQi9',
-    //     'marinesurvey': 'gKZZCIdSLCvrLvluErtn',
-    //     'management': 'lBfaNohObxnyr8mDu7uF',
-    //     'maritimerecovery': 'NaXg0p4djLdC7BXcRj6Q'
-    // }), []);
 
     const services = [
         { name: t('navbar.whatWeDo'), id: 'whatwedo'},
