@@ -150,14 +150,18 @@ function Contact() {
           </div>
           <div className='inputContainer'>
             <label htmlFor="message" className={`floatingLabel ${input.message.value && 'floatingLabelActive'}`}>{t('contact.messageForm')}</label>
-            <input 
+            <textarea 
               id="message" 
               value={input.message.value} 
               onChange={handleInputChange} 
               required 
-              // placeholder='Your message*' 
-              className='inputContact'
+              rows={1}
+              className='inputContact textAreaMessage'
               name='message'
+              onInput={(e) => {
+                e.target.style.height = "auto"; // Resetea la altura
+                e.target.style.height = `${e.target.scrollHeight}px`; // Ajusta a la altura del contenido
+              }}
             />
           </div>
         <button className='button contactButtonHover formButton'>{t('contact.sendForm')}</button>
