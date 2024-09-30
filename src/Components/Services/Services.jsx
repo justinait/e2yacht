@@ -177,9 +177,9 @@ function Services() {
                             </div>
                         </div>
                         <div>
-                            <p> <strong>{t('services.faqs.otherDocs')}</strong></p>
+                            <p className='otherDocumentsTitle'> <strong>{t('services.faqs.otherDocs')}</strong></p>
                             <ul>
-                            <li onClick={openPDF} style={{cursor: 'pointer', textDecoration: 'underline', color:'#165BBB'}}>
+                            <li className='otherDocumentsLI' onClick={openPDF} style={{cursor: 'pointer', textDecoration: 'underline', color:'#165BBB'}}>
                                 {t('services.faqs.certificate')}
                             </li>
                             </ul>

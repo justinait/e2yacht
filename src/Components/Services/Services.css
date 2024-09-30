@@ -73,6 +73,9 @@ li a {
     justify-content: space-between;
     width: 85%;
 }
+.otherDocumentsTitle, .otherDocumentsLI {
+    font-size: clamp(12px, 1.7vw, 14px);
+}
 
 .deliveriesHero {
     background-image: url('/public/images/deliveriesHero.jpg');   
@@ -140,7 +143,7 @@ li a {
 .servicesText {
     width: 100%;
     margin: 0;
-    font-size: var(--fontSize-12px-services);
+    font-size: clamp(12px, 1.7vw, 14px);
 }
 .serviceOpenContainer {
     border-top: 1px solid black;
@@ -223,7 +226,7 @@ li a {
     .ourServicesTitleDiv {
         width: 18vw;
     }
-    .servicesItemTitle, .servicesText {
+    .servicesItemTitle {
         font-size: var(--fontSize-12px-services);
     }
 }
@@ -292,11 +295,17 @@ li a {
         background-position: center;
     }
     .faqsTitle {
-        font-size: clamp(26px, 1.8vw, 35px);
+        font-size: clamp(26px, 2.35vw, 35px);
         color: #073460;
     }
-    .servicesItemTitle, .servicesText {
-        font-size: var(--fontSize-16px);
+    .otherDocumentsTitle {
+        font-size: var(--fontSize-18px);
+    }
+    .servicesItemTitle {
+        font-size: var(--fontSize-18px);
+    }
+    .servicesText {
+        font-size:clamp(15px, 1.2vw, 17px);
     }
     .serviceOpenContainer {
         padding: 18px 0;
