@@ -8,7 +8,7 @@
     margin-top: 1.5rem;
 }
 .descriptionCrew{
-    font-size: var(--fontSize-12px);
+    font-size: var(--fontSize-12px-services);
     color: black;
 }
 .ourCrewBrujula {
@@ -127,7 +127,7 @@
         width: 46%;
     }
     .descriptionCrew {
-        font-size: clamp(14.5px, 1.23vw, 16px);
+        font-size: clamp(16.5px, 1.35vw, 18px);
     }
     .ourCrewSectionFirstDiv .ourCrewH2 {
         margin-top: 0;
