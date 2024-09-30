@@ -91,6 +91,7 @@
     margin: 0 0 2% 0px;
     font-size: 15px;
     outline: none;
+    font-family: 'Libre Franklin Variable';
 }
 .inputContact:focus + .floatingLabel,
 .inputContact:not(:placeholder-shown) + .floatingLabel {
@@ -98,7 +99,7 @@
   left: 16px;
   font-size: 12px;
 }
-.inputContact::placeholder {
+.inputContact::placeholder{
     font-family: 'Libre Franklin Variable', sans-serif !important;
     color:  #80858D;
     opacity: 1;
