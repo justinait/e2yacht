@@ -1,12 +1,18 @@
-# React + Vite
+# E2Yacht Services
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img align="center" src="./public/images/hero.jpg" alt="e2Yacht Services">
 
-Currently, two official plugins are available:
+**Descripción del proyecto:** Sitio web para una empresa de servicios náuticos que ofrece una experiencia de navegación personalizada y de lujo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# e2yacht
+**Mi rol en el proyecto:** Desarrolladora Frontend, responsable de construir la interfaz siguiendo fielmente el diseño proporcionado por **Lara Carrizo**, asegurando que cada detalle se implementara de acuerdo con su visión. Utilicé **React.js** para una experiencia de usuario dinámica y **Firebase** para la integración de funcionalidades clave.
 
+<h3>👉🏻 <b>Deploy: <a href="https://e2yachtservices.com" target="_blank">e2Yacht Services</a></b></h3>
 
-<!-- AIzaSyCA8fXX9sFDs4rpt91AwmMKNn__L2FNzJw -->
+---
+
+## Tecnologías utilizadas:
+- ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+- ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
