@@ -1,12 +1,12 @@
 # E2Yacht Services
 
-<img align="center" src="./public/images/hero.jpg" alt="e2Yacht Services">
+<img align="center" src="./public/images/heroPc.jpg" alt="e2Yacht Services">
 
 **Descripción del proyecto:** Sitio web para una empresa de servicios náuticos que ofrece una experiencia de navegación personalizada y de lujo.
 
 **Mi rol en el proyecto:** Desarrolladora Frontend, responsable de construir la interfaz siguiendo fielmente el diseño proporcionado por **Lara Carrizo**, asegurando que cada detalle se implementara de acuerdo con su visión. Utilicé **React.js** para una experiencia de usuario dinámica y **Firebase** para la integración de funcionalidades clave.
 
-<h3>👉🏻 <b>Deploy: <a href="https://e2yachtservices.com" target="_blank">e2Yacht Services</a></b></h3>
+<h3>👉🏻 <b>Deploy: <a href="https://e2yachtservices.com" target="_blank">E2 Yacht Services</a></b></h3>
 
 ---
 
