@@ -1,7 +1,7 @@
 import '@fontsource-variable/libre-franklin';
 import CheckScroll from './CheckScroll';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
 import OurCrew from './Components/OurCrew/OurCrew';
@@ -24,7 +24,8 @@ function App() {
           <Route path='/contact' element={< Contact />} />
 
           <Route path='/:serviceId' element={< Services />} />
-          
+          <Route path='/lander' element={<Navigate to="/" replace />} />
+
         </Routes>
         
         <Footer/>
