@@ -10,7 +10,7 @@ function OurCrew() {
     { name: 'Eugenie Russel', text: t('ourCrew.captainEugenieText'), image: '/images/ourCrewEugene.jpg', className: 'rightCrew'},
     { name: 'José Alejandro Cano', text: t('ourCrew.joseText'), image: '/images/ourCrewCano.jpg', className: 'leftCrew'},
     { name: 'Odi Gutierrez', text: t('ourCrew.odiText'), image: '/images/OdiCrew.jpeg', className: 'rightCrew'},
-    { name: 'Miguel Sánchez Rodríguez', text: t('ourCrew.miguelText'), image: '/images/ourCrewCano.jpg', className: ''},
+    { name: 'Miguel Sánchez Rodríguez', text: t('ourCrew.miguelText'), image: '/images/miguel.jpeg', className: ''},
   ]
 
   return (
