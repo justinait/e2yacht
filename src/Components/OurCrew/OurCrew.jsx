@@ -11,6 +11,7 @@ function OurCrew() {
     { name: 'José Alejandro Cano', text: t('ourCrew.joseText'), image: '/images/ourCrewCano.jpg', className: 'leftCrew'},
     { name: 'Odi Gutierrez', text: t('ourCrew.odiText'), image: '/images/OdiCrew.jpeg', className: 'rightCrew'},
     { name: 'Miguel Sánchez Rodríguez', text: t('ourCrew.miguelText'), image: '/images/miguel.jpeg', className: ''},
+    { name: 'José Luis Remegio', text: t('ourCrew.joseLuisText'), image: '/images/joseLuisCrew.jpeg', className: ''},
   ]
 
   return (
