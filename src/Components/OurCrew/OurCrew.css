@@ -134,6 +134,7 @@
     }
     .cardCrew {
         width: 31%;
+        border-radius: 20px;
         margin: 1%;
     }
     .cardCrew img {
